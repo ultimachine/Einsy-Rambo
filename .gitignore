@@ -1,0 +1,5 @@
+*.SchDocPreview
+*.BomDoc
+*.AnnotationPreview
+*.PcbDocPreview
+board/History/
