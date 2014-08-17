@@ -1,0 +1,838 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">8/15/2014</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">5:24:41 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:09</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc" class="file"><acronym title="C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc">C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">37</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">108</td></tr>
+</table>
+</td>
+</table>
+<p class="error">ERROR : Design Rule Check was aborted</p>
+<hr><a name="IDASAEYB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAEBEYB">Your board contains 37 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.</a></td>
+<td class="column2">37</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">37</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAAGEYB">Minimum Annular Ring (Minimum=7mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAGGEYB">SMD To Corner (Distance=3mil) (All)</a></td>
+<td class="column2">17</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAVREYB">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAESEYB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAKSEYB">Clearance Constraint (Gap=7mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAZSEYB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA5SEYB">Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAFTEYB">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDALTEYB">Hole Size Constraint (Min=15mil) (Max=100000mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDARTEYB">Hole To Hole Clearance (Gap=8mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAXTEYB">Minimum Solder Mask Sliver (Gap=4mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA3TEYB">Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDADUEYB">Silk to Silk (Clearance=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAJUEYB">Silk primitive without silk layer</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAPUEYB">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">89</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDARNFYB">Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAXNFYB">Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA3NFYB">Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDADOFYB">Clearance Constraint (Gap=7mil) (IsPad),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAJOFYB">Clearance Constraint (Gap=7mil) (IsPad),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAPOFYB">Clearance Constraint (Gap=7mil) (IsVia),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAVOFYB">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA1OFYB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">108</td>
+</tr>
+</table><br><hr><a name="IDABBEYB"><h2>Warnings</h2></a><a name="IDAEBEYB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Your board contains 37 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: SMPS Bottom In net +12V On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net GND On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net NetD6_A On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net NetD10_A On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net GND On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net GND On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net 12V-IN On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net NetF3_1 On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net +12V3 On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net +12V2 On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net +12V2 On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Top-CryGND1 In net GND1 On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Top-GND1 In net GND1 On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Top-GND-ICoupler In net GND On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Direct Connect In net GND On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Direct Connect In net VCC On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Direct Connect In net NetD9_A On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Direct Connect In net NetC40_2 On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: SMPS field In net GND On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: DirectConnect In net GND On Top</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Top-MotorThermal In net GND On Top</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Top-VCC2 In net VCC On Supply</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net NetD6_A On Supply</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs On Supply</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Top-No Net In net USBVCC On Supply</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Top-VCC In net VCC On Supply</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Top-GND1 In net GND1 On Bottom</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: SMPS Bottom In net GND On Bottom</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net NetD6_A On Bottom</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net NetD10_A On Bottom</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net NetF3_1 On Bottom</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net +12V3 On Bottom</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net +12V3 On Bottom</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Power Inputs In net +12V3 On Bottom</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Power Inputs In net +12V3 On Bottom</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Polygon named: Btm-GND In net GND On Bottom</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: Btm-MotorThermal In net GND On Bottom</td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><hr><a name="IDAGGEYB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD To Corner (Distance=3mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1849.484mil|Location2.X=1852.339mil|Location1.Y=1717.42mil|Location2.Y=1726.02mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1849.484mil|Location2.X=1852.339mil|Location1.Y=1717.42mil|Location2.Y=1726.02mil|Absolute=True">SMD To Corner Constraint (2.978mil &lt; 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1256.602mil|Location2.X=1264.427mil|Location1.Y=1562.909mil|Location2.Y=1564.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1256.602mil|Location2.X=1264.427mil|Location1.Y=1562.909mil|Location2.Y=1564.869mil|Absolute=True">SMD To Corner Constraint (2.339mil &lt; 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1174.956mil|Location2.X=1177.811mil|Location1.Y=1599.208mil|Location2.Y=1607.808mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1174.956mil|Location2.X=1177.811mil|Location1.Y=1599.208mil|Location2.Y=1607.808mil|Absolute=True">SMD To Corner Constraint (1.291mil &lt; 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1217.602mil|Location2.X=1225.427mil|Location1.Y=1787.019mil|Location2.Y=1788.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1217.602mil|Location2.X=1225.427mil|Location1.Y=1787.019mil|Location2.Y=1788.979mil|Absolute=True">SMD To Corner Constraint (2.906mil &lt; 3mil) : Pad U5-16(1218.402mil,1770.496mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3148.606mil|Location2.X=3156.431mil|Location1.Y=2158.015mil|Location2.Y=2159.975mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3148.606mil|Location2.X=3156.431mil|Location1.Y=2158.015mil|Location2.Y=2159.975mil|Absolute=True">SMD To Corner Constraint (2.923mil &lt; 3mil) : Pad R6-1(3149.406mil,2137.798mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3629.905mil|Location2.X=3637.73mil|Location1.Y=2864.85mil|Location2.Y=2866.81mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3629.905mil|Location2.X=3637.73mil|Location1.Y=2864.85mil|Location2.Y=2866.81mil|Absolute=True">SMD To Corner Constraint (0.718mil &lt; 3mil) : Pad R69-2(3630.705mil,2885.824mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1483.455mil|Location2.X=1491.28mil|Location1.Y=1821.848mil|Location2.Y=1823.808mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1483.455mil|Location2.X=1491.28mil|Location1.Y=1821.848mil|Location2.Y=1823.808mil|Absolute=True">SMD To Corner Constraint (2.076mil &lt; 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1523.243mil|Location2.X=1526.098mil|Location1.Y=2653.975mil|Location2.Y=2662.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1523.243mil|Location2.X=1526.098mil|Location1.Y=2653.975mil|Location2.Y=2662.575mil|Absolute=True">SMD To Corner Constraint (2.537mil &lt; 3mil) : Pad RV1-2(1544.997mil,2661.775mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.49mil|Location2.X=1651.629mil|Location1.Y=2700.671mil|Location2.Y=2711.261mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.49mil|Location2.X=1651.629mil|Location1.Y=2700.671mil|Location2.Y=2711.261mil|Absolute=True">SMD To Corner Constraint (2.572mil &lt; 3mil) : Pad R2-2(1634mil,2715mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2637.535mil|Location2.X=2640.39mil|Location1.Y=1622.121mil|Location2.Y=1630.721mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2637.535mil|Location2.X=2640.39mil|Location1.Y=1622.121mil|Location2.Y=1630.721mil|Absolute=True">SMD To Corner Constraint (2.732mil &lt; 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2254.715mil|Location2.X=2263mil|Location1.Y=1906.178mil|Location2.Y=1909.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2254.715mil|Location2.X=2263mil|Location1.Y=1906.178mil|Location2.Y=1909.303mil|Absolute=True">SMD To Corner Constraint (2.918mil &lt; 3mil) : Pad C41-1(2241.142mil,1891.929mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.164mil|Location2.X=1920.718mil|Location1.Y=1748.783mil|Location2.Y=1757.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.164mil|Location2.X=1920.718mil|Location1.Y=1748.783mil|Location2.Y=1757.341mil|Absolute=True">SMD To Corner Constraint (2.839mil &lt; 3mil) : Pad C33-2(1929.134mil,1769.882mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.947mil|Location2.X=2639.083mil|Location1.Y=1701.98mil|Location2.Y=1712.572mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.947mil|Location2.X=2639.083mil|Location1.Y=1701.98mil|Location2.Y=1712.572mil|Absolute=True">SMD To Corner Constraint (2.463mil &lt; 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2331.43mil|Location2.X=2334.285mil|Location1.Y=2689.366mil|Location2.Y=2697.966mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2331.43mil|Location2.X=2334.285mil|Location1.Y=2689.366mil|Location2.Y=2697.966mil|Absolute=True">SMD To Corner Constraint (0.804mil &lt; 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2799.2mil|Location2.X=2807.025mil|Location1.Y=1324.57mil|Location2.Y=1326.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2799.2mil|Location2.X=2807.025mil|Location1.Y=1324.57mil|Location2.Y=1326.53mil|Absolute=True">SMD To Corner Constraint (1mil &lt; 3mil) : Pad TP60-TP(2800mil,1300mil)  Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2699.2mil|Location2.X=2707.025mil|Location1.Y=1325.07mil|Location2.Y=1327.03mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2699.2mil|Location2.X=2707.025mil|Location1.Y=1325.07mil|Location2.Y=1327.03mil|Absolute=True">SMD To Corner Constraint (2mil &lt; 3mil) : Pad TP58-TP(2700mil,1300mil)  Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.2mil|Location2.X=2107.025mil|Location1.Y=3525.318mil|Location2.Y=3527.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.2mil|Location2.X=2107.025mil|Location1.Y=3525.318mil|Location2.Y=3527.278mil|Absolute=True">SMD To Corner Constraint (2.496mil &lt; 3mil) : Pad TP40-TP(2100mil,3500mil)  Bottom</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDAVREYB"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3409.449mil|Location2.X=3555.118mil|Location1.Y=1051.181mil|Location2.Y=1157.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3409.449mil|Location2.X=3555.118mil|Location1.Y=1051.181mil|Location2.Y=1157.48mil|Absolute=True">Area Fill (3409.449mil,1051.181mil) (3555.118mil,1157.48mil)  Top</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3546.606mil|Location2.X=3752.606mil|Location1.Y=1115.504mil|Location2.Y=1261.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3546.606mil|Location2.X=3752.606mil|Location1.Y=1115.504mil|Location2.Y=1261.504mil|Absolute=True">Pad F1-2(3649.606mil,1188.504mil)  Multi-Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDAKSEYB"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Clearance Constraint (Gap=7mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3409.449mil|Location2.X=3555.118mil|Location1.Y=1051.181mil|Location2.Y=1157.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3409.449mil|Location2.X=3555.118mil|Location1.Y=1051.181mil|Location2.Y=1157.48mil|Absolute=True">Area Fill (3409.449mil,1051.181mil) (3555.118mil,1157.48mil)  Top</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3546.606mil|Location2.X=3752.606mil|Location1.Y=1115.504mil|Location2.Y=1261.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3546.606mil|Location2.X=3752.606mil|Location1.Y=1115.504mil|Location2.Y=1261.504mil|Absolute=True">Pad F1-2(3649.606mil,1188.504mil)  Multi-Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDAPUEYB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1779.165mil|Location2.X=1834.32mil|Location1.Y=2390.386mil|Location2.Y=2477.411mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1779.165mil|Location2.X=1834.32mil|Location1.Y=2390.386mil|Location2.Y=2477.411mil|Absolute=True">Net Antennae: Via (1802.165mil,2413.386mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1647mil|Location2.X=1702.154mil|Location1.Y=1852mil|Location2.Y=1939.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1647mil|Location2.X=1702.154mil|Location1.Y=1852mil|Location2.Y=1939.025mil|Absolute=True">Net Antennae: Via (1670mil,1875mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1197mil|Location2.X=1252.154mil|Location1.Y=1852mil|Location2.Y=1939.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1197mil|Location2.X=1252.154mil|Location1.Y=1852mil|Location2.Y=1939.025mil|Absolute=True">Net Antennae: Via (1220mil,1875mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True">Net Antennae: Via (4255.905mil,2781.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True">Net Antennae: Via (4255.905mil,2821.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True">Net Antennae: Via (4255.905mil,2741.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4232.905mil|Location2.X=4288.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True">Net Antennae: Via (4255.905mil,2701.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True">Net Antennae: Via (4215.905mil,2701.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True">Net Antennae: Via (4175.905mil,2701.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True">Net Antennae: Via (4175.905mil,2741.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True">Net Antennae: Via (4215.905mil,2741.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True">Net Antennae: Via (4215.905mil,2781.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True">Net Antennae: Via (4175.905mil,2781.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4152.905mil|Location2.X=4208.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True">Net Antennae: Via (4175.905mil,2821.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4192.905mil|Location2.X=4248.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True">Net Antennae: Via (4215.905mil,2821.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True">Net Antennae: Via (4295.905mil,2821.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2798.535mil|Location2.Y=2885.56mil|Absolute=True">Net Antennae: Via (4335.905mil,2821.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True">Net Antennae: Via (4335.905mil,2781.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2758.535mil|Location2.Y=2845.56mil|Absolute=True">Net Antennae: Via (4295.905mil,2781.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True">Net Antennae: Via (4295.905mil,2741.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2718.535mil|Location2.Y=2805.56mil|Absolute=True">Net Antennae: Via (4335.905mil,2741.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4312.905mil|Location2.X=4368.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True">Net Antennae: Via (4335.905mil,2701.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.905mil|Location2.X=4328.06mil|Location1.Y=2678.535mil|Location2.Y=2765.56mil|Absolute=True">Net Antennae: Via (4295.905mil,2701.535mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True">Net Antennae: Via (4654.173mil,3260.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True">Net Antennae: Via (4694.173mil,3260.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True">Net Antennae: Via (4694.173mil,3300.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True">Net Antennae: Via (4654.173mil,3300.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True">Net Antennae: Via (4654.173mil,3340.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True">Net Antennae: Via (4694.173mil,3340.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4671.173mil|Location2.X=4726.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True">Net Antennae: Via (4694.173mil,3380.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4631.173mil|Location2.X=4686.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True">Net Antennae: Via (4654.173mil,3380.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True">Net Antennae: Via (4574.173mil,3380.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True">Net Antennae: Via (4534.173mil,3380.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True">Net Antennae: Via (4534.173mil,3340.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True">Net Antennae: Via (4574.173mil,3340.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True">Net Antennae: Via (4574.173mil,3300.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True">Net Antennae: Via (4534.173mil,3300.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4511.173mil|Location2.X=4566.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True">Net Antennae: Via (4534.173mil,3260.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.173mil|Location2.X=4606.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True">Net Antennae: Via (4574.173mil,3260.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3237.591mil|Location2.Y=3324.616mil|Absolute=True">Net Antennae: Via (4614.173mil,3260.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3277.591mil|Location2.Y=3364.616mil|Absolute=True">Net Antennae: Via (4614.173mil,3300.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3357.591mil|Location2.Y=3444.616mil|Absolute=True">Net Antennae: Via (4614.173mil,3380.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4591.173mil|Location2.X=4646.328mil|Location1.Y=3317.591mil|Location2.Y=3404.616mil|Absolute=True">Net Antennae: Via (4614.173mil,3340.591mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4925.491mil|Location2.X=4980.645mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4925.491mil|Location2.X=4980.645mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True">Net Antennae: Via (4948.491mil,2625mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4933.693mil|Location2.X=4988.847mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4933.693mil|Location2.X=4988.847mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True">Net Antennae: Via (4956.693mil,2767.717mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4831.331mil|Location2.X=4886.485mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4831.331mil|Location2.X=4886.485mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True">Net Antennae: Via (4854.331mil,2767.717mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4882.512mil|Location2.X=4937.666mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4882.512mil|Location2.X=4937.666mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True">Net Antennae: Via (4905.512mil,2767.717mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4982.905mil|Location2.X=5038.06mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4982.905mil|Location2.X=5038.06mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True">Net Antennae: Via (5005.905mil,2625mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4984.874mil|Location2.X=5040.028mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4984.874mil|Location2.X=5040.028mil|Location1.Y=2744.717mil|Location2.Y=2831.742mil|Absolute=True">Net Antennae: Via (5007.874mil,2767.717mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4868.076mil|Location2.X=4923.23mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4868.076mil|Location2.X=4923.23mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True">Net Antennae: Via (4891.076mil,2625mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4810.662mil|Location2.X=4865.816mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4810.662mil|Location2.X=4865.816mil|Location1.Y=2602mil|Location2.Y=2689.025mil|Absolute=True">Net Antennae: Via (4833.662mil,2625mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3217.157mil|Location2.X=3272.312mil|Location1.Y=2795.898mil|Location2.Y=2882.923mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3217.157mil|Location2.X=3272.312mil|Location1.Y=2795.898mil|Location2.Y=2882.923mil|Absolute=True">Net Antennae: Via (3240.157mil,2818.898mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1465.189mil|Location2.X=1520.343mil|Location1.Y=3036.055mil|Location2.Y=3123.08mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1465.189mil|Location2.X=1520.343mil|Location1.Y=3036.055mil|Location2.Y=3123.08mil|Absolute=True">Net Antennae: Via (1488.189mil,3059.055mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1781.134mil|Location2.X=1836.288mil|Location1.Y=2218.142mil|Location2.Y=2305.167mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1781.134mil|Location2.X=1836.288mil|Location1.Y=2218.142mil|Location2.Y=2305.167mil|Absolute=True">Net Antennae: Via (1804.134mil,2241.142mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1462mil|Location2.X=1517.154mil|Location1.Y=1900mil|Location2.Y=1987.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1462mil|Location2.X=1517.154mil|Location1.Y=1900mil|Location2.Y=1987.025mil|Absolute=True">Net Antennae: Via (1485mil,1923mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1886.449mil|Location2.X=1941.603mil|Location1.Y=1894.323mil|Location2.Y=1981.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1886.449mil|Location2.X=1941.603mil|Location1.Y=1894.323mil|Location2.Y=1981.348mil|Absolute=True">Net Antennae: Via (1909.449mil,1917.323mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1814.598mil|Location2.X=1869.753mil|Location1.Y=2921.882mil|Location2.Y=3008.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1814.598mil|Location2.X=1869.753mil|Location1.Y=2921.882mil|Location2.Y=3008.907mil|Absolute=True">Net Antennae: Via (1837.598mil,2944.882mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2203.378mil|Location2.X=2258.532mil|Location1.Y=2704.362mil|Location2.Y=2791.387mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2203.378mil|Location2.X=2258.532mil|Location1.Y=2704.362mil|Location2.Y=2791.387mil|Absolute=True">Net Antennae: Via (2226.378mil,2727.362mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2689.598mil|Location2.X=2744.753mil|Location1.Y=2910.071mil|Location2.Y=2997.096mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2689.598mil|Location2.X=2744.753mil|Location1.Y=2910.071mil|Location2.Y=2997.096mil|Absolute=True">Net Antennae: Via (2712.598mil,2933.071mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.787mil|Location2.X=2107.942mil|Location1.Y=2800.819mil|Location2.Y=2887.844mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.787mil|Location2.X=2107.942mil|Location1.Y=2800.819mil|Location2.Y=2887.844mil|Absolute=True">Net Antennae: Via (2075.787mil,2823.819mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4520.307mil|Location2.X=4575.462mil|Location1.Y=2303.772mil|Location2.Y=2390.797mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4520.307mil|Location2.X=4575.462mil|Location1.Y=2303.772mil|Location2.Y=2390.797mil|Absolute=True">Net Antennae: Via (4543.307mil,2326.772mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4520.307mil|Location2.X=4575.462mil|Location1.Y=2240.78mil|Location2.Y=2327.805mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4520.307mil|Location2.X=4575.462mil|Location1.Y=2240.78mil|Location2.Y=2327.805mil|Absolute=True">Net Antennae: Via (4543.307mil,2263.78mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4669.913mil|Location2.X=4725.068mil|Location1.Y=2244.716mil|Location2.Y=2331.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4669.913mil|Location2.X=4725.068mil|Location1.Y=2244.716mil|Location2.Y=2331.742mil|Absolute=True">Net Antennae: Via (4692.913mil,2267.716mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4669.913mil|Location2.X=4725.068mil|Location1.Y=2299.835mil|Location2.Y=2386.86mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4669.913mil|Location2.X=4725.068mil|Location1.Y=2299.835mil|Location2.Y=2386.86mil|Absolute=True">Net Antennae: Via (4692.913mil,2322.835mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4587.236mil|Location2.X=4642.391mil|Location1.Y=2473.063mil|Location2.Y=2560.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4587.236mil|Location2.X=4642.391mil|Location1.Y=2473.063mil|Location2.Y=2560.088mil|Absolute=True">Net Antennae: Via (4610.236mil,2496.063mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4669.913mil|Location2.X=4725.068mil|Location1.Y=2445.504mil|Location2.Y=2532.529mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4669.913mil|Location2.X=4725.068mil|Location1.Y=2445.504mil|Location2.Y=2532.529mil|Absolute=True">Net Antennae: Via (4692.913mil,2468.504mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4878.575mil|Location2.X=4933.729mil|Location1.Y=2000.622mil|Location2.Y=2087.647mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4878.575mil|Location2.X=4933.729mil|Location1.Y=2000.622mil|Location2.Y=2087.647mil|Absolute=True">Net Antennae: Via (4901.575mil,2023.622mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4839.205mil|Location2.X=4894.359mil|Location1.Y=2000.622mil|Location2.Y=2087.647mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4839.205mil|Location2.X=4894.359mil|Location1.Y=2000.622mil|Location2.Y=2087.647mil|Absolute=True">Net Antennae: Via (4862.205mil,2023.622mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4917.945mil|Location2.X=4973.099mil|Location1.Y=2000.622mil|Location2.Y=2087.647mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4917.945mil|Location2.X=4973.099mil|Location1.Y=2000.622mil|Location2.Y=2087.647mil|Absolute=True">Net Antennae: Via (4940.945mil,2023.622mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4965.189mil|Location2.X=5020.343mil|Location1.Y=2051.803mil|Location2.Y=2138.828mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4965.189mil|Location2.X=5020.343mil|Location1.Y=2051.803mil|Location2.Y=2138.828mil|Absolute=True">Net Antennae: Via (4988.189mil,2074.803mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4898.26mil|Location2.X=4953.414mil|Location1.Y=2110.858mil|Location2.Y=2197.883mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4898.26mil|Location2.X=4953.414mil|Location1.Y=2110.858mil|Location2.Y=2197.883mil|Absolute=True">Net Antennae: Via (4921.26mil,2133.858mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4843.142mil|Location2.X=4898.296mil|Location1.Y=2110.858mil|Location2.Y=2197.883mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4843.142mil|Location2.X=4898.296mil|Location1.Y=2110.858mil|Location2.Y=2197.883mil|Absolute=True">Net Antennae: Via (4866.142mil,2133.858mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4500.622mil|Location2.X=4555.776mil|Location1.Y=2036.055mil|Location2.Y=2123.08mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4500.622mil|Location2.X=4555.776mil|Location1.Y=2036.055mil|Location2.Y=2123.08mil|Absolute=True">Net Antennae: Via (4523.622mil,2059.055mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4701.409mil|Location2.X=4756.564mil|Location1.Y=2036.055mil|Location2.Y=2123.08mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4701.409mil|Location2.X=4756.564mil|Location1.Y=2036.055mil|Location2.Y=2123.08mil|Absolute=True">Net Antennae: Via (4724.409mil,2059.055mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4532.118mil|Location2.X=4587.273mil|Location1.Y=1937.63mil|Location2.Y=2024.655mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4532.118mil|Location2.X=4587.273mil|Location1.Y=1937.63mil|Location2.Y=2024.655mil|Absolute=True">Net Antennae: Via (4555.118mil,1960.63mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4532.118mil|Location2.X=4587.273mil|Location1.Y=1886.449mil|Location2.Y=1973.474mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4532.118mil|Location2.X=4587.273mil|Location1.Y=1886.449mil|Location2.Y=1973.474mil|Absolute=True">Net Antennae: Via (4555.118mil,1909.449mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4662.039mil|Location2.X=4717.194mil|Location1.Y=1890.386mil|Location2.Y=1977.411mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4662.039mil|Location2.X=4717.194mil|Location1.Y=1890.386mil|Location2.Y=1977.411mil|Absolute=True">Net Antennae: Via (4685.039mil,1913.386mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4662.039mil|Location2.X=4717.194mil|Location1.Y=1933.693mil|Location2.Y=2020.718mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4662.039mil|Location2.X=4717.194mil|Location1.Y=1933.693mil|Location2.Y=2020.718mil|Absolute=True">Net Antennae: Via (4685.039mil,1956.693mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4532.118mil|Location2.X=4587.273mil|Location1.Y=1736.842mil|Location2.Y=1823.868mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4532.118mil|Location2.X=4587.273mil|Location1.Y=1736.842mil|Location2.Y=1823.868mil|Absolute=True">Net Antennae: Via (4555.118mil,1759.842mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4662.039mil|Location2.X=4717.194mil|Location1.Y=1732.906mil|Location2.Y=1819.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4662.039mil|Location2.X=4717.194mil|Location1.Y=1732.906mil|Location2.Y=1819.93mil|Absolute=True">Net Antennae: Via (4685.039mil,1755.906mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4713.221mil|Location2.X=4768.375mil|Location1.Y=1543.929mil|Location2.Y=1630.954mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4713.221mil|Location2.X=4768.375mil|Location1.Y=1543.929mil|Location2.Y=1630.954mil|Absolute=True">Net Antennae: Via (4736.221mil,1566.929mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4382.512mil|Location2.X=4437.666mil|Location1.Y=1638.417mil|Location2.Y=1725.442mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4382.512mil|Location2.X=4437.666mil|Location1.Y=1638.417mil|Location2.Y=1725.442mil|Absolute=True">Net Antennae: Via (4405.512mil,1661.417mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4402.197mil|Location2.X=4457.351mil|Location1.Y=1425.819mil|Location2.Y=1512.844mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4402.197mil|Location2.X=4457.351mil|Location1.Y=1425.819mil|Location2.Y=1512.844mil|Absolute=True">Net Antennae: Via (4425.197mil,1448.819mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4563.614mil|Location2.X=4618.769mil|Location1.Y=1425.819mil|Location2.Y=1512.844mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4563.614mil|Location2.X=4618.769mil|Location1.Y=1425.819mil|Location2.Y=1512.844mil|Absolute=True">Net Antennae: Via (4586.614mil,1448.819mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.803mil|Location2.X=4606.958mil|Location1.Y=1477mil|Location2.Y=1564.025mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4551.803mil|Location2.X=4606.958mil|Location1.Y=1477mil|Location2.Y=1564.025mil|Absolute=True">Net Antennae: Via (4574.803mil,1500mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4417.945mil|Location2.X=4473.099mil|Location1.Y=1480.937mil|Location2.Y=1567.962mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4417.945mil|Location2.X=4473.099mil|Location1.Y=1480.937mil|Location2.Y=1567.962mil|Absolute=True">Net Antennae: Via (4440.945mil,1503.937mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4528.181mil|Location2.X=4583.336mil|Location1.Y=1591.173mil|Location2.Y=1678.198mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4528.181mil|Location2.X=4583.336mil|Location1.Y=1591.173mil|Location2.Y=1678.198mil|Absolute=True">Net Antennae: Via (4551.181mil,1614.173mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4425.819mil|Location2.X=4480.973mil|Location1.Y=1602.984mil|Location2.Y=1690.009mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4425.819mil|Location2.X=4480.973mil|Location1.Y=1602.984mil|Location2.Y=1690.009mil|Absolute=True">Net Antennae: Via (4448.819mil,1625.984mil) Top to Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2977mil|Location2.X=3032.154mil|Location1.Y=2287.039mil|Location2.Y=2374.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2977mil|Location2.X=3032.154mil|Location1.Y=2287.039mil|Location2.Y=2374.064mil|Absolute=True">Net Antennae: Via (3000mil,2310.039mil) Top to Bottom</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

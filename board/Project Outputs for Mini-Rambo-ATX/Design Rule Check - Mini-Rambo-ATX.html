@@ -1,0 +1,449 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">8/13/2014</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">11:19:02 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc" class="file"><acronym title="C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc">C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">23</td></tr>
+</table>
+</td>
+</table>
+<hr><a name="IDASA0YB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAEB0YB">Minimum Annular Ring (Minimum=7mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAKB0YB">SMD To Corner (Distance=3mil) (All)</a></td>
+<td class="column2">22</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAUF0YB">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA0F0YB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAGG0YB">Clearance Constraint (Gap=7mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAMG0YB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDASG0YB">Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAYG0YB">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA4G0YB">Hole Size Constraint (Min=15mil) (Max=100000mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAEH0YB">Hole To Hole Clearance (Gap=8mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAKH0YB">Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAQH0YB">Silk to Silk (Clearance=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAWH0YB">Silk primitive without silk layer</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA2H0YB">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAFQ0YB">Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDALQ0YB">Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDARQ0YB">Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAXQ0YB">Clearance Constraint (Gap=7mil) (IsPad),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA3Q0YB">Clearance Constraint (Gap=7mil) (IsPad),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDADR0YB">Clearance Constraint (Gap=7mil) (IsVia),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAJR0YB">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAPR0YB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">23</td>
+</tr>
+</table><br><hr><a name="IDAKB0YB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD To Corner (Distance=3mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.164mil|Location2.X=1920.718mil|Location1.Y=1748.783mil|Location2.Y=1757.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1910.164mil|Location2.X=1920.718mil|Location1.Y=1748.783mil|Location2.Y=1757.341mil|Absolute=True">SMD To Corner Constraint (2.839mil &lt; 3mil) : Pad C33-2(1929.134mil,1769.882mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2203.924mil|Location2.X=2211.749mil|Location1.Y=2702.873mil|Location2.Y=2704.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2203.924mil|Location2.X=2211.749mil|Location1.Y=2702.873mil|Location2.Y=2704.833mil|Absolute=True">SMD To Corner Constraint (1.716mil &lt; 3mil) : Pad C9-2(2199.504mil,2690.945mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1465.879mil|Location2.X=1476.333mil|Location1.Y=1749.551mil|Location2.Y=1757.775mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1465.879mil|Location2.X=1476.333mil|Location1.Y=1749.551mil|Location2.Y=1757.775mil|Absolute=True">SMD To Corner Constraint (1.512mil &lt; 3mil) : Pad C28-2(1484.252mil,1769.882mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1840.834mil|Location2.X=1851.424mil|Location1.Y=2398.541mil|Location2.Y=2408.681mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1840.834mil|Location2.X=1851.424mil|Location1.Y=2398.541mil|Location2.Y=2408.681mil|Absolute=True">SMD To Corner Constraint (2.599mil &lt; 3mil) : Pad C70-1(1832.677mil,2412.401mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2331.43mil|Location2.X=2334.285mil|Location1.Y=2689.366mil|Location2.Y=2697.966mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2331.43mil|Location2.X=2334.285mil|Location1.Y=2689.366mil|Location2.Y=2697.966mil|Absolute=True">SMD To Corner Constraint (0.804mil &lt; 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1915.064mil|Location2.X=1917.919mil|Location1.Y=2314.739mil|Location2.Y=2323.339mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1915.064mil|Location2.X=1917.919mil|Location1.Y=2314.739mil|Location2.Y=2323.339mil|Absolute=True">SMD To Corner Constraint (2.201mil &lt; 3mil) : Pad U10-4(1889.764mil,2322.539mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2991.326mil|Location2.X=2999.151mil|Location1.Y=1537.469mil|Location2.Y=1539.429mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2991.326mil|Location2.X=2999.151mil|Location1.Y=1537.469mil|Location2.Y=1539.429mil|Absolute=True">SMD To Corner Constraint (2.225mil &lt; 3mil) : Pad R20-1(2992.126mil,1505.787mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3150.08mil|Location2.X=3158.443mil|Location1.Y=2858.327mil|Location2.Y=2868.825mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3150.08mil|Location2.X=3158.443mil|Location1.Y=2858.327mil|Location2.Y=2868.825mil|Absolute=True">SMD To Corner Constraint (2.016mil &lt; 3mil) : Pad R73-1(3138.586mil,2877.956mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1483.455mil|Location2.X=1491.28mil|Location1.Y=1821.848mil|Location2.Y=1823.808mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1483.455mil|Location2.X=1491.28mil|Location1.Y=1821.848mil|Location2.Y=1823.808mil|Absolute=True">SMD To Corner Constraint (2.076mil &lt; 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.074mil|Location2.X=3744.574mil|Location1.Y=3324.427mil|Location2.Y=3334.965mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.074mil|Location2.X=3744.574mil|Location1.Y=3324.427mil|Location2.Y=3334.965mil|Absolute=True">SMD To Corner Constraint (2.577mil &lt; 3mil) : Pad R42-1(3752.759mil,3350.397mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.49mil|Location2.X=1651.629mil|Location1.Y=2700.671mil|Location2.Y=2711.261mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.49mil|Location2.X=1651.629mil|Location1.Y=2700.671mil|Location2.Y=2711.261mil|Absolute=True">SMD To Corner Constraint (2.572mil &lt; 3mil) : Pad R2-2(1634mil,2715mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.55mil|Location2.X=2639.405mil|Location1.Y=1622.121mil|Location2.Y=1630.721mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.55mil|Location2.X=2639.405mil|Location1.Y=1622.121mil|Location2.Y=1630.721mil|Absolute=True">SMD To Corner Constraint (0.764mil &lt; 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2254.715mil|Location2.X=2263mil|Location1.Y=1906.178mil|Location2.Y=1909.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2254.715mil|Location2.X=2263mil|Location1.Y=1906.178mil|Location2.Y=1909.303mil|Absolute=True">SMD To Corner Constraint (2.918mil &lt; 3mil) : Pad C41-1(2241.142mil,1891.929mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.947mil|Location2.X=2639.083mil|Location1.Y=1701.98mil|Location2.Y=1712.572mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.947mil|Location2.X=2639.083mil|Location1.Y=1701.98mil|Location2.Y=1712.572mil|Absolute=True">SMD To Corner Constraint (2.463mil &lt; 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.947mil|Location2.X=2639.083mil|Location1.Y=1865.366mil|Location2.Y=1875.957mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.947mil|Location2.X=2639.083mil|Location1.Y=1865.366mil|Location2.Y=1875.957mil|Absolute=True">SMD To Corner Constraint (2.463mil &lt; 3mil) : Pad C19-1(2641.733mil,1884.843mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1657.664mil|Location2.X=1665.489mil|Location1.Y=2319.428mil|Location2.Y=2321.388mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1657.664mil|Location2.X=1665.489mil|Location1.Y=2319.428mil|Location2.Y=2321.388mil|Absolute=True">SMD To Corner Constraint (2.542mil &lt; 3mil) : Pad C12-1(1658.464mil,2307.087mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1849.484mil|Location2.X=1852.339mil|Location1.Y=1717.42mil|Location2.Y=1726.02mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1849.484mil|Location2.X=1852.339mil|Location1.Y=1717.42mil|Location2.Y=1726.02mil|Absolute=True">SMD To Corner Constraint (2.978mil &lt; 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1256.602mil|Location2.X=1264.427mil|Location1.Y=1563.893mil|Location2.Y=1565.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1256.602mil|Location2.X=1264.427mil|Location1.Y=1563.893mil|Location2.Y=1565.853mil|Absolute=True">SMD To Corner Constraint (0.37mil &lt; 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1174.956mil|Location2.X=1177.811mil|Location1.Y=1599.208mil|Location2.Y=1607.808mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1174.956mil|Location2.X=1177.811mil|Location1.Y=1599.208mil|Location2.Y=1607.808mil|Absolute=True">SMD To Corner Constraint (1.291mil &lt; 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4124.95mil|Location2.X=4127.805mil|Location1.Y=3392.2mil|Location2.Y=3400.8mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4124.95mil|Location2.X=4127.805mil|Location1.Y=3392.2mil|Location2.Y=3400.8mil|Absolute=True">SMD To Corner Constraint (1.5mil &lt; 3mil) : Pad TP3-TP(4100mil,3400mil)  Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.2mil|Location2.X=4507.025mil|Location1.Y=3525.32mil|Location2.Y=3527.28mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.2mil|Location2.X=4507.025mil|Location1.Y=3525.32mil|Location2.Y=3527.28mil|Absolute=True">SMD To Corner Constraint (2.5mil &lt; 3mil) : Pad TP23-TP(4500mil,3500mil)  Bottom</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.489mil|Location2.X=1126.896mil|Location1.Y=2010.585mil|Location2.Y=2020.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.489mil|Location2.X=1126.896mil|Location1.Y=2010.585mil|Location2.Y=2020.992mil|Absolute=True">SMD To Corner Constraint (2.202mil &lt; 3mil) : Pad TP1-TP(1100mil,2000mil)  Bottom</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDA0F0YB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1090.732mil|Location2.X=1290.732mil|Location1.Y=2992.66mil|Location2.Y=3426.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1090.732mil|Location2.X=1290.732mil|Location1.Y=2992.66mil|Location2.Y=3426.976mil|Absolute=True">Un-Routed Net Constraint: Net FGND Between Track on layer Bottom (1190.732,3092.66mil) And Pad S1-3 (1190.732,3326.976mil)</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,3 @@
+Added Component: Designator=TP32(TP1-27)
+Added Pin To Net: NetName=VCC Pin=TP32-TP
+Added Member To Class: ClassName=Power-SMPS Member=Component TP32 TestPoint

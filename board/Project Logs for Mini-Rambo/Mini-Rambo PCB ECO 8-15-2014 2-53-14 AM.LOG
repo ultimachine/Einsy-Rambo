@@ -1,0 +1,118 @@
+Change Component Description : Designator=R16 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R21 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R43 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R57 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R59 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R60 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R61 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Change Component Description : Designator=R62 Old Description=RES 0603 10r 100mW 1% New Description=RES 100K OHM 1/10W 1% 0603 SMD
+Added Component: Designator=TP33(TP1-27)
+Added Component: Designator=TP34(TP1-27)
+Added Component: Designator=TP35(TP1-27)
+Added Component: Designator=TP36(TP1-27)
+Added Component: Designator=TP37(TP1-27)
+Added Component: Designator=TP38(TP1-27)
+Added Component: Designator=TP39(TP1-27)
+Added Component: Designator=TP40(TP1-27)
+Added Component: Designator=TP41(TP1-27)
+Added Component: Designator=TP42(TP1-27)
+Added Component: Designator=TP43(TP1-27)
+Added Component: Designator=TP44(TP1-27)
+Added Component: Designator=TP45(TP1-27)
+Added Component: Designator=TP46(TP1-27)
+Added Component: Designator=TP47(TP1-27)
+Added Component: Designator=TP48(TP1-27)
+Added Component: Designator=TP49(TP1-27)
+Added Component: Designator=TP50(TP1-27)
+Added Component: Designator=TP51(TP1-27)
+Added Component: Designator=TP52(TP1-27)
+Added Component: Designator=TP53(TP1-27)
+Added Component: Designator=TP54(TP1-27)
+Added Component: Designator=TP55(TP1-27)
+Added Component: Designator=TP56(TP1-27)
+Added Component: Designator=TP57(TP1-27)
+Added Component: Designator=TP58(TP1-27)
+Added Component: Designator=TP59(TP1-27)
+Added Component: Designator=TP60(TP1-27)
+Added Component: Designator=TP61(TP1-27)
+Added Component: Designator=TP62(TP1-27)
+Added Component: Designator=TP63(TP1-27)
+Added Component: Designator=TP64(TP1-27)
+Added Component: Designator=TP65(TP1-27)
+Added Component: Designator=TP66(TP1-27)
+Added Component: Designator=TP67(TP1-27)
+Added Component: Designator=TP68(TP1-27)
+Added Component: Designator=TP69(TP1-27)
+Added Pin To Net: NetName=+12V4 Pin=TP33-TP
+Added Pin To Net: NetName=PB3_MISO Pin=TP34-TP
+Added Pin To Net: NetName=PB1_SCK Pin=TP35-TP
+Added Pin To Net: NetName=PB2_MOSI Pin=TP36-TP
+Added Pin To Net: NetName=RESET Pin=TP37-TP
+Added Pin To Net: NetName=X-MIN Pin=TP38-TP
+Added Pin To Net: NetName=X-MAX Pin=TP39-TP
+Added Pin To Net: NetName=Y-MIN Pin=TP40-TP
+Added Pin To Net: NetName=Y-MAX Pin=TP41-TP
+Added Pin To Net: NetName=MOSI2 Pin=TP42-TP
+Added Pin To Net: NetName=MISO2 Pin=TP43-TP
+Added Pin To Net: NetName=RESET2 Pin=TP44-TP
+Added Pin To Net: NetName=SCK2 Pin=TP45-TP
+Added Pin To Net: NetName=NetF4_1 Pin=TP46-TP
+Added Pin To Net: NetName=GND1 Pin=TP47-TP
+Added Pin To Net: NetName=Z-MIN Pin=TP48-TP
+Added Pin To Net: NetName=Z-MAX Pin=TP49-TP
+Added Pin To Net: NetName=NetU5_30 Pin=TP50-TP
+Added Pin To Net: NetName=NetU6_30 Pin=TP51-TP
+Added Pin To Net: NetName=NetU6_1 Pin=TP52-TP
+Added Pin To Net: NetName=NetU5_1 Pin=TP53-TP
+Added Pin To Net: NetName=NetU5_27 Pin=TP54-TP
+Added Pin To Net: NetName=NetU6_27 Pin=TP55-TP
+Added Pin To Net: NetName=NetU5_24 Pin=TP56-TP
+Added Pin To Net: NetName=NetU6_24 Pin=TP57-TP
+Added Pin To Net: NetName=NetU7_30 Pin=TP58-TP
+Added Pin To Net: NetName=NetU8_30 Pin=TP59-TP
+Added Pin To Net: NetName=NetU7_1 Pin=TP60-TP
+Added Pin To Net: NetName=NetU8_1 Pin=TP61-TP
+Added Pin To Net: NetName=NetU8_27 Pin=TP62-TP
+Added Pin To Net: NetName=NetU7_27 Pin=TP63-TP
+Added Pin To Net: NetName=NetU8_24 Pin=TP64-TP
+Added Pin To Net: NetName=NetU7_24 Pin=TP65-TP
+Added Pin To Net: NetName=12V-IN Pin=TP66-TP
+Added Pin To Net: NetName=GND Pin=TP67-TP
+Added Pin To Net: NetName=NetF3_1 Pin=TP68-TP
+Added Pin To Net: NetName=GND Pin=TP69-TP
+Change Net Name : Old Net Name=NetU5_1 New Net Name=NetTP53_TP
+Change Net Name : Old Net Name=NetU5_24 New Net Name=NetTP56_TP
+Change Net Name : Old Net Name=NetU5_27 New Net Name=NetTP54_TP
+Change Net Name : Old Net Name=NetU5_30 New Net Name=NetTP50_TP
+Change Net Name : Old Net Name=NetU6_1 New Net Name=NetTP52_TP
+Change Net Name : Old Net Name=NetU6_24 New Net Name=NetTP57_TP
+Change Net Name : Old Net Name=NetU6_27 New Net Name=NetTP55_TP
+Change Net Name : Old Net Name=NetU6_30 New Net Name=NetTP51_TP
+Change Net Name : Old Net Name=NetU7_1 New Net Name=NetTP60_TP
+Change Net Name : Old Net Name=NetU7_24 New Net Name=NetTP65_TP
+Change Net Name : Old Net Name=NetU7_27 New Net Name=NetTP63_TP
+Change Net Name : Old Net Name=NetU7_30 New Net Name=NetTP58_TP
+Change Net Name : Old Net Name=NetU8_1 New Net Name=NetTP61_TP
+Change Net Name : Old Net Name=NetU8_24 New Net Name=NetTP64_TP
+Change Net Name : Old Net Name=NetU8_27 New Net Name=NetTP62_TP
+Change Net Name : Old Net Name=NetU8_30 New Net Name=NetTP59_TP
+Added Member To Class: ClassName=Motors Member=Component TP50 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP51 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP52 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP53 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP54 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP55 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP56 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP57 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP58 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP59 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP60 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP61 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP62 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP63 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP64 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP65 TestPoint
+Added Member To Class: ClassName=Power-SMPS Member=Component TP66 TestPoint
+Added Member To Class: ClassName=Power-SMPS Member=Component TP67 TestPoint
+Added Member To Class: ClassName=Power-SMPS Member=Component TP68 TestPoint
+Added Member To Class: ClassName=Power-SMPS Member=Component TP69 TestPoint

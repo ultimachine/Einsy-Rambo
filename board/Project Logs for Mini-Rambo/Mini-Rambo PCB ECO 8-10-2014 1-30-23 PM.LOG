@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetD9_A Pin=R13-1
+Removed Pin From Net: NetName=GND Pin=R13-2
+Removed Member From Class: ClassName=Power-SMPS Member=R?
+Change Component Designator: OldDesignator=R? NewDesignator=R13
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=NetD9_A Pin=R13-2

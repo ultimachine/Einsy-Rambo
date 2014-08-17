@@ -1,0 +1,31 @@
+Change Component Footprint: Designator=X14 Old Footprint=4POL254 New Footprint=4POL254 noPol
+Change Component Footprint: Designator=X15 Old Footprint=4POL254 New Footprint=4POL254 noPol
+Added Component: Designator=TP3(TP1-27)
+Added Component: Designator=TP16(TP1-27)
+Added Component: Designator=TP17(TP1-27)
+Added Component: Designator=TP18(TP1-27)
+Added Component: Designator=TP22(TP1-27)
+Added Component: Designator=TP23(TP1-27)
+Added Component: Designator=TP24(TP1-27)
+Added Component: Designator=TP25(TP1-27)
+Added Component: Designator=TP26(TP1-27)
+Added Component: Designator=TP27(TP1-27)
+Added Component: Designator=TP28(TP1-27)
+Added Component: Designator=TP29(TP1-27)
+Added Component: Designator=TP30(TP1-27)
+Added Component: Designator=TP31(TP1-27)
+Added Pin To Net: NetName=+12V2 Pin=TP3-TP
+Added Pin To Net: NetName=+12V3 Pin=TP16-TP
+Added Pin To Net: NetName=NetD6_A Pin=TP17-TP
+Added Pin To Net: NetName=NetD10_A Pin=TP18-TP
+Added Pin To Net: NetName=NetLED8_C Pin=TP22-TP
+Added Pin To Net: NetName=NetLED3_C Pin=TP23-TP
+Added Pin To Net: NetName=DTR Pin=TP24-TP
+Added Pin To Net: NetName=RX0-I Pin=TP25-TP
+Added Pin To Net: NetName=TX0-I Pin=TP26-TP
+Added Pin To Net: NetName=D- Pin=TP27-TP
+Added Pin To Net: NetName=D+ Pin=TP28-TP
+Added Pin To Net: NetName=NetC10_1 Pin=TP29-TP
+Added Pin To Net: NetName=RX0 Pin=TP30-TP
+Added Pin To Net: NetName=TX0 Pin=TP31-TP
+Change Net Name : Old Net Name=XVCC New Net Name=NetF4_1

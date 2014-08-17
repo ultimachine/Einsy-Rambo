@@ -1,0 +1,228 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc
+Date     : 8/15/2014
+Time     : 5:24:41 PM
+
+ERROR : Design Rule Check was aborted
+
+WARNING: Your board contains 37 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.
+   Polygon named: SMPS Bottom In net +12V On Top
+   Polygon named: Power Inputs In net GND On Top
+   Polygon named: Power Inputs In net NetD6_A On Top
+   Polygon named: Power Inputs In net NetD10_A On Top
+   Polygon named: Power Inputs In net GND On Top
+   Polygon named: Power Inputs In net GND On Top
+   Polygon named: Power Inputs In net 12V-IN On Top
+   Polygon named: Power Inputs In net NetF3_1 On Top
+   Polygon named: Power Inputs In net +12V3 On Top
+   Polygon named: Power Inputs In net +12V2 On Top
+   Polygon named: Power Inputs In net +12V2 On Top
+   Polygon named: Top-CryGND1 In net GND1 On Top
+   Polygon named: Top-GND1 In net GND1 On Top
+   Polygon named: Top-GND-ICoupler In net GND On Top
+   Polygon named: Direct Connect In net GND On Top
+   Polygon named: Direct Connect In net VCC On Top
+   Polygon named: Direct Connect In net NetD9_A On Top
+   Polygon named: Direct Connect In net NetC40_2 On Top
+   Polygon named: SMPS field In net GND On Top
+   Polygon named: DirectConnect In net GND On Top
+   Polygon named: Top-MotorThermal In net GND On Top
+   Polygon named: Top-VCC2 In net VCC On Supply
+   Polygon named: Power Inputs In net NetD6_A On Supply
+   Polygon named: Power Inputs On Supply
+   Polygon named: Top-No Net In net USBVCC On Supply
+   Polygon named: Top-VCC In net VCC On Supply
+   Polygon named: Top-GND1 In net GND1 On Bottom
+   Polygon named: SMPS Bottom In net GND On Bottom
+   Polygon named: Power Inputs In net NetD6_A On Bottom
+   Polygon named: Power Inputs In net NetD10_A On Bottom
+   Polygon named: Power Inputs In net NetF3_1 On Bottom
+   Polygon named: Power Inputs In net +12V3 On Bottom
+   Polygon named: Power Inputs In net +12V3 On Bottom
+   Polygon named: Power Inputs In net +12V3 On Bottom
+   Polygon named: Power Inputs In net +12V3 On Bottom
+   Polygon named: Btm-GND In net GND On Bottom
+   Polygon named: Btm-MotorThermal In net GND On Bottom
+
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=3mil) (All)
+   Violation between SMD To Corner Constraint (2.978mil < 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top
+   Violation between SMD To Corner Constraint (2.339mil < 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top
+   Violation between SMD To Corner Constraint (1.291mil < 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top
+   Violation between SMD To Corner Constraint (2.906mil < 3mil) : Pad U5-16(1218.402mil,1770.496mil)  Top
+   Violation between SMD To Corner Constraint (2.923mil < 3mil) : Pad R6-1(3149.406mil,2137.798mil)  Top
+   Violation between SMD To Corner Constraint (0.718mil < 3mil) : Pad R69-2(3630.705mil,2885.824mil)  Top
+   Violation between SMD To Corner Constraint (2.076mil < 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top
+   Violation between SMD To Corner Constraint (2.537mil < 3mil) : Pad RV1-2(1544.997mil,2661.775mil)  Top
+   Violation between SMD To Corner Constraint (2.572mil < 3mil) : Pad R2-2(1634mil,2715mil)  Top
+   Violation between SMD To Corner Constraint (2.732mil < 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top
+   Violation between SMD To Corner Constraint (2.918mil < 3mil) : Pad C41-1(2241.142mil,1891.929mil)  Top
+   Violation between SMD To Corner Constraint (2.839mil < 3mil) : Pad C33-2(1929.134mil,1769.882mil)  Top
+   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top
+   Violation between SMD To Corner Constraint (0.804mil < 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top
+   Violation between SMD To Corner Constraint (1mil < 3mil) : Pad TP60-TP(2800mil,1300mil)  Bottom
+   Violation between SMD To Corner Constraint (2mil < 3mil) : Pad TP58-TP(2700mil,1300mil)  Bottom
+   Violation between SMD To Corner Constraint (2.496mil < 3mil) : Pad TP40-TP(2100mil,3500mil)  Bottom
+Rule Violations :17
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Area Fill (3409.449mil,1051.181mil) (3555.118mil,1157.48mil)  Top and 
+                     Pad F1-2(3649.606mil,1188.504mil)  Multi-Layer
+Rule Violations :1
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+   Violation between Area Fill (3409.449mil,1051.181mil) (3555.118mil,1157.48mil)  Top and 
+                     Pad F1-2(3649.606mil,1188.504mil)  Multi-Layer
+Rule Violations :1
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=15mil) (Max=100000mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Via (1802.165mil,2413.386mil) Top to Bottom
+   Violation between Net Antennae: Via (1670mil,1875mil) Top to Bottom
+   Violation between Net Antennae: Via (1220mil,1875mil) Top to Bottom
+   Violation between Net Antennae: Via (4255.905mil,2781.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4255.905mil,2821.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4255.905mil,2741.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4255.905mil,2701.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4215.905mil,2701.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4175.905mil,2701.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4175.905mil,2741.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4215.905mil,2741.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4215.905mil,2781.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4175.905mil,2781.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4175.905mil,2821.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4215.905mil,2821.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4295.905mil,2821.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4335.905mil,2821.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4335.905mil,2781.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4295.905mil,2781.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4295.905mil,2741.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4335.905mil,2741.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4335.905mil,2701.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4295.905mil,2701.535mil) Top to Bottom
+   Violation between Net Antennae: Via (4654.173mil,3260.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4694.173mil,3260.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4694.173mil,3300.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4654.173mil,3300.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4654.173mil,3340.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4694.173mil,3340.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4694.173mil,3380.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4654.173mil,3380.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4574.173mil,3380.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4534.173mil,3380.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4534.173mil,3340.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4574.173mil,3340.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4574.173mil,3300.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4534.173mil,3300.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4534.173mil,3260.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4574.173mil,3260.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4614.173mil,3260.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4614.173mil,3300.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4614.173mil,3380.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4614.173mil,3340.591mil) Top to Bottom
+   Violation between Net Antennae: Via (4948.491mil,2625mil) Top to Bottom
+   Violation between Net Antennae: Via (4956.693mil,2767.717mil) Top to Bottom
+   Violation between Net Antennae: Via (4854.331mil,2767.717mil) Top to Bottom
+   Violation between Net Antennae: Via (4905.512mil,2767.717mil) Top to Bottom
+   Violation between Net Antennae: Via (5005.905mil,2625mil) Top to Bottom
+   Violation between Net Antennae: Via (5007.874mil,2767.717mil) Top to Bottom
+   Violation between Net Antennae: Via (4891.076mil,2625mil) Top to Bottom
+   Violation between Net Antennae: Via (4833.662mil,2625mil) Top to Bottom
+   Violation between Net Antennae: Via (3240.157mil,2818.898mil) Top to Bottom
+   Violation between Net Antennae: Via (1488.189mil,3059.055mil) Top to Bottom
+   Violation between Net Antennae: Via (1804.134mil,2241.142mil) Top to Bottom
+   Violation between Net Antennae: Via (1485mil,1923mil) Top to Bottom
+   Violation between Net Antennae: Via (1909.449mil,1917.323mil) Top to Bottom
+   Violation between Net Antennae: Via (1837.598mil,2944.882mil) Top to Bottom
+   Violation between Net Antennae: Via (2226.378mil,2727.362mil) Top to Bottom
+   Violation between Net Antennae: Via (2712.598mil,2933.071mil) Top to Bottom
+   Violation between Net Antennae: Via (2075.787mil,2823.819mil) Top to Bottom
+   Violation between Net Antennae: Via (4543.307mil,2326.772mil) Top to Bottom
+   Violation between Net Antennae: Via (4543.307mil,2263.78mil) Top to Bottom
+   Violation between Net Antennae: Via (4692.913mil,2267.716mil) Top to Bottom
+   Violation between Net Antennae: Via (4692.913mil,2322.835mil) Top to Bottom
+   Violation between Net Antennae: Via (4610.236mil,2496.063mil) Top to Bottom
+   Violation between Net Antennae: Via (4692.913mil,2468.504mil) Top to Bottom
+   Violation between Net Antennae: Via (4901.575mil,2023.622mil) Top to Bottom
+   Violation between Net Antennae: Via (4862.205mil,2023.622mil) Top to Bottom
+   Violation between Net Antennae: Via (4940.945mil,2023.622mil) Top to Bottom
+   Violation between Net Antennae: Via (4988.189mil,2074.803mil) Top to Bottom
+   Violation between Net Antennae: Via (4921.26mil,2133.858mil) Top to Bottom
+   Violation between Net Antennae: Via (4866.142mil,2133.858mil) Top to Bottom
+   Violation between Net Antennae: Via (4523.622mil,2059.055mil) Top to Bottom
+   Violation between Net Antennae: Via (4724.409mil,2059.055mil) Top to Bottom
+   Violation between Net Antennae: Via (4555.118mil,1960.63mil) Top to Bottom
+   Violation between Net Antennae: Via (4555.118mil,1909.449mil) Top to Bottom
+   Violation between Net Antennae: Via (4685.039mil,1913.386mil) Top to Bottom
+   Violation between Net Antennae: Via (4685.039mil,1956.693mil) Top to Bottom
+   Violation between Net Antennae: Via (4555.118mil,1759.842mil) Top to Bottom
+   Violation between Net Antennae: Via (4685.039mil,1755.906mil) Top to Bottom
+   Violation between Net Antennae: Via (4736.221mil,1566.929mil) Top to Bottom
+   Violation between Net Antennae: Via (4405.512mil,1661.417mil) Top to Bottom
+   Violation between Net Antennae: Via (4425.197mil,1448.819mil) Top to Bottom
+   Violation between Net Antennae: Via (4586.614mil,1448.819mil) Top to Bottom
+   Violation between Net Antennae: Via (4574.803mil,1500mil) Top to Bottom
+   Violation between Net Antennae: Via (4440.945mil,1503.937mil) Top to Bottom
+   Violation between Net Antennae: Via (4551.181mil,1614.173mil) Top to Bottom
+   Violation between Net Antennae: Via (4448.819mil,1625.984mil) Top to Bottom
+   Violation between Net Antennae: Via (3000mil,2310.039mil) Top to Bottom
+Rule Violations :89
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
+Rule Violations :0
+
+
+Violations Detected : 108
+Time Elapsed        : 00:00:09

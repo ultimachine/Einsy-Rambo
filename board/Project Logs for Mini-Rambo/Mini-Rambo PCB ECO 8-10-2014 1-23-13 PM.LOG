@@ -1,0 +1,6 @@
+Change Component DesignItemId : Designator=C30 Old DesignItemId=GRM31CR71H475KA12L New DesignItemId=C1206C475K5PACTU
+Change Component Footprint: Designator=C25 Old Footprint=C0402 New Footprint=C0603
+Change Component Footprint: Designator=R13 Old Footprint=R2010 New Footprint=RN2010
+Change Component Description : Designator=C30 Old Description=CAP CER 1206 4.7uF 50V 10% X7R New Description=CAP CER 1206 4.7uF 50V 10% X5R
+Added Component: Designator=R?(2512R-0.55)
+Added Member To Class: ClassName=Power-SMPS Member=Component R? 0.6r
