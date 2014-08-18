@@ -1,0 +1,4 @@
+Change Component DesignItemId : Designator=P? Old DesignItemId=Header 5X2 New DesignItemId=5X2 IDCw
+Change Component Footprint: Designator=P? Old Footprint=HDR2X5 New Footprint=2x5 IDCw
+Change Component Comment : Designator=P? Old Comment=Header 5X2 New Comment=5x2 IDCw
+Change Component Designator: OldDesignator=P? NewDesignator=P3

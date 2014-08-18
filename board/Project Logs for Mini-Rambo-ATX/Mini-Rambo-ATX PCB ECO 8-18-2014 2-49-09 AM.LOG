@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=NetD10_A Pin=TP22-TP
+Removed Pin From Net: NetName=+12V3 Pin=TP23-TP
+Removed Pin From Net: NetName=NetD10_A Pin=TP32-TP
+Removed Pin From Net: NetName=12V-IN Pin=TP33-TP
+Removed Pin From Net: NetName=+12V Pin=TP66-TP
+Removed Pin From Net: NetName=GND Pin=TP68-TP
+Removed Pin From Net: NetName=NetF1_1 Pin=TP69-TP
+Added Pin To Net: NetName=+12V2 Pin=TP3-TP
+Added Pin To Net: NetName=THERM2 Pin=TP15-TP
+Added Pin To Net: NetName=+12V3 Pin=TP16-TP
+Added Pin To Net: NetName=NetD6_A Pin=TP17-TP
+Added Pin To Net: NetName=NetD10_A Pin=TP18-TP
+Added Pin To Net: NetName=NetLED8_C Pin=TP22-TP
+Added Pin To Net: NetName=NetLED3_C Pin=TP23-TP
+Added Pin To Net: NetName=VCC Pin=TP32-TP
+Added Pin To Net: NetName=+12V4 Pin=TP33-TP
+Added Pin To Net: NetName=PB3_MISO Pin=TP34-TP
+Added Pin To Net: NetName=PB1_SCK Pin=TP35-TP
+Added Pin To Net: NetName=PB2_MOSI Pin=TP36-TP
+Added Pin To Net: NetName=X-MIN Pin=TP38-TP
+Added Pin To Net: NetName=Y-MIN Pin=TP40-TP
+Added Pin To Net: NetName=Y-MAX Pin=TP41-TP
+Added Pin To Net: NetName=MOSI2 Pin=TP42-TP
+Added Pin To Net: NetName=MISO2 Pin=TP43-TP
+Added Pin To Net: NetName=RESET2 Pin=TP44-TP
+Added Pin To Net: NetName=SCK2 Pin=TP45-TP
+Added Pin To Net: NetName=NetF4_1 Pin=TP46-TP
+Added Pin To Net: NetName=GND1 Pin=TP47-TP
+Added Pin To Net: NetName=Z-MIN Pin=TP48-TP
+Added Pin To Net: NetName=Z-MAX Pin=TP49-TP
+Added Pin To Net: NetName=NetTP50_TP Pin=TP50-TP
+Added Pin To Net: NetName=NetTP51_TP Pin=TP51-TP
+Added Pin To Net: NetName=NetTP52_TP Pin=TP52-TP
+Added Pin To Net: NetName=NetTP53_TP Pin=TP53-TP
+Added Pin To Net: NetName=NetTP54_TP Pin=TP54-TP
+Added Pin To Net: NetName=NetTP55_TP Pin=TP55-TP
+Added Pin To Net: NetName=NetTP56_TP Pin=TP56-TP
+Added Pin To Net: NetName=NetTP57_TP Pin=TP57-TP
+Added Pin To Net: NetName=NetTP58_TP Pin=TP58-TP
+Added Pin To Net: NetName=NetTP59_TP Pin=TP59-TP
+Added Pin To Net: NetName=NetTP60_TP Pin=TP60-TP
+Added Pin To Net: NetName=NetTP61_TP Pin=TP61-TP
+Added Pin To Net: NetName=NetTP62_TP Pin=TP62-TP
+Added Pin To Net: NetName=NetTP63_TP Pin=TP63-TP
+Added Pin To Net: NetName=NetTP64_TP Pin=TP64-TP
+Added Pin To Net: NetName=NetTP65_TP Pin=TP65-TP
+Added Pin To Net: NetName=12V-IN Pin=TP66-TP
+Added Member To Class: ClassName=Motors Member=Component TP0 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP1 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP2 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP4 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP5 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP6 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP7 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP8 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP9 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP10 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP11 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP12 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP13 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP14 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP19 TestPoint
+Added Member To Class: ClassName=Power-ATX Member=Component TP32 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP50 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP51 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP52 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP53 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP54 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP55 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP56 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP57 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP58 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP59 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP60 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP61 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP62 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP63 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP64 TestPoint
+Added Member To Class: ClassName=Motors Member=Component TP65 TestPoint
+Added Member To Class: ClassName=Power-ATX Member=Component TP66 TestPoint
+Added Member To Class: ClassName=Power-ATX Member=Component TP67 TestPoint

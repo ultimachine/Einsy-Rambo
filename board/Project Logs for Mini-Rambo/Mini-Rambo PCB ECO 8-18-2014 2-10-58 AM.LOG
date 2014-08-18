@@ -1,0 +1,11 @@
+Added Component: Designator=P?(HDR2X5)
+Added Pin To Net: NetName=VCC Pin=P?-1
+Added Pin To Net: NetName=VCC Pin=P?-2
+Added Pin To Net: NetName=TX2 Pin=P?-3
+Added Pin To Net: NetName=GND Pin=P?-4
+Added Pin To Net: NetName=RX2 Pin=P?-5
+Added Pin To Net: NetName=SCL Pin=P?-6
+Added Pin To Net: NetName=GND Pin=P?-7
+Added Pin To Net: NetName=SDA Pin=P?-8
+Added Pin To Net: NetName=RESET Pin=P?-9
+Added Pin To Net: NetName=PH2 Pin=P?-10
