@@ -1,95 +1,98 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc
 Date     : 8/18/2014
-Time     : 11:50:16 AM
+Time     : 12:55:36 PM
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
-Rule Violations :0
+Processing Rule : SMD To Corner (Distance=3mil) (All)
+   Violation between SMD To Corner Constraint (2.978mil < 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top
+   Violation between SMD To Corner Constraint (2.339mil < 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top
+   Violation between SMD To Corner Constraint (1.291mil < 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top
+   Violation between SMD To Corner Constraint (2.906mil < 3mil) : Pad U5-16(1218.402mil,1770.496mil)  Top
+   Violation between SMD To Corner Constraint (2.48mil < 3mil) : Pad C49-1(4306.7mil,3476mil)  Top
+   Violation between SMD To Corner Constraint (2.923mil < 3mil) : Pad R6-1(3149.406mil,2137.798mil)  Top
+   Violation between SMD To Corner Constraint (0.718mil < 3mil) : Pad R69-2(3630.705mil,2885.824mil)  Top
+   Violation between SMD To Corner Constraint (2.076mil < 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top
+   Violation between SMD To Corner Constraint (2.537mil < 3mil) : Pad RV1-2(1544.997mil,2661.775mil)  Top
+   Violation between SMD To Corner Constraint (2.572mil < 3mil) : Pad R2-2(1634mil,2715mil)  Top
+   Violation between SMD To Corner Constraint (2.732mil < 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top
+   Violation between SMD To Corner Constraint (1.217mil < 3mil) : Pad C33-1(1929.134mil,1716.339mil)  Top
+   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top
+   Violation between SMD To Corner Constraint (0.595mil < 3mil) : Pad C35-1(4365mil,3311.402mil)  Top
+   Violation between SMD To Corner Constraint (2.623mil < 3mil) : Pad U2-31(2301.827mil,2657.796mil)  Top
+   Violation between SMD To Corner Constraint (1.094mil < 3mil) : Pad U2-30(2301.827mil,2677.48mil)  Top
+   Violation between SMD To Corner Constraint (0.804mil < 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top
+   Violation between SMD To Corner Constraint (1.15mil < 3mil) : Pad TP46-TP(1400mil,2400mil)  Bottom
+   Violation between SMD To Corner Constraint (1mil < 3mil) : Pad TP60-TP(2800mil,1300mil)  Bottom
+   Violation between SMD To Corner Constraint (2mil < 3mil) : Pad TP58-TP(2700mil,1300mil)  Bottom
+   Violation between SMD To Corner Constraint (2.496mil < 3mil) : Pad TP40-TP(2100mil,3500mil)  Bottom
+Rule Violations :21
 
-Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
-Rule Violations :0
-
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
-Rule Violations :0
-
-Processing Rule : Silk primitive without silk layer
-Rule Violations :0
-
-Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
-Rule Violations :0
-
-Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
-Rule Violations :0
-
-Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=15mil) (Max=100000mil) (All)
-Rule Violations :0
-
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)
-Rule Violations :0
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
 Rule Violations :0
 
-Processing Rule : SMD To Corner (Distance=3mil) (All)
-   Violation between SMD To Corner Constraint (0.804mil < 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top
-   Violation between SMD To Corner Constraint (0.595mil < 3mil) : Pad C35-1(4365mil,3311.402mil)  Top
-   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top
-   Violation between SMD To Corner Constraint (1.217mil < 3mil) : Pad C33-1(1929.134mil,1716.339mil)  Top
-   Violation between SMD To Corner Constraint (2.732mil < 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top
-   Violation between SMD To Corner Constraint (2.572mil < 3mil) : Pad R2-2(1634mil,2715mil)  Top
-   Violation between SMD To Corner Constraint (2.537mil < 3mil) : Pad RV1-2(1544.997mil,2661.775mil)  Top
-   Violation between SMD To Corner Constraint (2.076mil < 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top
-   Violation between SMD To Corner Constraint (0.718mil < 3mil) : Pad R69-2(3630.705mil,2885.824mil)  Top
-   Violation between SMD To Corner Constraint (2.923mil < 3mil) : Pad R6-1(3149.406mil,2137.798mil)  Top
-   Violation between SMD To Corner Constraint (2.48mil < 3mil) : Pad C49-1(4306.7mil,3476mil)  Top
-   Violation between SMD To Corner Constraint (2.906mil < 3mil) : Pad U5-16(1218.402mil,1770.496mil)  Top
-   Violation between SMD To Corner Constraint (1.291mil < 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top
-   Violation between SMD To Corner Constraint (2.339mil < 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top
-   Violation between SMD To Corner Constraint (2.978mil < 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top
-   Violation between SMD To Corner Constraint (2.496mil < 3mil) : Pad TP40-TP(2100mil,3500mil)  Bottom
-   Violation between SMD To Corner Constraint (2mil < 3mil) : Pad TP58-TP(2700mil,1300mil)  Bottom
-   Violation between SMD To Corner Constraint (1mil < 3mil) : Pad TP60-TP(2800mil,1300mil)  Bottom
-Rule Violations :18
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
+Processing Rule : Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=15mil) (Max=100000mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
 Rule Violations :0
 
 
-Violations Detected : 18
-Time Elapsed        : 00:00:48
+Violations Detected : 21
+Time Elapsed        : 00:00:38

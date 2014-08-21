@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=USBVCC Pin=F4-2
+Change Component DesignItemId : Designator=P3 Old DesignItemId=Header 5X2 New DesignItemId=5X2 IDCw
+Change Component Footprint: Designator=P1 Old Footprint=10X2-0.05X0.1 New Footprint=10X2-0.05X0.1w
+Change Component Footprint: Designator=P2 Old Footprint=10X2-0.05X0.1 New Footprint=10X2-0.05X0.1w
+Change Component Footprint: Designator=P3 Old Footprint=HDR2X5 New Footprint=2x5 IDCw
+Change Component Comment : Designator=P3 Old Comment=Header 5X2 New Comment=5x2 IDCw
+Added Pin To Net: NetName=USBVCC Pin=TP46-TP
+Added Pin To Net: NetName=USBVCC Pin=X2-1

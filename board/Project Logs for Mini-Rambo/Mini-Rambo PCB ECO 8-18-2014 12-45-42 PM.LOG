@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=USBVCC Pin=F4-2
+Added Pin To Net: NetName=USBVCC Pin=TP46-TP
+Added Pin To Net: NetName=USBVCC Pin=X2-1
