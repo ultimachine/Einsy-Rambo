@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc
-Date     : 8/18/2014
-Time     : 12:55:36 PM
+Date     : 8/22/2014
+Time     : 11:26:08 PM
 
 Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
 Rule Violations :0
@@ -27,8 +27,7 @@ Processing Rule : SMD To Corner (Distance=3mil) (All)
    Violation between SMD To Corner Constraint (1.15mil < 3mil) : Pad TP46-TP(1400mil,2400mil)  Bottom
    Violation between SMD To Corner Constraint (1mil < 3mil) : Pad TP60-TP(2800mil,1300mil)  Bottom
    Violation between SMD To Corner Constraint (2mil < 3mil) : Pad TP58-TP(2700mil,1300mil)  Bottom
-   Violation between SMD To Corner Constraint (2.496mil < 3mil) : Pad TP40-TP(2100mil,3500mil)  Bottom
-Rule Violations :21
+Rule Violations :20
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -93,6 +92,42 @@ Rule Violations :0
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
 Rule Violations :0
 
+Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And PolyRegion on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And PolyRegion on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And PolyRegion on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Track on MidLayer1 And Track on MidLayer1
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Track on BottomLayer And Pad on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between PolyRegion on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+Rule Violations :33
 
-Violations Detected : 21
-Time Elapsed        : 00:00:38
+
+Violations Detected : 53
+Time Elapsed        : 00:00:21

@@ -1,94 +1,193 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo-ATX.PcbDoc
-Date     : 8/20/2014
-Time     : 8:57:37 PM
+Date     : 8/21/2014
+Time     : 11:31:33 AM
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
-Rule Violations :0
+Processing Rule : SMD To Corner (Distance=3mil) (All)
+   Violation between SMD To Corner Constraint (0.517mil < 3mil) : Pad C33-1(1929.134mil,1716.339mil)  Top
+   Violation between SMD To Corner Constraint (1.716mil < 3mil) : Pad C9-2(2199.504mil,2690.945mil)  Top
+   Violation between SMD To Corner Constraint (1.512mil < 3mil) : Pad C28-2(1484.252mil,1769.882mil)  Top
+   Violation between SMD To Corner Constraint (2.568mil < 3mil) : Pad C62-1(3916.535mil,2590.551mil)  Top
+   Violation between SMD To Corner Constraint (2.599mil < 3mil) : Pad C70-1(1832.677mil,2412.401mil)  Top
+   Violation between SMD To Corner Constraint (2.201mil < 3mil) : Pad U10-4(1889.764mil,2322.539mil)  Top
+   Violation between SMD To Corner Constraint (2.225mil < 3mil) : Pad R20-1(2992.126mil,1505.787mil)  Top
+   Violation between SMD To Corner Constraint (2.076mil < 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top
+   Violation between SMD To Corner Constraint (2.572mil < 3mil) : Pad R2-2(1634mil,2715mil)  Top
+   Violation between SMD To Corner Constraint (0.764mil < 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top
+   Violation between SMD To Corner Constraint (2.918mil < 3mil) : Pad C41-1(2241.142mil,1891.929mil)  Top
+   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top
+   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C19-1(2641.733mil,1884.843mil)  Top
+   Violation between SMD To Corner Constraint (2.542mil < 3mil) : Pad C12-1(1658.464mil,2307.087mil)  Top
+   Violation between SMD To Corner Constraint (2.978mil < 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top
+   Violation between SMD To Corner Constraint (0.37mil < 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top
+   Violation between SMD To Corner Constraint (1.291mil < 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top
+   Violation between SMD To Corner Constraint (0.804mil < 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top
+   Violation between SMD To Corner Constraint (2.5mil < 3mil) : Pad TP23-TP(4500mil,3500mil)  Bottom
+   Violation between SMD To Corner Constraint (2.202mil < 3mil) : Pad TP1-TP(1100mil,2000mil)  Bottom
+Rule Violations :20
 
-Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
-Rule Violations :0
-
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
-Rule Violations :0
-
-Processing Rule : Silk primitive without silk layer
-Rule Violations :0
-
-Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
-Rule Violations :0
-
-Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
-Rule Violations :0
-
-Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=15mil) (Max=100000mil) (All)
-Rule Violations :0
-
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)
-Rule Violations :0
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Un-Routed Net Constraint ( (All) )
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 1mil, Vertical Gap = 10mil ) (InComponentClass('Connectors')),(All) 
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
-Processing Rule : SMD To Corner (Distance=3mil) (All)
-   Violation between SMD To Corner Constraint (0.804mil < 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top
-   Violation between SMD To Corner Constraint (1.291mil < 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top
-   Violation between SMD To Corner Constraint (0.37mil < 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top
-   Violation between SMD To Corner Constraint (2.978mil < 3mil) : Pad U6-7(1832.795mil,1725.22mil)  Top
-   Violation between SMD To Corner Constraint (2.542mil < 3mil) : Pad C12-1(1658.464mil,2307.087mil)  Top
-   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C19-1(2641.733mil,1884.843mil)  Top
-   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top
-   Violation between SMD To Corner Constraint (2.918mil < 3mil) : Pad C41-1(2241.142mil,1891.929mil)  Top
-   Violation between SMD To Corner Constraint (0.764mil < 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top
-   Violation between SMD To Corner Constraint (2.572mil < 3mil) : Pad R2-2(1634mil,2715mil)  Top
-   Violation between SMD To Corner Constraint (2.076mil < 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top
-   Violation between SMD To Corner Constraint (2.225mil < 3mil) : Pad R20-1(2992.126mil,1505.787mil)  Top
-   Violation between SMD To Corner Constraint (2.201mil < 3mil) : Pad U10-4(1889.764mil,2322.539mil)  Top
-   Violation between SMD To Corner Constraint (2.599mil < 3mil) : Pad C70-1(1832.677mil,2412.401mil)  Top
-   Violation between SMD To Corner Constraint (2.568mil < 3mil) : Pad C62-1(3916.535mil,2590.551mil)  Top
-   Violation between SMD To Corner Constraint (1.512mil < 3mil) : Pad C28-2(1484.252mil,1769.882mil)  Top
-   Violation between SMD To Corner Constraint (1.716mil < 3mil) : Pad C9-2(2199.504mil,2690.945mil)  Top
-   Violation between SMD To Corner Constraint (0.517mil < 3mil) : Pad C33-1(1929.134mil,1716.339mil)  Top
-   Violation between SMD To Corner Constraint (2.202mil < 3mil) : Pad TP1-TP(1100mil,2000mil)  Bottom
-   Violation between SMD To Corner Constraint (2.5mil < 3mil) : Pad TP23-TP(4500mil,3500mil)  Bottom
-Rule Violations :20
-
-Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
+Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
 
-Violations Detected : 20
-Time Elapsed        : 00:01:05
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=15mil) (MaxHoleWidth=28mil) (PreferredHoleWidth=15mil) (MinWidth=30mil) (MaxWidth=50mil) (PreferedWidth=30mil) (All)
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 10mil, Vertical Gap = 10mil ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Pads and Vias to follow the Drill pairs settings
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=15mil) (Max=100000mil) (All)
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=10mil) (Max=10mil) (Preferred=10mil)  and Width Constraints (Min=15mil) (Max=15mil) (Preferred=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between PolyRegion on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between PolyRegion on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between PolyRegion on TopLayer And PolyRegion on TopLayer
+   Violation between Acute Angle Constraint Between PolyRegion on BottomLayer And Track on BottomLayer
+Rule Violations :33
+
+Processing Rule : Un-Connected Pin Constraint ( (All) )
+   Violation between Un-Connected Pin Constraint: Pad FID3-1(5051.181mil,1048.228mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad FID1-1(1048.228mil,3712.598mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad FID2-1(1048.228mil,1052.165mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U10-13(2095.126mil,2322.539mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad RN3-3(2563.724mil,1683.07mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad RN1-3(2563.724mil,1978.346mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad RN5-8(1967.52mil,2892.291mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-2(3159.449mil,1619.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-4(3159.449mil,1659.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-21(2969.961mil,1659.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-23(2969.961mil,1619.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-26(3014.961mil,1574.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-28(3054.961mil,1574.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-29(3074.803mil,1574.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U8-31(3114.173mil,1574.118mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-31(2226.141mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-29(2186.771mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-28(2166.929mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-26(2126.929mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-23(2081.929mil,1626.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-21(2081.929mil,1666.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-4(2271.417mil,1666.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U7-2(2271.417mil,1626.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-2(1832.795mil,1626.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-4(1832.795mil,1666.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-21(1643.307mil,1666.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-23(1643.307mil,1626.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-26(1688.307mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-28(1728.307mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-29(1748.149mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U6-31(1787.519mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-31(1336.614mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-29(1297.244mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-28(1277.402mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-26(1237.402mil,1581.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-23(1192.402mil,1626.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-21(1192.402mil,1666.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-4(1381.89mil,1666.008mil)  Top
+   Violation between Un-Connected Pin Constraint: Pad U5-2(1381.89mil,1626.008mil)  Top
+Rule Violations :39
+
+
+Violations Detected : 92
+Time Elapsed        : 00:00:24
