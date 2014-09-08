@@ -17,7 +17,7 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=Mini-Rambo-ATX.OutJob
 Description=
-TargetOutputMedium=PDF
+TargetOutputMedium=Assembly
 VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
@@ -29,7 +29,7 @@ OutputMedium1_Printer=
 OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputMedium2=PDF
 OutputMedium2_Type=Publish
-OutputMedium3=Folder Structure
+OutputMedium3=Assembly
 OutputMedium3_Type=GeneratedFiles
 OutputMedium4=Video
 OutputMedium4_Type=Multimedia
@@ -38,7 +38,7 @@ OutputName1=Schematic Prints
 OutputCategory1=Documentation
 OutputDocumentPath1=[Project Physical Documents]
 OutputVariantName1=[No Variations]
-OutputEnabled1=1
+OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=1
 OutputEnabled1_OutputMedium3=0
@@ -52,7 +52,7 @@ OutputName2=PCB Prints
 OutputCategory2=Documentation
 OutputDocumentPath2=Mini-Rambo-ATX.PcbDoc
 OutputVariantName2=
-OutputEnabled2=1
+OutputEnabled2=0
 OutputEnabled2_OutputMedium1=0
 OutputEnabled2_OutputMedium2=2
 OutputEnabled2_OutputMedium3=0
@@ -98,7 +98,7 @@ OutputName3=Bill of Materials
 OutputCategory3=Report
 OutputDocumentPath3=Mini-Rambo-ATX.BomDoc
 OutputVariantName3=
-OutputEnabled3=1
+OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
 OutputEnabled3_OutputMedium2=3
 OutputEnabled3_OutputMedium3=0
@@ -115,6 +115,68 @@ Configuration3_Name4=SortOrder
 Configuration3_Item4=Designator=Up
 Configuration3_Name5=VisibleOrder
 Configuration3_Item5=Designator=385|DesignItemId=154|Description=231|Comment=154|Quantity=54|Manufacturer 1=77|Manufacturer Part Number 1=77
+OutputType4=Assembly
+OutputName4=Assembly Drawings
+OutputCategory4=Assembly
+OutputDocumentPath4=Mini-Rambo-ATX.PcbDoc
+OutputVariantName4=
+OutputEnabled4=0
+OutputEnabled4_OutputMedium1=0
+OutputEnabled4_OutputMedium2=0
+OutputEnabled4_OutputMedium3=0
+OutputEnabled4_OutputMedium4=0
+OutputDefault4=0
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType5=Pick Place
+OutputName5=Generates pick and place files
+OutputCategory5=Assembly
+OutputDocumentPath5=Mini-Rambo-ATX.PcbDoc
+OutputVariantName5=
+OutputEnabled5=1
+OutputEnabled5_OutputMedium1=0
+OutputEnabled5_OutputMedium2=0
+OutputEnabled5_OutputMedium3=2
+OutputEnabled5_OutputMedium4=0
+OutputDefault5=0
+Configuration5_Name1=OutputConfigurationParameter1
+Configuration5_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True
+OutputType6=Test Points For Assembly
+OutputName6=Test Point Report
+OutputCategory6=Assembly
+OutputDocumentPath6=Mini-Rambo-ATX.PcbDoc
+OutputVariantName6=
+OutputEnabled6=1
+OutputEnabled6_OutputMedium1=0
+OutputEnabled6_OutputMedium2=0
+OutputEnabled6_OutputMedium3=3
+OutputEnabled6_OutputMedium4=0
+OutputDefault6=0
+Configuration6_Name1=OutputConfigurationParameter1
+Configuration6_Item1=AssyAdjacencyDistance=250000|AssyGenerateCSVFormat=True|AssyGenerateIPCFormat=False|AssyGenerateSpreadSheetFormat=False|AssyGenerateTextFormat=False|AssyOriginPosition=Relative|AssyOutlineLayer=56|AssyOutputAdjancencies=False|AssyOutputBoardOutline=False|AssyOutputTraces=False|AssyReportBottomLayerTestpoints=True|AssyReportTopLayerTestpoints=True|AssyUnits=Imperial|Record=TestPointView
+OutputType7=BOM_PartType
+OutputName7=Tab Bill of Materials
+OutputCategory7=Report
+OutputDocumentPath7=Mini-Rambo-ATX.BomDoc
+OutputVariantName7=
+OutputEnabled7=1
+OutputEnabled7_OutputMedium1=0
+OutputEnabled7_OutputMedium2=0
+OutputEnabled7_OutputMedium3=1
+OutputEnabled7_OutputMedium4=0
+OutputDefault7=0
+PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration7_Name1=Filter
+Configuration7_Item1=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration7_Name2=General
+Configuration7_Item2=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=|BatchMode=1|FormWidth=1094|FormHeight=652|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration7_Name3=GroupOrder
+Configuration7_Item3=
+Configuration7_Name4=OutputConfigurationParameter1
+Configuration7_Item4=??
+Configuration7_Name5=SortOrder
+Configuration7_Item5=
+Configuration7_Name6=VisibleOrder
+Configuration7_Item6=Comment=100|Description=100|Designator=100|Footprint=100|LibRef=100
 
 [PublishSettings]
 OutputFilePath2=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Project Outputs for Mini-Rambo-ATX\Mini-Rambo-ATX.pdf
@@ -142,7 +204,7 @@ MarkPortsId2=1
 GenerateTOC=1
 ShowComponentParameters2=1
 GlobalBookmarks2=0
-OutputFilePath3=
+OutputFilePath3=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Project Outputs for Mini-Rambo-ATX\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for Mini-Rambo-ATX
 OutputPathMedia3=
@@ -196,7 +258,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Project Outputs for Mini-Rambo-ATX\Mini-Rambo-ATX.pdf
 OpenOutputs2=1
-RelativeOutputPath3=
+RelativeOutputPath3=C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Project Outputs for Mini-Rambo-ATX\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0

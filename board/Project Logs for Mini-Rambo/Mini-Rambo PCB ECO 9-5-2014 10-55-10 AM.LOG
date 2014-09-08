@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=LED1 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=LED4 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=LED7 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=LED10 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=Y1 Old Footprint=CRYSTAL-3.2-2.5 New Footprint=CRYS320250
+Change Component Footprint: Designator=Y2 Old Footprint=CRYSTAL-3.2-2.5 New Footprint=CRYS320250
+Change Component Footprint: Designator=U5 Old Footprint=QFN32TROUND New Footprint=QFN32_050050
+Change Component Footprint: Designator=U6 Old Footprint=QFN32TROUND New Footprint=QFN32_050050
+Change Component Footprint: Designator=U7 Old Footprint=QFN32TROUND New Footprint=QFN32_050050
+Change Component Footprint: Designator=U8 Old Footprint=QFN32TROUND New Footprint=QFN32_050050

@@ -1,0 +1,6 @@
+Change Component DesignItemId : Designator=L1 Old DesignItemId=XAL5050-153MEB New DesignItemId=XAL5050-153MED
+Change Component Footprint: Designator=LED2 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=LED3 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=LED6 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Footprint: Designator=LED8 Old Footprint=CHIP-LED0805 New Footprint=LED2012120
+Change Component Comment : Designator=L1 Old Comment=XAL5050-153MEB New Comment=XAL5050-153MED
