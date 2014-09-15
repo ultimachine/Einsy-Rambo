@@ -1,0 +1,10 @@
+Output: Test Point Report
+Type  : Test Points
+From  : PCB Document [Mini-Rambo-ATX.PcbDoc]
+   Generated File[Assembly Testpoint Report for Mini-Rambo-ATX.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 9:06:47 PM On 9/5/2014
