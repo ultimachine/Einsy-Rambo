@@ -1,0 +1,82 @@
+Added Component: Designator=C50(C0603)
+Added Component: Designator=C51(C0603)
+Added Component: Designator=C55(C0603)
+Added Component: Designator=C61(C0603)
+Added Component: Designator=C64(C0603)
+Added Component: Designator=C65(C0603)
+Added Component: Designator=C66(C0603)
+Added Component: Designator=C75(C0603)
+Added Component: Designator=C76(C0603)
+Added Component: Designator=C77(C0603)
+Added Component: Designator=C78(C0603)
+Added Component: Designator=C79(C0603)
+Added Component: Designator=C80(C0603)
+Added Component: Designator=C81(C0603)
+Added Component: Designator=C82(C0603)
+Added Component: Designator=C83(C0603)
+Added Pin To Net: NetName=NetTP52_TP Pin=C50-1
+Added Pin To Net: NetName=GND Pin=C50-2
+Added Pin To Net: NetName=NetTP53_TP Pin=C51-1
+Added Pin To Net: NetName=GND Pin=C51-2
+Added Pin To Net: NetName=NetTP51_TP Pin=C55-1
+Added Pin To Net: NetName=GND Pin=C55-2
+Added Pin To Net: NetName=NetTP50_TP Pin=C61-1
+Added Pin To Net: NetName=GND Pin=C61-2
+Added Pin To Net: NetName=NetTP55_TP Pin=C64-1
+Added Pin To Net: NetName=GND Pin=C64-2
+Added Pin To Net: NetName=NetTP54_TP Pin=C65-1
+Added Pin To Net: NetName=GND Pin=C65-2
+Added Pin To Net: NetName=NetTP56_TP Pin=C66-1
+Added Pin To Net: NetName=GND Pin=C66-2
+Added Pin To Net: NetName=NetTP57_TP Pin=C75-1
+Added Pin To Net: NetName=GND Pin=C75-2
+Added Pin To Net: NetName=NetTP60_TP Pin=C76-1
+Added Pin To Net: NetName=GND Pin=C76-2
+Added Pin To Net: NetName=NetTP61_TP Pin=C77-1
+Added Pin To Net: NetName=GND Pin=C77-2
+Added Pin To Net: NetName=NetTP58_TP Pin=C78-1
+Added Pin To Net: NetName=GND Pin=C78-2
+Added Pin To Net: NetName=NetTP59_TP Pin=C79-1
+Added Pin To Net: NetName=GND Pin=C79-2
+Added Pin To Net: NetName=NetTP63_TP Pin=C80-1
+Added Pin To Net: NetName=GND Pin=C80-2
+Added Pin To Net: NetName=NetTP62_TP Pin=C81-1
+Added Pin To Net: NetName=GND Pin=C81-2
+Added Pin To Net: NetName=NetTP65_TP Pin=C82-1
+Added Pin To Net: NetName=GND Pin=C82-2
+Added Pin To Net: NetName=NetTP64_TP Pin=C83-1
+Added Pin To Net: NetName=GND Pin=C83-2
+Added Pin To Net: NetName=+12V Pin=R15-1
+Added Pin To Net: NetName=+12V Pin=U7-25
+Change Net Name : Old Net Name=NetTP50_TP New Net Name=NetC61_1
+Change Net Name : Old Net Name=NetTP51_TP New Net Name=NetC55_1
+Change Net Name : Old Net Name=NetTP52_TP New Net Name=NetC50_1
+Change Net Name : Old Net Name=NetTP53_TP New Net Name=NetC51_1
+Change Net Name : Old Net Name=NetTP54_TP New Net Name=NetC65_1
+Change Net Name : Old Net Name=NetTP55_TP New Net Name=NetC64_1
+Change Net Name : Old Net Name=NetTP56_TP New Net Name=NetC66_1
+Change Net Name : Old Net Name=NetTP57_TP New Net Name=NetC75_1
+Change Net Name : Old Net Name=NetTP58_TP New Net Name=NetC78_1
+Change Net Name : Old Net Name=NetTP59_TP New Net Name=NetC79_1
+Change Net Name : Old Net Name=NetTP60_TP New Net Name=NetC76_1
+Change Net Name : Old Net Name=NetTP61_TP New Net Name=NetC77_1
+Change Net Name : Old Net Name=NetTP62_TP New Net Name=NetC81_1
+Change Net Name : Old Net Name=NetTP63_TP New Net Name=NetC80_1
+Change Net Name : Old Net Name=NetTP64_TP New Net Name=NetC83_1
+Change Net Name : Old Net Name=NetTP65_TP New Net Name=NetC82_1
+Added Member To Class: ClassName=Motors Member=Component C50 1nF
+Added Member To Class: ClassName=Motors Member=Component C51 1nF
+Added Member To Class: ClassName=Motors Member=Component C55 1nF
+Added Member To Class: ClassName=Motors Member=Component C61 1nF
+Added Member To Class: ClassName=Motors Member=Component C64 1nF
+Added Member To Class: ClassName=Motors Member=Component C65 1nF
+Added Member To Class: ClassName=Motors Member=Component C66 1nF
+Added Member To Class: ClassName=Motors Member=Component C75 1nF
+Added Member To Class: ClassName=Motors Member=Component C76 1nF
+Added Member To Class: ClassName=Motors Member=Component C77 1nF
+Added Member To Class: ClassName=Motors Member=Component C78 1nF
+Added Member To Class: ClassName=Motors Member=Component C79 1nF
+Added Member To Class: ClassName=Motors Member=Component C80 1nF
+Added Member To Class: ClassName=Motors Member=Component C81 1nF
+Added Member To Class: ClassName=Motors Member=Component C82 1nF
+Added Member To Class: ClassName=Motors Member=Component C83 1nF

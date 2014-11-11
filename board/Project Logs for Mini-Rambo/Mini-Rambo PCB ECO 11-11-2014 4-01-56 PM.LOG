@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=+12V Pin=R15-1
+Removed Pin From Net: NetName=+12V Pin=U7-25
+Added Pin To Net: NetName=NetR15_1 Pin=R15-1
+Added Pin To Net: NetName=NetR15_1 Pin=U7-25
+Added Net: Name=NetR15_1
