@@ -1,0 +1,6 @@
+Added Component: Designator=TP70(TP1-27)
+Added Component: Designator=TP71(TP1-27)
+Added Component: Designator=TP72(TP1-27)
+Added Pin To Net: NetName=E-REF Pin=TP70-TP
+Added Pin To Net: NetName=Z-REF Pin=TP71-TP
+Added Pin To Net: NetName=XY-REF Pin=TP72-TP
