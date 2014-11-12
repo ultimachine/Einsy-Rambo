@@ -1,26 +1,12 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of Project [Mini-Rambo.PrjPcb]
-   Generated File[Mini-Rambo.GTL]
-   Generated File[Mini-Rambo.GP1]
-   Generated File[Mini-Rambo.G1]
-   Generated File[Mini-Rambo.GBL]
-   Generated File[Mini-Rambo.GTO]
-   Generated File[Mini-Rambo.GTP]
-   Generated File[Mini-Rambo.GTS]
-   Generated File[Mini-Rambo.GBS]
-   Generated File[Mini-Rambo.GBP]
-   Generated File[Mini-Rambo.GM1]
-   Generated File[Mini-Rambo.GM8]
-   Generated File[Mini-Rambo.GM15]
-   Generated File[Mini-Rambo.GD1]
-   Generated File[Mini-Rambo.GG1]
-   Generated File[Mini-Rambo.RUL]
-   Generated File[Mini-Rambo.EXTREP]
-   Generated File[Mini-Rambo.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Mini-Rambo.PrjPcb]
+   Generated File[Mini-Rambo.TXT]
+   Generated File[Mini-Rambo.LDP]
+   Generated File[Mini-Rambo.DRR]
 
 
-Files Generated   : 17
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 3:58:22 PM On 9/2/2014
+Finished Output Generation At 1:43:40 PM On 11/12/2014

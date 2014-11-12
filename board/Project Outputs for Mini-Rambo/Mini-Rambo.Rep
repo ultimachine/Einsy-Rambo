@@ -1,491 +1,577 @@
-Export log for : Mini-Rambo.Rep
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-      Warning: Unknown Kind 11
-AddingPadStyle (Default)
-AddingPadStyle P:EX80Y80D401
-AddingPadStyle P:EX276Y276D1181
-AddingPadStyle EF50X50TOP1
-AddingPadStyle EF130X35TOP1
-AddingPadStyle EF46X63TOP1
-AddingPadStyle EF24X24TOP1
-AddingPadStyle P:EX100Y100D591
-AddingPadStyle P:PX70Y70D401
-AddingPadStyle P:EX130Y130D871
-AddingPadStyle P:EX54Y54D381
-AddingPadStyle EF60X12TOP1
-AddingPadStyle EF12X60TOP1
-AddingPadStyle EF132X24TOP1
-AddingPadStyle P:PX62Y62D381
-AddingPadStyle EF48X48TOP1
-AddingPadStyle EF22X24TOP1
-AddingPadStyle EF137X137TOP1
-AddingPadStyle EF12X32TOP1
-AddingPadStyle EF29X39TOP1
-AddingPadStyle EF20X26TOP1
-AddingPadStyle EF42X52TOP1
-AddingPadStyle P:EX120Y60D401
-AddingPadStyle EF63X71TOP1
-AddingPadStyle EF197X170TOP1
-AddingPadStyle EF28X56TOP1
-AddingPadStyle P:PX84Y84D401
-AddingPadStyle P:EX84Y84D401
-AddingPadStyle EF52X60TOP1
-AddingPadStyle P:EX60Y60D401
-AddingPadStyle EF63X126TOP1
-AddingPadStyle EF40X40TOP1
-AddingPadStyle EF32X36TOP1
-AddingPadStyle EF79X79TOP1
-AddingPadStyle EF15X50TOP1
-AddingPadStyle EF28X20TOP1
-AddingPadStyle P:EX100Y100D401
-AddingPadStyle P:EX165Y82D551
-AddingPadStyle P:EX36Y54D221
-AddingPadStyle P:EX36Y36D221
-AddingPadStyle P:PX140Y200D1001
-AddingPadStyle EF71X54TOP1
-AddingPadStyle EF67X43TOP1
-AddingPadStyle EF165X81TOP1
-AddingPadStyle EF68X75TOP1
-AddingPadStyle EF12X40TOP1
-AddingPadStyle P:EX59Y102D351
-AddingPadStyle P:EX59Y59D351
-AddingPadStyle P:SX59Y59D351
-Adding ViaStyle (Default)
-Adding ViaStyle V:EX30Y30D151
-Adding ViaStyle V:EX50Y50D281
-Adding ViaStyle V:EX32Y32D151
-Adding ViaStyle V:EX40Y40D201
-Adding ViaStyle V:EX50Y50D301
-Adding TextStyle (Default)
-Adding TextStyle T:H60W10
-Adding TextStyle T:H32W6
-Adding TextStyle T:H78W10
-Adding TextStyle T:H50W8
-Adding TextStyle T:H62W10
-Adding TextStyle T:H36W7
-Adding TextStyle T:H60W6
-Adding TextStyle T:H40W8
-Adding TextStyle T:H30W5
-Adding PatternDef TP1-27_1
-Adding PatternDef 2512R-0.55_1
-Adding PatternDef Net Tie_1
-Adding PatternDef SOD323-R_1
-Adding PatternDef B3F-31XX_1
-Adding PatternDef PN61729_1
-Adding PatternDef TQFP100_1
-Adding PatternDef PTS1812 Fuse_1
-Adding PatternDef 2X03_1
-Adding PatternDef CHIP-LED0805_1
-Adding PatternDef C0402_1
-Adding PatternDef C0402_2
-Adding PatternDef CHIP-LED0805_2
-Adding PatternDef SJ_1
-Adding PatternDef QFN32TROUND_1
-Adding PatternDef R0603_1
-Adding PatternDef R0603_2
-Adding PatternDef CAY16_1
-Adding PatternDef C0402_3
-Adding PatternDef CRYSTAL-3.2-2.5_1
-Adding PatternDef 4POL254_1
-Adding PatternDef R1206_1
-Adding PatternDef R1206_2
-Adding PatternDef C0603_1
-Adding PatternDef C0603_2
-Adding PatternDef C0603_3
-Adding PatternDef C0603_4
-Adding PatternDef R1206_3
-Adding PatternDef C0603_5
-Adding PatternDef C0603_6
-Adding PatternDef C0603_7
-Adding PatternDef C0603_8
-Adding PatternDef 4POL254 noPol_1
-Adding PatternDef R1206_4
-Adding PatternDef C0603_9
-Adding PatternDef C0603_10
-Adding PatternDef R1206_5
-Adding PatternDef C0603_11
-Adding PatternDef C0603_12
-Adding PatternDef 70543-03_1
-Adding PatternDef SOT669_1
-Adding PatternDef SOT669_2
-Adding PatternDef 70543-02_1
-Adding PatternDef 70543-02_2
-Adding PatternDef R0603_3
-Adding PatternDef C0402_4
-Adding PatternDef R0603_4
-Adding PatternDef R0603_5
-Adding PatternDef CHIP-LED0805_3
-Adding PatternDef R0603_6
-Adding PatternDef R0603_7
-Adding PatternDef R0603_8
-Adding PatternDef R0603_9
-Adding PatternDef R0603_10
-Adding PatternDef R0603_11
-Adding PatternDef CHIP-LED0805_4
-Adding PatternDef R0603_12
-Adding PatternDef C3,5-8_1
-Adding PatternDef C3,5-8_2
-Adding PatternDef R0603_13
-Adding PatternDef R0603_14
-Adding PatternDef R0603_15
-Adding PatternDef 70543-02_3
-Adding PatternDef R0402_1
-Adding PatternDef C0805_1
-Adding PatternDef C0603_13
-Adding PatternDef C0603_14
-Adding PatternDef C0603_15
-Adding PatternDef C0603_16
-Adding PatternDef 1X02_1
-Adding PatternDef DO-214AB_1
-Adding PatternDef QFN32TROUND_2
-Adding PatternDef QFN32TROUND_3
-Adding PatternDef FIDUCIAL-1X2_1
-Adding PatternDef C0402_5
-Adding PatternDef C0603_17
-Adding PatternDef C0603_18
-Adding PatternDef 70543-02_4
-Adding PatternDef SOT23-3_1
-Adding PatternDef CHIP-LED0805_5
-Adding PatternDef R0603_16
-Adding PatternDef R0603_17
-Adding PatternDef R0603_18
-Adding PatternDef SMA-SM_1
-Adding PatternDef SMA-SM_2
-Adding PatternDef QSOP16_1
-Adding PatternDef R0402_2
-Adding PatternDef C0402_6
-Adding PatternDef C0402_7
-Adding PatternDef C0402_8
-Adding PatternDef R0603_19
-Adding PatternDef C0603_19
-Adding PatternDef C0603_20
-Adding PatternDef C0603_21
-Adding PatternDef C0603_22
-Adding PatternDef SOD323-R_2
-Adding PatternDef SOD523_1
-Adding PatternDef R0603_20
-Adding PatternDef R0603_21
-Adding PatternDef C12,5-5_1
-Adding PatternDef SMA-SM_3
-Adding PatternDef SMA-SM_4
-Adding PatternDef C0402_9
-Adding PatternDef MSTBV4_1
-Adding PatternDef 10X2-0.05X0.1w_1
-Adding PatternDef 3522-2_1
-Adding PatternDef R0603_22
-Adding PatternDef R0603_23
-Adding PatternDef CHIP-LED0805_6
-Adding PatternDef R0603_24
-Adding PatternDef R0603_25
-Adding PatternDef R0603_26
-Adding PatternDef C0603_23
-Adding PatternDef L1806_1
-Adding PatternDef C0603_24
-Adding PatternDef OSHW_8X150_NOTEXT_1
-Adding PatternDef C1206_1
-Adding PatternDef C0805_2
-Adding PatternDef C0603_25
-Adding PatternDef C0805_3
-Adding PatternDef C0402_10
-Adding PatternDef SMA-SM_5
-Adding PatternDef XAL50xx-153_1
-Adding PatternDef R0402_3
-Adding PatternDef R0603_27
-Adding PatternDef R0603_28
-Adding PatternDef R0603_29
-Adding PatternDef VSSOP10_1
-Adding PatternDef 2X5 IDCW_1
-Adding CompDef TP1-27_1
-Adding CompDef 2512R-0.55_1
-Adding CompDef Net Tie_1
-Adding CompDef SOD323-R_1
-Adding CompDef B3F-31XX_1
-Adding CompDef PN61729_1
-Adding CompDef TQFP100_1
-Adding CompDef PTS1812 Fuse_1
-Adding CompDef 2X03_1
-Adding CompDef CHIP-LED0805_1
-Adding CompDef C0402_1
-Adding CompDef C0402_2
-Adding CompDef CHIP-LED0805_2
-Adding CompDef SJ_1
-Adding CompDef QFN32TROUND_1
-Adding CompDef R0603_1
-Adding CompDef R0603_2
-Adding CompDef CAY16_1
-Adding CompDef C0402_3
-Adding CompDef CRYSTAL-3.2-2.5_1
-Adding CompDef 4POL254_1
-Adding CompDef R1206_1
-Adding CompDef R1206_2
-Adding CompDef C0603_1
-Adding CompDef C0603_2
-Adding CompDef C0603_3
-Adding CompDef C0603_4
-Adding CompDef R1206_3
-Adding CompDef C0603_5
-Adding CompDef C0603_6
-Adding CompDef C0603_7
-Adding CompDef C0603_8
-Adding CompDef 4POL254 noPol_1
-Adding CompDef R1206_4
-Adding CompDef C0603_9
-Adding CompDef C0603_10
-Adding CompDef R1206_5
-Adding CompDef C0603_11
-Adding CompDef C0603_12
-Adding CompDef 70543-03_1
-Adding CompDef SOT669_1
-Adding CompDef SOT669_2
-Adding CompDef 70543-02_1
-Adding CompDef 70543-02_2
-Adding CompDef R0603_3
-Adding CompDef C0402_4
-Adding CompDef R0603_4
-Adding CompDef R0603_5
-Adding CompDef CHIP-LED0805_3
-Adding CompDef R0603_6
-Adding CompDef R0603_7
-Adding CompDef R0603_8
-Adding CompDef R0603_9
-Adding CompDef R0603_10
-Adding CompDef R0603_11
-Adding CompDef CHIP-LED0805_4
-Adding CompDef R0603_12
-Adding CompDef C3,5-8_1
-Adding CompDef C3,5-8_2
-Adding CompDef R0603_13
-Adding CompDef R0603_14
-Adding CompDef R0603_15
-Adding CompDef 70543-02_3
-Adding CompDef R0402_1
-Adding CompDef C0805_1
-Adding CompDef C0603_13
-Adding CompDef C0603_14
-Adding CompDef C0603_15
-Adding CompDef C0603_16
-Adding CompDef 1X02_1
-Adding CompDef DO-214AB_1
-Adding CompDef QFN32TROUND_2
-Adding CompDef QFN32TROUND_3
-Adding CompDef FIDUCIAL-1X2_1
-Adding CompDef C0402_5
-Adding CompDef C0603_17
-Adding CompDef C0603_18
-Adding CompDef 70543-02_4
-Adding CompDef SOT23-3_1
-Adding CompDef CHIP-LED0805_5
-Adding CompDef R0603_16
-Adding CompDef R0603_17
-Adding CompDef R0603_18
-Adding CompDef SMA-SM_1
-Adding CompDef SMA-SM_2
-Adding CompDef QSOP16_1
-Adding CompDef R0402_2
-Adding CompDef C0402_6
-Adding CompDef C0402_7
-Adding CompDef C0402_8
-Adding CompDef R0603_19
-Adding CompDef C0603_19
-Adding CompDef C0603_20
-Adding CompDef C0603_21
-Adding CompDef C0603_22
-Adding CompDef SOD323-R_2
-Adding CompDef SOD523_1
-Adding CompDef R0603_20
-Adding CompDef R0603_21
-Adding CompDef C12,5-5_1
-Adding CompDef SMA-SM_3
-Adding CompDef SMA-SM_4
-Adding CompDef C0402_9
-Adding CompDef MSTBV4_1
-Adding CompDef 10X2-0.05X0.1w_1
-Adding CompDef 3522-2_1
-Adding CompDef R0603_22
-Adding CompDef R0603_23
-Adding CompDef CHIP-LED0805_6
-Adding CompDef R0603_24
-Adding CompDef R0603_25
-Adding CompDef R0603_26
-Adding CompDef C0603_23
-Adding CompDef L1806_1
-Adding CompDef C0603_24
-Adding CompDef OSHW_8X150_NOTEXT_1
-Adding CompDef C1206_1
-Adding CompDef C0805_2
-Adding CompDef C0603_25
-Adding CompDef C0805_3
-Adding CompDef C0402_10
-Adding CompDef SMA-SM_5
-Adding CompDef XAL50xx-153_1
-Adding CompDef R0402_3
-Adding CompDef R0603_27
-Adding CompDef R0603_28
-Adding CompDef R0603_29
-Adding CompDef VSSOP10_1
-Adding CompDef 2X5 IDCW_1
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Unexpected Poly Region Object Found On Layer TopLayer.
-      Warning: Unexpected Poly Region Object Found On Layer TopLayer.
-      Warning: Unexpected Poly Region Object Found On Layer TopLayer.
-      Warning: Unexpected Poly Region Object Found On Layer TopLayer.
-      Warning: Unexpected Poly Region Object Found On Layer TopLayer.
-      Warning: Unexpected Poly Region Object Found On Layer TopLayer.
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
-      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
- 
-EndLog
+*************************************************************
+FileName = Mini-Rambo.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top
+      File : Mini-Rambo.GTL
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : Mini-Rambo.GP1
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D52
+    D57
+    D74
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+*************************************************************
+
+*************************************************************
+Generating : Supply
+      File : Mini-Rambo.G1
+
+    Adding Layer      : Supply
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D46
+    D48
+    D49
+    D50
+    D55
+    D56
+    D57
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Bottom
+      File : Mini-Rambo.GBL
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D57
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D106
+    D112
+    D113
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Mini-Rambo.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D50
+    D52
+    D53
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+    D122
+    D123
+    D124
+    D125
+    D126
+    D127
+    D128
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Mini-Rambo.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D85
+    D129
+    D130
+    D131
+    D132
+    D133
+    D134
+    D135
+    D136
+    D137
+    D138
+    D139
+    D140
+    D141
+    D142
+    D143
+    D144
+    D145
+    D146
+    D147
+    D148
+    D149
+    D150
+    D151
+    D152
+    D153
+    D154
+    D155
+    D156
+    D157
+    D158
+    D159
+    D160
+    D161
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Mini-Rambo.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D46
+    D162
+    D163
+    D164
+    D165
+    D166
+    D167
+    D168
+    D169
+    D170
+    D171
+    D172
+    D173
+    D174
+    D175
+    D176
+    D177
+    D178
+    D179
+    D180
+    D181
+    D182
+    D183
+    D184
+    D185
+    D186
+    D187
+    D188
+    D189
+    D190
+    D191
+    D192
+    D193
+    D194
+    D195
+    D196
+    D197
+    D198
+    D199
+    D200
+    D201
+    D202
+    D203
+    D204
+    D205
+    D206
+    D207
+    D208
+    D209
+    D210
+    D211
+    D212
+    D213
+    D214
+    D215
+    D216
+    D217
+    D218
+    D219
+    D220
+    D221
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Mini-Rambo.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D46
+    D199
+    D200
+    D201
+    D202
+    D203
+    D204
+    D205
+    D206
+    D207
+    D208
+    D209
+    D210
+    D211
+    D212
+    D213
+    D214
+    D215
+    D216
+    D217
+    D218
+    D219
+    D220
+    D221
+    D222
+    D223
+    D224
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Mini-Rambo.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D85
+    D161
+    D225
+    D226
+*************************************************************
+
+*************************************************************
+Generating : Dimension
+      File : Mini-Rambo.GM1
+
+    Adding Layer      : Dimension
+
+
+Used DCodes :
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Top Document
+      File : Mini-Rambo.GM8
+
+    Adding Layer      : Top Document
+
+
+Used DCodes :
+    D50
+    D52
+    D117
+    D119
+    D127
+    D128
+    D227
+    D228
+    D229
+    D230
+    D231
+    D232
+    D233
+    D234
+    D235
+    D236
+    D237
+    D238
+    D239
+    D240
+    D241
+    D242
+    D243
+    D244
+    D245
+    D246
+    D247
+    D248
+    D249
+    D250
+    D251
+    D252
+    D253
+    D254
+    D255
+    D256
+    D257
+    D258
+    D259
+    D260
+    D261
+    D262
+    D263
+    D264
+    D265
+    D266
+    D267
+    D268
+    D269
+    D270
+    D271
+    D272
+    D273
+    D274
+    D275
+    D276
+    D277
+    D278
+    D279
+    D280
+    D281
+    D282
+    D283
+    D284
+    D285
+    D286
+    D287
+    D288
+    D289
+    D290
+    D291
+    D292
+    D293
+    D294
+    D295
+    D296
+    D297
+    D298
+    D299
+    D300
+    D301
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : Mini-Rambo.GM15
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D227
+    D228
+    D302
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Mini-Rambo.GD1
+
+    Adding Drill Pair : Top-Bottom
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D115
+    D119
+    D303
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Mini-Rambo.GG1
+
+    Adding Drill Pair : Top-Bottom
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D115
+*************************************************************
+
