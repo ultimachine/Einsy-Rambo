@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=C49 Old DesignItemId=GRM155R60J105KE19D New DesignItemId=CC0402KRX7R8BB472
+Change Component Comment : Designator=C49 Old Comment=1uF New Comment=4.7nF
+Change Component Description : Designator=C49 Old Description=CAP CER 0402 1uF 6.3V 10% X5R New Description=CAP CER 0402 4.7nF 25V 10% X7R
+Change Net Name : Old Net Name=12V-IN New Net Name=PWR-IN
+Change Net Name : Old Net Name=NetF3_1 New Net Name=BED-IN
