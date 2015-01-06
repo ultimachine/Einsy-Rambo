@@ -244,110 +244,126 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Test Points\Assembly Testpoint Report for Mini-Rambo.csv
+DocumentPath=libraries\3Delight.csv
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\BOM\Bill of Materials-Mini-Rambo.csv
+DocumentPath=libraries\3Delight.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\BOM\CSV Bill of Materials-Mini-Rambo.csv
+DocumentPath=libraries\3Delight.rep
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Mini-Rambo\Design Rule Check - Mini-Rambo.html
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Test Points\Assembly Testpoint Report for Mini-Rambo.csv
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\IDFReport_Mini-Rambo.html
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\BOM\Bill of Materials-Mini-Rambo.csv
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\Mini-Rambo.brd
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\BOM\CSV Bill of Materials-Mini-Rambo.csv
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.DRR
+DocumentPath=Project Outputs for Mini-Rambo\Design Rule Check - Mini-Rambo.html
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.EXTREP
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\IDFReport_Mini-Rambo.html
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.G1
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\Mini-Rambo.brd
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBL
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBP
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBS
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.G1
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GD1
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GG1
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM1
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM8
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM15
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GP1
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTL
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTO
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTP
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTS
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.LDP
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.REP
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.RUL
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.TXT
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument27]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.REP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument31]
 DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Pick Place\Pick Place for Mini-Rambo.txt
 DItemRevisionGUID=
 
@@ -1407,7 +1423,7 @@ OutputDocumentPath10=
 OutputVariantName10=[No Variations]
 OutputDefault10=0
 Configuration10_Name1=OutputConfigurationParameter1
-Configuration10_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=40|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842753~1,16777218~1,16842751~1,16973835~1,16973833~1,16908289~1,16908296~1,16908303~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=40|Record=GerberView|SoftwareArcs=False|Sorted=False
+Configuration10_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=40|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842753~1,16777218~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908296~1,16908303~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=40|Record=GerberView|SoftwareArcs=False|Sorted=False
 
 [OutputGroup6]
 Name=Report Outputs

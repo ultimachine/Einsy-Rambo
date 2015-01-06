@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=PH7 Pin=P1-1
+Removed Pin From Net: NetName=PG4 Pin=P1-2
+Removed Pin From Net: NetName=PH2 Pin=P1-7
+Removed Pin From Net: NetName=PH6 Pin=P1-8
+Removed Pin From Net: NetName=RX3 Pin=P2-3
+Removed Pin From Net: NetName=PJ2 Pin=P2-7
+Added Pin To Net: NetName=PH2 Pin=P1-1
+Added Pin To Net: NetName=PH6 Pin=P1-2
+Added Pin To Net: NetName=PH7 Pin=P1-7
+Added Pin To Net: NetName=PG4 Pin=P1-8
+Added Pin To Net: NetName=PJ2 Pin=P2-3
+Added Pin To Net: NetName=RX3 Pin=P2-7

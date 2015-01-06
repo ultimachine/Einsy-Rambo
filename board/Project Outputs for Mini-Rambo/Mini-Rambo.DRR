@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: Mini-Rambo.PcbDoc   12/3/2014  9:53:51 PM
+NCDrill File Report For: Mini-Rambo.PcbDoc   12/29/2014  10:09:16 AM
 ---------------------------------------------------------------------------
 
 Layer Pair : Top to Bottom
@@ -7,20 +7,19 @@ ASCII RoundHoles File : Mini-Rambo.TXT
 
 Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
 ---------------------------------------------------------------------------
-T1        15mil (0.381mm)          Round          557              60.15 Inch (1527.77 mm)
+T1        15mil (0.381mm)          Round          543              59.60 Inch (1513.80 mm)
 T2        20mil (0.508mm)          Round          1                0.00 Inch (0.00 mm)
-T3        22mil (0.5588mm)         Round          40               2.98 Inch (75.75 mm)
-T4        28mil (0.7112mm)         Round          5                6.50 Inch (165.14 mm)
-T5        30mil (0.762mm)          Round          5                2.58 Inch (65.58 mm)
-T6        35.4mil (0.89916mm)      Round          10               0.90 Inch (22.86 mm)
-T7        38mil (0.9652mm)         Round          16               2.63 Inch (66.86 mm)
-T8        40mil (1.016mm)          Round          59               17.63 Inch (447.85 mm)
-T9        55mil (1.397mm)          Round          8                2.45 Inch (62.24 mm)
-T10       59mil (1.4986mm)         Round          2                0.28 Inch (7.01 mm)
-T11       87mil (2.2098mm)         Round          2                0.47 Inch (12.02 mm)
-T12       100mil (2.54mm)          Round          12               2.66 Inch (67.50 mm)
-T13       118.1mil (2.99974mm)     Round          4         NPTH   11.93 Inch (302.90 mm)
+T3        28mil (0.7112mm)         Round          5                6.50 Inch (165.14 mm)
+T4        30mil (0.762mm)          Round          5                2.58 Inch (65.58 mm)
+T5        35.4mil (0.89916mm)      Round          30               3.71 Inch (94.36 mm)
+T6        38mil (0.9652mm)         Round          16               2.63 Inch (66.86 mm)
+T7        40mil (1.016mm)          Round          59               17.63 Inch (447.85 mm)
+T8        55mil (1.397mm)          Round          8                2.45 Inch (62.24 mm)
+T9        59mil (1.4986mm)         Round          2                0.28 Inch (7.01 mm)
+T10       87mil (2.2098mm)         Round          2                0.47 Inch (12.02 mm)
+T11       100mil (2.54mm)          Round          12               2.66 Inch (67.50 mm)
+T12       118.1mil (2.99974mm)     Round          4         NPTH   11.93 Inch (302.90 mm)
 ---------------------------------------------------------------------------
-Totals                                            721              111.16 Inch (2823.46 mm)
+Totals                                            687              110.44 Inch (2805.24 mm)
 
 Total Processing Time (hh:mm:ss) : 00:00:01
