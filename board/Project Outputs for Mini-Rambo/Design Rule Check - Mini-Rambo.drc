@@ -1,25 +1,33 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\johnny\Documents\GitHub\Mini-Rambo\board\Mini-Rambo.PcbDoc
-Date     : 11/12/2014
-Time     : 1:22:20 PM
+Date     : 4/5/2015
+Time     : 1:45:24 AM
 
 Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
-   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
-   Violation between Acute Angle Constraint Between Pad on BottomLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Pad on BottomLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Track on TopLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
-   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
    Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
    Violation between Acute Angle Constraint Between Track on TopLayer And Pad on TopLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Track on TopLayer
-   Violation between Acute Angle Constraint Between Track on TopLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
-   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on BottomLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on BottomLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And PolyRegion on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between PolyRegion on TopLayer And Track on TopLayer
+   Violation between Acute Angle Constraint Between Track on MidLayer1 And Track on MidLayer1
    Violation between Acute Angle Constraint Between Track on MidLayer1 And Track on MidLayer1
    Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
@@ -27,17 +35,20 @@ Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
    Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
-   Violation between Acute Angle Constraint Between Pad on MultiLayer And Track on BottomLayer
-   Violation between Acute Angle Constraint Between Pad on MultiLayer And Track on BottomLayer
-   Violation between Acute Angle Constraint Between Pad on MultiLayer And Track on BottomLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
    Violation between Acute Angle Constraint Between Pad on TopLayer And Via on MultiLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Pad on TopLayer
    Violation between Acute Angle Constraint Between Via on MultiLayer And PolyRegion on TopLayer
-   Violation between Acute Angle Constraint Between PolyRegion on TopLayer And Track on TopLayer
-Rule Violations :33
+   Violation between Acute Angle Constraint Between Track on TopLayer And PolyRegion on TopLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Via on MultiLayer And Via on MultiLayer
+   Violation between Acute Angle Constraint Between Pad on BottomLayer And Pad on MultiLayer
+Rule Violations :44
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
 Rule Violations :0
@@ -67,11 +78,7 @@ Processing Rule : Net Antennae (Tolerance=0mil) (All)
 Rule Violations :0
 
 Processing Rule : Silk primitive without silk layer
-   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "Hole" (1053.602mil,953.602mil)  Top Overlay
-   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "Hole" (4793.76mil,953.602mil)  Top Overlay
-   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "1" (3380mil,3785mil)  Top Overlay
-   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "2" (3480mil,3805mil)  Top Overlay
-Rule Violations :4
+Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
 Rule Violations :0
@@ -80,10 +87,26 @@ Processing Rule : Silk To Solder Mask (Clearance=10mil) (Disabled)(IsPad),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
-Rule Violations :0
+   Violation between Pad R71-2(3599.61mil,2852.365mil)  Top and 
+                     Pad Q8-4(3653.543mil,2880.709mil)  Top
+   Violation between Pad R9-2(3599.61mil,2899.61mil)  Top and 
+                     Pad Q8-4(3653.543mil,2880.709mil)  Top
+   Violation between Pad R9-2(3599.61mil,2899.61mil)  Top and 
+                     Pad Q8-3(3653.543mil,2930.709mil)  Top
+   Violation between Pad R71-2(3599.61mil,2852.365mil)  Top and 
+                     Pad R9-2(3599.61mil,2899.61mil)  Top
+   Violation between Pad R71-1(3546.066mil,2852.365mil)  Top and 
+                     Pad R9-1(3546.066mil,2899.61mil)  Top
+   Violation between Pad R16-1(3501.972mil,2903.737mil)  Top and 
+                     Pad R9-1(3546.066mil,2899.61mil)  Top
+   Violation between Pad R71-1(3546.066mil,2852.365mil)  Top and 
+                     Pad R16-2(3501.972mil,2850.194mil)  Top
+Rule Violations :7
 
 Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
-Rule Violations :0
+   Violation between Via (4264mil,2400mil) Top to Bottom and 
+                     Pad F2-2(4308mil,2384.095mil)  Multi-Layer
+Rule Violations :1
 
 Processing Rule : Hole Size Constraint (Min=15mil) (Max=100000mil) (All)
 Rule Violations :0
@@ -107,32 +130,23 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : SMD To Corner (Distance=3mil) (All)
-   Violation between SMD To Corner Constraint (2.623mil < 3mil) : Pad U2-31(2301.827mil,2657.796mil)  Top
-   Violation between SMD To Corner Constraint (1.094mil < 3mil) : Pad U2-30(2301.827mil,2677.48mil)  Top
-   Violation between SMD To Corner Constraint (0.804mil < 3mil) : Pad U2-29(2301.827mil,2697.166mil)  Top
-   Violation between SMD To Corner Constraint (1.543mil < 3mil) : Pad U5-24(1192.402mil,1607.008mil)  Top
-   Violation between SMD To Corner Constraint (2.591mil < 3mil) : Pad U5-27(1257.402mil,1581.008mil)  Top
-   Violation between SMD To Corner Constraint (0.137mil < 3mil) : Pad U6-17(1643.307mil,1744.906mil)  Top
-   Violation between SMD To Corner Constraint (0.087mil < 3mil) : Pad U8-1(3159.449mil,1600.118mil)  Top
-   Violation between SMD To Corner Constraint (2.537mil < 3mil) : Pad RV1-2(1544.997mil,2661.775mil)  Top
-   Violation between SMD To Corner Constraint (2.076mil < 3mil) : Pad R60-2(1484.255mil,1838.383mil)  Top
-   Violation between SMD To Corner Constraint (0.718mil < 3mil) : Pad R69-2(3630.705mil,2885.824mil)  Top
-   Violation between SMD To Corner Constraint (2.923mil < 3mil) : Pad R6-1(3149.406mil,2137.798mil)  Top
-   Violation between SMD To Corner Constraint (2.572mil < 3mil) : Pad R2-2(1634mil,2715mil)  Top
-   Violation between SMD To Corner Constraint (2.732mil < 3mil) : Pad RN3-8(2626.968mil,1629.496mil)  Top
-   Violation between SMD To Corner Constraint (0.595mil < 3mil) : Pad C35-1(4365mil,3311.402mil)  Top
-   Violation between SMD To Corner Constraint (1.217mil < 3mil) : Pad C33-1(1929.134mil,1716.339mil)  Top
-   Violation between SMD To Corner Constraint (2.463mil < 3mil) : Pad C20-1(2641.733mil,1721.457mil)  Top
-   Violation between SMD To Corner Constraint (2.48mil < 3mil) : Pad C49-1(4306.7mil,3476mil)  Top
-   Violation between SMD To Corner Constraint (0.315mil < 3mil) : Pad C81-1(3047.772mil,1303mil)  Top
-   Violation between SMD To Corner Constraint (1mil < 3mil) : Pad TP60-TP(2800mil,1300mil)  Bottom
-   Violation between SMD To Corner Constraint (2mil < 3mil) : Pad TP58-TP(2700mil,1300mil)  Bottom
-   Violation between SMD To Corner Constraint (1.15mil < 3mil) : Pad TP46-TP(1400mil,2400mil)  Bottom
-Rule Violations :21
+   Violation between SMD To Corner Constraint (1.792mil < 3mil)  Between Pad on MultiLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (1.403mil < 3mil)  Between Pad on MultiLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (1.872mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (0.85mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (1.872mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (1.872mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (1.047mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (0.356mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (0.37mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (0.427mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (0.8mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+   Violation between SMD To Corner Constraint (1.777mil < 3mil)  Between Pad on TopLayer And Track on TopLayer
+Rule Violations :12
 
 Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
 Rule Violations :0
 
 
-Violations Detected : 58
-Time Elapsed        : 00:00:30
+Violations Detected : 64
+Time Elapsed        : 00:00:22

@@ -1,0 +1,18 @@
+Added Component: Designator=C84(C0603)
+Added Component: Designator=C85(C0603)
+Added Component: Designator=C86(C0603)
+Added Component: Designator=C87(C0603)
+Added Pin To Net: NetName=PWR-IN Pin=C84-1
+Added Pin To Net: NetName=GND Pin=C84-2
+Added Pin To Net: NetName=NetF1_1 Pin=C85-1
+Added Pin To Net: NetName=GND Pin=C85-2
+Added Pin To Net: NetName=PWR-IN Pin=C86-1
+Added Pin To Net: NetName=GND Pin=C86-2
+Added Pin To Net: NetName=NetF2_1 Pin=C87-1
+Added Pin To Net: NetName=GND Pin=C87-2
+Change Net Name : Old Net Name=NetF1_1 New Net Name=NetC85_1
+Change Net Name : Old Net Name=NetF2_1 New Net Name=NetC87_1
+Added Member To Class: ClassName=Power-SMPS Member=Component C84 NP
+Added Member To Class: ClassName=Power-SMPS Member=Component C85 NP
+Added Member To Class: ClassName=Power-SMPS Member=Component C86 NP
+Added Member To Class: ClassName=Power-SMPS Member=Component C87 NP

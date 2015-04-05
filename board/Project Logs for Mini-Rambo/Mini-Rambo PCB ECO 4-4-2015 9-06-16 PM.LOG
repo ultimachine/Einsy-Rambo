@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetQ8_1 Pin=Q8-1
+Removed Pin From Net: NetName=GND Pin=Q8-2
+Removed Pin From Net: NetName=NetLED8_C Pin=Q8-3
+Removed Pin From Net: NetName=NetQ9_1 Pin=Q9-1
+Removed Pin From Net: NetName=GND Pin=Q9-2
+Removed Pin From Net: NetName=NetLED3_C Pin=Q9-3
+Change Component DesignItemId : Designator=Q8 Old DesignItemId=IRLML6346TRPBF New DesignItemId=NCV8402AD
+Change Component Footprint: Designator=Q8 Old Footprint=SOT23-3 New Footprint=NCV8402AD-SOIC8
+Change Component Comment : Designator=Q8 Old Comment=IRLML6346TRPBF New Comment=NCV8402AD
+Added Pin To Net: NetName=GND Pin=Q8-1
+Added Pin To Net: NetName=NetQ8_1 Pin=Q8-2
+Added Pin To Net: NetName=GND Pin=Q8-3
+Added Pin To Net: NetName=NetQ9_1 Pin=Q8-4
+Added Pin To Net: NetName=NetLED3_C Pin=Q8-5
+Added Pin To Net: NetName=NetLED3_C Pin=Q8-5
+Added Pin To Net: NetName=NetLED8_C Pin=Q8-7
+Added Pin To Net: NetName=NetLED8_C Pin=Q8-7
+Change Net Name : Old Net Name=NetQ8_1 New Net Name=NetQ8_2
+Change Net Name : Old Net Name=NetQ9_1 New Net Name=NetQ8_4

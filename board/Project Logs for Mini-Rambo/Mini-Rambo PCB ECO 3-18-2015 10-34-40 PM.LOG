@@ -1,0 +1,9 @@
+Change Component DesignItemId : Designator=F1 Old DesignItemId=3522-2 New DesignItemId=3557
+Change Component DesignItemId : Designator=F2 Old DesignItemId=3522-2 New DesignItemId=3557
+Change Component DesignItemId : Designator=F3 Old DesignItemId=3522-2 New DesignItemId=3557
+Change Component Footprint: Designator=F1 Old Footprint=3522-2 New Footprint=3557
+Change Component Footprint: Designator=F2 Old Footprint=3522-2 New Footprint=3557
+Change Component Footprint: Designator=F3 Old Footprint=3522-2 New Footprint=3557
+Change Component Comment : Designator=F1 Old Comment=3522-2 New Comment=3557
+Change Component Comment : Designator=F2 Old Comment=3522-2 New Comment=3557
+Change Component Comment : Designator=F3 Old Comment=3522-2 New Comment=3557
