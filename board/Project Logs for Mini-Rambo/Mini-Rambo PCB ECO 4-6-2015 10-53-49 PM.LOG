@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=+12V2 Pin=F5-1
+Removed Pin From Net: NetName=+12V4 Pin=F5-2
+Removed Pin From Net: NetName=+12V4 Pin=R69-2
+Removed Pin From Net: NetName=+12V4 Pin=R70-2
+Removed Member From Class: ClassName=Power-SMPS Member=F5
+Added Pin To Net: NetName=+12V2 Pin=R69-2
+Added Pin To Net: NetName=+12V2 Pin=R70-2
