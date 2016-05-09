@@ -1,0 +1,36 @@
+mini-rambo order
+
+verify inventory:
+leds
+	598-8170-107F
+	5988110107F
+	5988140107F
+washable switches 1571610-2
+USB connector
+crystal
+BLM41PG600SN1L
+C0805C106K8PACTU
+CBC2012T100M
+GRM155R71C104KA88D
+GRM21BR71H105KA12L
+S3A-13-F
+IRLML6346TRPBF
+RC0402FR-0722RL
+RSB39VTE-17
+SK310A-TP
+SMAJ30A
+SZMM3Z4V7T1G
+1N4148WT
+
+
+
+
+USB cable
+
+Miregli part numbers
+ribbon cable
+idc connector
+sd connector
+encoder
+
+order stencils

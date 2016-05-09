@@ -1,0 +1,3 @@
+Change Component DesignItemId : Designator=J1 Old DesignItemId=1-1437667-0 New DesignItemId=2-1437667-9
+Change Component Footprint: Designator=J1 Old Footprint=CON-Barrier-4-8.26mm New Footprint=CON-Barrier-6-8.26mm
+Change Component Comment : Designator=J1 Old Comment=1-1437667-0 New Comment=2-1437667-9
