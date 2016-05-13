@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=C91 Old DesignItemId=C0603TBD New DesignItemId=C0402TBD
+Change Component DesignItemId : Designator=C96 Old DesignItemId=CC0603ZRY5V6BB105 New DesignItemId=GRM155R60J105KE19D
+Change Component Footprint: Designator=C91 Old Footprint=C0603 New Footprint=C0402
+Change Component Footprint: Designator=C96 Old Footprint=C0603 New Footprint=C0402
+Change Component Comment : Designator=C91 Old Comment=C0603TBD New Comment=C0402TBD

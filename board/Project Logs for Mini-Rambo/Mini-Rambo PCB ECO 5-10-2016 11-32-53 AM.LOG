@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=GND Pin=C61-2
+Removed Pin From Net: NetName=GND Pin=C65-2
+Removed Pin From Net: NetName=GND Pin=C92-1
+Removed Pin From Net: NetName=GND Pin=C93-1
+Removed Pin From Net: NetName=GND Pin=C94-1
+Removed Pin From Net: NetName=GND Pin=C95-1
+Removed Pin From Net: NetName=GND Pin=C96-2
+Removed Pin From Net: NetName=GND Pin=C97-2
+Removed Pin From Net: NetName=GND Pin=C98-2
+Removed Pin From Net: NetName=GND Pin=C99-1
+Removed Pin From Net: NetName=GND Pin=C100-2
+Removed Pin From Net: NetName=GND Pin=C101-2
+Removed Pin From Net: NetName=GND Pin=C102-1
+Removed Pin From Net: NetName=GND Pin=C103-2
+Removed Pin From Net: NetName=GND Pin=C104-1
+Removed Pin From Net: NetName=GND Pin=C105-1
+Removed Pin From Net: NetName=VCC Pin=L6-2
+Removed Pin From Net: NetName=GND Pin=R17-2
+Removed Pin From Net: NetName=GND Pin=R18-2
+Removed Pin From Net: NetName=GND Pin=U4-1
+Removed Pin From Net: NetName=X-MS2 Pin=U4-2
+Removed Pin From Net: NetName=PB1_SCK Pin=U4-3
+Removed Pin From Net: NetName=PB2_MOSI Pin=U4-4
+Removed Pin From Net: NetName=PB3_MISO Pin=U4-5
+Removed Pin From Net: NetName=GND Pin=U4-12
+Removed Pin From Net: NetName=GND Pin=U4-18
+Removed Pin From Net: NetName=X-MS1 Pin=U4-21
+Removed Pin From Net: NetName=XY-REF Pin=U4-23
+Removed Pin From Net: NetName=GND Pin=U4-24
+Removed Pin From Net: NetName=GND Pin=U4-35
+Removed Pin From Net: NetName=GND Pin=U4-37
+Removed Member From Class: ClassName=Motors Member=C61
+Removed Member From Class: ClassName=Motors Member=C65
+Removed Member From Class: ClassName=Motors Member=TP50
+Removed Member From Class: ClassName=Motors Member=TP53
+Removed Member From Class: ClassName=Motors Member=TP54
+Removed Member From Class: ClassName=Motors Member=X8
+Removed Member From Class: ClassName=Power-SMPS Member=X16
+Added Pin To Net: NetName=NetU2_36 Pin=U2-36
+Added Net: Name=NetU2_36
+Added Pin To Net: NetName=NetU2_53 Pin=U2-53
+Added Net: Name=NetU2_53
+Added Pin To Net: NetName=NetU2_71 Pin=U2-71
+Added Net: Name=NetU2_71

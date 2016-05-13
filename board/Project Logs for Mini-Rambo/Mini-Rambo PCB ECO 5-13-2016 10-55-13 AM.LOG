@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=+12V3 Pin=X3-1
+Removed Pin From Net: NetName=NetD10_A Pin=X3-2
+Removed Pin From Net: NetName=BED-IN Pin=X10-1
+Removed Pin From Net: NetName=GND Pin=X10-2
+Removed Pin From Net: NetName=PWR-IN Pin=X10-3
+Removed Pin From Net: NetName=GND Pin=X10-4
+Removed Member From Class: ClassName=Power-SMPS Member=X10
+Added Pin To Net: NetName=PWR-IN Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=BED-IN Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=+12V3 Pin=J1-5
+Added Pin To Net: NetName=NetD10_A Pin=J1-6

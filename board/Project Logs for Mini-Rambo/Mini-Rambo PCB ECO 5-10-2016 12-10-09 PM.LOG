@@ -1,0 +1,6 @@
+Change Component DesignItemId : Designator=C92 Old DesignItemId=C0603C104K5RACTU New DesignItemId=GRM155R71C104KA88D
+Change Component DesignItemId : Designator=C94 Old DesignItemId=C0603C104K5RACTU New DesignItemId=GRM155R71C104KA88D
+Change Component DesignItemId : Designator=C95 Old DesignItemId=C0603C104K5RACTU New DesignItemId=GRM155R71C104KA88D
+Change Component Footprint: Designator=C92 Old Footprint=C0603 New Footprint=C0402
+Change Component Footprint: Designator=C94 Old Footprint=C0603 New Footprint=C0402
+Change Component Footprint: Designator=C95 Old Footprint=C0603 New Footprint=C0402
