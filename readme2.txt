@@ -17,3 +17,7 @@ Keep existing test point locations.
 Use label to mark pins on power connector?
 
 Extruder heater TP17, HB TP18, TP69, 
+
+Add break away power connector label / panel rails
+
+Change TVS diode on motor input to cheaper part?
