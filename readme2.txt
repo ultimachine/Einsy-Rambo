@@ -20,4 +20,15 @@ Extruder heater TP17, HB TP18, TP69,
 
 Add break away power connector label / panel rails
 
-Change TVS diode on motor input to cheaper part?
+Change TVS diode on motor input to cheaper part? replace tvs back on if off?
+
+remove third resistor from vref.
+
+add stitching capacitor between 5v and 12 rail?
+
+add angle mask stop slots under driver?
+
+rename motor rail vmot. find other wires that should be renamed vmot!
+
+move coil A to same side of driver
+

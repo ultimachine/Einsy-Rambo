@@ -87,7 +87,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=XGQSGYLH
+DocumentUniqueId=GOUFYAND
 
 [Document4]
 DocumentPath=Motors.SchDoc
@@ -283,7 +283,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=6
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -292,6 +292,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UCAMFKMA
+
+[Document16]
+DocumentPath=Motor-Z.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=7
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GQKGVBYN
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Test Points\Assembly Testpoint Report for Mini-Rambo.csv
@@ -410,20 +427,20 @@ Path=*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=ProjectTitle
-Value=Mini-Rambo
+Name=ProjectBoardRevision
+Value=a
 
 [Parameter2]
-Name=ProjectDesigner
-Value=UltiMachine
-
-[Parameter3]
 Name=ProjectBoardVersion
 Value=1.4
 
+[Parameter3]
+Name=ProjectDesigner
+Value=UltiMachine
+
 [Parameter4]
-Name=ProjectBoardRevision
-Value=a
+Name=ProjectTitle
+Value=Mini-Rambo
 
 [Configuration1]
 Name=Default Configuration

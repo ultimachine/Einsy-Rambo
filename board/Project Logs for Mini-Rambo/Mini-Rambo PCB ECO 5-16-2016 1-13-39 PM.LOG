@@ -1,0 +1,5 @@
+Added Component: Designator=X8(4POL254)
+Added Pin To Net: NetName=NetC75_1 Pin=X8-1
+Added Pin To Net: NetName=NetC112_1 Pin=X8-2
+Added Pin To Net: NetName=NetC114_1 Pin=X8-3
+Added Pin To Net: NetName=NetC115_1 Pin=X8-4
