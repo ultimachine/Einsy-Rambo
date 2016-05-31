@@ -32,3 +32,9 @@ rename motor rail vmot. find other wires that should be renamed vmot!
 
 move coil A to same side of driver
 
+add series resistors to endstops and other pins where possible
+
+switch x and y dir pins
+
+change extension headers to accept housings
+
