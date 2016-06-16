@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=BED-IN Pin=C89-1
+Added Pin To Net: NetName=+12V3 Pin=C89-1

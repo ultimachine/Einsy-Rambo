@@ -24,7 +24,7 @@ Change TVS diode on motor input to cheaper part? replace tvs back on if off?
 
 remove third resistor from vref.
 
-add stitching capacitor between 5v and 12 rail?
+add stitching capacitor between 5v and 12 rail? And to gnd?
 
 add angle mask stop slots under driver?
 
@@ -37,4 +37,14 @@ add series resistors to endstops and other pins where possible
 switch x and y dir pins
 
 change extension headers to accept housings
+
+shift 5vout docoupling gnd, parts
+
+cleanup drivers - push traces away
+
+terminating resistors to spi?
+
+add vcc polygon back to supply layer
+
+isolate onboard, offboard spi with resistors?
 
