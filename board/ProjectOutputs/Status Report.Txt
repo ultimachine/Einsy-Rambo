@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : PCB Document [Mini-Rambo.PcbDoc]
+   Generated File[Einy_0.1a.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 1:17:41 PM On 6/30/2016

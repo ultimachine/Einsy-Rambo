@@ -1,0 +1,4 @@
+Added Component: Designator=C17(C0402)
+Added Pin To Net: NetName=VCC Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Member To Class: ClassName=Power-SMPS Member=Component C17 100nF

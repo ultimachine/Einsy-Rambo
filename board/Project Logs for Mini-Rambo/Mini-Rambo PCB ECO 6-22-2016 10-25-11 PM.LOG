@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=L13 Pin=R33-1
+Removed Pin From Net: NetName=NetLED1_A Pin=R33-2
+Removed Pin From Net: NetName=X-MAX Pin=U2-60
+Removed Pin From Net: NetName=Y-MAX Pin=U2-76
+Removed Pin From Net: NetName=Z-MAX Pin=U2-77
+Added Component: Designator=RN4(CAY16)
+Added Pin To Net: NetName=L13 Pin=RN4-1
+Added Pin To Net: NetName=Z-MAX Pin=RN4-5
+Added Pin To Net: NetName=Y-MAX Pin=RN4-6
+Added Pin To Net: NetName=X-MAX Pin=RN4-7
+Added Pin To Net: NetName=NetLED1_A Pin=RN4-8
+Change Net Name : Old Net Name=X-MAX New Net Name=NetRN4_7
+Change Net Name : Old Net Name=Y-MAX New Net Name=NetRN4_6
+Change Net Name : Old Net Name=Z-MAX New Net Name=NetRN4_5
+Added Pin To Net: NetName=X-MAX Pin=RN4-2
+Added Pin To Net: NetName=X-MAX Pin=U2-60
+Added Net: Name=X-MAX
+Added Pin To Net: NetName=Y-MAX Pin=RN4-3
+Added Pin To Net: NetName=Y-MAX Pin=U2-76
+Added Net: Name=Y-MAX
+Added Pin To Net: NetName=Z-MAX Pin=RN4-4
+Added Pin To Net: NetName=Z-MAX Pin=U2-77
+Added Net: Name=Z-MAX

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=PB2_MOSI Pin=RV8-2
+Removed Pin From Net: NetName=PB3_MISO Pin=RV17-1
+Removed Pin From Net: NetName=PB1_SCK Pin=RV18-2
+Added Pin To Net: NetName=NetP2_5 Pin=RV8-2
+Added Pin To Net: NetName=NetP2_10 Pin=RV17-1
+Added Pin To Net: NetName=NetP2_9 Pin=RV18-2

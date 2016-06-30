@@ -4,47 +4,51 @@ Sense resistor selection
 barrier block hole size
 DIAG1
 
-
+DONE
 Replace pth caps with smt
+change stackup to improve impedance. add power plane capacitor to adum
+Keep existing test point locations.
+change extension headers to accept housings
+terminating resistors to spi?
 
+
+TODO
 measure back emf from spun motors.
 test clamping diode sizes
 
-change stackup to fix impedance. add power plane capacitor to adum
-
-Keep existing test point locations.
-
-Use label to mark pins on power connector?
-
-Extruder heater TP17, HB TP18, TP69, 
-
-Add break away power connector label / panel rails
-
-Change TVS diode on motor input to cheaper part? replace tvs back on if off?
-
-remove third resistor from vref.
+fix silks
 
 add stitching capacitor between 5v and 12 rail? And to gnd?
 
-add angle mask stop slots under driver?
-
 rename motor rail vmot. find other wires that should be renamed vmot!
 
-move coil A to same side of driver
+Extruder heater TP17, HB TP18, TP69, 
 
 add series resistors to endstops and other pins where possible
 
 switch x and y dir pins
 
-change extension headers to accept housings
+idc ? http://www.digikey.com/product-search/en?keywords=302-s101
 
-shift 5vout docoupling gnd, parts
 
-cleanup drivers - push traces away
 
-terminating resistors to spi?
+DONT DO
+Add break away power connector label / panel rails
+Use label to mark pins on power connector?
+
+Change TVS diode on motor input to cheaper part? replace tvs back on if off?
+
+remove third resistor from vref.
+
+
+add angle mask stop slots under driver?
+
+
+
+
+
+
 
 add vcc polygon back to supply layer
 
-isolate onboard, offboard spi with resistors?
 
