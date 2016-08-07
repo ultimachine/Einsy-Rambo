@@ -43,12 +43,10 @@ remove third resistor from vref.
 
 add angle mask stop slots under driver?
 
-
-
-
-
-
-
 add vcc polygon back to supply layer
 
+Solder apertures ratio for tmc is 7. AGI changed it to a 10.
 
+
+Check thermal connection to ground, etc.
+move endstop protection resistor to connector side of MLV.

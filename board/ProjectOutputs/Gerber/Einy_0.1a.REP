@@ -107,11 +107,11 @@ Generating : GND
 
 
 Used DCodes :
+    D57
+    D60
     D61
-    D62
-    D69
+    D79
     D81
-    D83
     D94
     D95
     D96
@@ -141,19 +141,19 @@ Generating : Supply
 
 
 Used DCodes :
-    D58
+    D60
     D61
-    D62
-    D74
+    D63
+    D73
     D75
-    D76
     D77
     D79
-    D80
     D81
+    D82
     D83
+    D84
     D85
-    D87
+    D86
     D88
     D89
     D111
@@ -175,8 +175,8 @@ Generating : Bottom
 Used DCodes :
     D10
     D11
-    D47
-    D48
+    D16
+    D29
     D57
     D58
     D59
@@ -184,9 +184,9 @@ Used DCodes :
     D61
     D62
     D63
-    D65
-    D67
-    D69
+    D64
+    D66
+    D68
     D70
     D73
     D74
@@ -223,9 +223,9 @@ Generating : Top Overlay
 
 
 Used DCodes :
-    D10
-    D59
-    D69
+    D11
+    D57
+    D58
     D119
     D120
     D121
@@ -256,7 +256,7 @@ Generating : Top Paste
 
 
 Used DCodes :
-    D90
+    D91
     D135
     D136
     D137
@@ -313,7 +313,7 @@ Generating : Top Solder
 
 
 Used DCodes :
-    D48
+    D29
     D177
     D178
     D179
@@ -389,8 +389,8 @@ Generating : Bottom Solder
 
 
 Used DCodes :
-    D48
-    D213
+    D29
+    D185
     D221
     D222
     D223
@@ -428,7 +428,7 @@ Generating : Bottom Paste
 
 
 Used DCodes :
-    D168
+    D139
     D244
     D245
     D246
@@ -455,8 +455,8 @@ Generating : Dimension
 
 
 Used DCodes :
-    D10
-    D123
+    D11
+    D119
 *************************************************************
 
 *************************************************************
@@ -467,7 +467,7 @@ Generating : PCB Document
 
 
 Used DCodes :
-    D69
+    D57
     D119
     D123
 *************************************************************
@@ -480,13 +480,13 @@ Generating : Top Document
 
 
 Used DCodes :
-    D10
-    D69
+    D11
+    D57
+    D119
     D120
-    D123
     D125
-    D126
-    D130
+    D133
+    D134
     D248
     D249
     D250
@@ -579,7 +579,7 @@ Generating : Top Courtyard
 
 Used DCodes :
     D120
-    D248
+    D249
     D329
 *************************************************************
 
@@ -593,7 +593,7 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D248
+    D249
     D330
     D331
 *************************************************************
@@ -608,6 +608,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D248
+    D249
 *************************************************************
 
