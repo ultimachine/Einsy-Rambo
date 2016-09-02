@@ -40,13 +40,20 @@ Change TVS diode on motor input to cheaper part? replace tvs back on if off?
 
 remove third resistor from vref.
 
-
+UNKNOWN STATUS
 add angle mask stop slots under driver?
 
 add vcc polygon back to supply layer
 
+FIRST PROTO DISCOVERIES
 Solder apertures ratio for tmc is 7. AGI changed it to a 10.
 
 
+NEW TASK LIST
 Check thermal connection to ground, etc.
-move endstop protection resistor to connector side of MLV.
+move endstop protection resistor to connector side of MLV ? This will make it less of a noise filter. We probably want to leave it the way it is and over voltage blowing MLV will be??
+
+michal's fan request
+clean up motor ip
+
+ADC to extensions
