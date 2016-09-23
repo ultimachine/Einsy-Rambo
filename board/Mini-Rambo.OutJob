@@ -22,7 +22,7 @@ VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
 TargetPrinter=Virtual Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
 OutputMedium1_Printer=
@@ -47,7 +47,7 @@ OutputEnabled1_OutputMedium3=0
 OutputEnabled1_OutputMedium4=0
 OutputEnabled1_OutputMedium5=0
 OutputDefault1=0
-PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration1_Name1=OutputConfigurationParameter1
 Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0
 OutputType2=PCB Print
@@ -55,9 +55,9 @@ OutputName2=PCB Prints
 OutputCategory2=Documentation
 OutputDocumentPath2=
 OutputVariantName2=
-OutputEnabled2=1
+OutputEnabled2=0
 OutputEnabled2_OutputMedium1=0
-OutputEnabled2_OutputMedium2=2
+OutputEnabled2_OutputMedium2=0
 OutputEnabled2_OutputMedium3=0
 OutputEnabled2_OutputMedium4=0
 OutputEnabled2_OutputMedium5=0
@@ -99,9 +99,9 @@ OutputName3=PCB 3D Print
 OutputCategory3=Documentation
 OutputDocumentPath3=
 OutputVariantName3=
-OutputEnabled3=1
+OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
-OutputEnabled3_OutputMedium2=3
+OutputEnabled3_OutputMedium2=0
 OutputEnabled3_OutputMedium3=0
 OutputEnabled3_OutputMedium4=0
 OutputEnabled3_OutputMedium5=0
@@ -247,9 +247,9 @@ Configuration10_Name7=VisibleOrder
 Configuration10_Item7=LibRef=85|Comment=108|Description=108|Designator=160|Footprint=147|Quantity=58
 
 [PublishSettings]
-OutputFilePath2=C:\Users\Johnny-x-9c\Documents\Projects\Mini-Rambo\board\ProjectOutputs\Einy_0.1a_VariantName_VarRevNo.PDF
+OutputFilePath2=C:\Users\domotechinc\Desktop\SYNC\UltiMachine\mini_rambo\Mini-Rambo\board\Project Outputs for mini RAMBo 1.3\Einy_0.1a_VariantName_VarRevNo.PDF
 ReleaseManaged2=0
-OutputBasePath2=ProjectOutputs\
+OutputBasePath2=Project Outputs for mini RAMBo 1.3\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=
@@ -337,7 +337,7 @@ OutputFileNameSpecial5=
 OpenOutput5=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\Johnny-x-9c\Documents\Projects\Mini-Rambo\board\ProjectOutputs\Einy_0.1a_VariantName_VarRevNo.PDF
+RelativeOutputPath2=C:\Users\domotechinc\Desktop\SYNC\UltiMachine\mini_rambo\Mini-Rambo\board\Project Outputs for mini RAMBo 1.3\Einy_0.1a_VariantName_VarRevNo.PDF
 OpenOutputs2=0
 RelativeOutputPath3=C:\Users\Johnny-x-9c\Documents\Projects\Mini-Rambo\board\./ProjectOutputs\
 OpenOutputs3=1

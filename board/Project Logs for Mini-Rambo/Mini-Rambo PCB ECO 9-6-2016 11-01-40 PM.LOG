@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=NetLED3_C Pin=X14-1
+Removed Pin From Net: NetName=NetLED8_C Pin=X14-2
+Removed Pin From Net: NetName=FAN-0 Pin=X14-3
+Removed Pin From Net: NetName=NetD6_A Pin=X15-1
+Removed Pin From Net: NetName=NetD6_A Pin=X15-2
+Removed Pin From Net: NetName=GND Pin=X15-3
+Added Component: Designator=X6(70543-03)
+Added Pin To Net: NetName=NetLED3_C Pin=X6-1
+Added Pin To Net: NetName=+12V2 Pin=X6-2
+Added Pin To Net: NetName=NetLED8_C Pin=X14-1
+Added Pin To Net: NetName=+12V2 Pin=X14-2
+Added Pin To Net: NetName=NetX6_3 Pin=X6-3
+Added Net: Name=NetX6_3
+Added Pin To Net: NetName=NetX14_3 Pin=X14-3
+Added Net: Name=NetX14_3

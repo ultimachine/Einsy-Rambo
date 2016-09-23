@@ -1,0 +1,83 @@
+Removed Pin From Net: NetName=GND Pin=D1-1
+Removed Pin From Net: NetName=VCC Pin=D1-2
+Removed Pin From Net: NetName=GND Pin=D5-1
+Removed Pin From Net: NetName=VCC Pin=D5-2
+Removed Pin From Net: NetName=GND Pin=D11-1
+Removed Pin From Net: NetName=VCC Pin=D11-2
+Removed Pin From Net: NetName=GND Pin=D12-1
+Removed Pin From Net: NetName=VCC Pin=D12-2
+Removed Pin From Net: NetName=GND Pin=D13-1
+Removed Pin From Net: NetName=VCC Pin=D13-2
+Removed Pin From Net: NetName=THERM0 Pin=R6-1
+Removed Pin From Net: NetName=NetR31_1 Pin=R32-2
+Removed Pin From Net: NetName=THERM1 Pin=R37-1
+Removed Pin From Net: NetName=NetR36_1 Pin=R38-2
+Removed Pin From Net: NetName=THERM2 Pin=R39-1
+Removed Pin From Net: NetName=NetLED2_A Pin=R40-1
+Removed Pin From Net: NetName=+12V2 Pin=R40-2
+Removed Pin From Net: NetName=NetR5_1 Pin=R41-2
+Removed Pin From Net: NetName=HEAT-0 Pin=R43-1
+Removed Pin From Net: NetName=BED-HEAT Pin=R57-1
+Removed Pin From Net: NetName=NetLED6_A Pin=R58-1
+Removed Pin From Net: NetName=+12V3 Pin=R58-2
+Change Component Footprint: Designator=R5 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R31 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R36 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R40 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R42 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R43 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R56 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R57 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R58 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=D1 Old Footprint=SOT323 New Footprint=SOD523_
+Change Component Footprint: Designator=D5 Old Footprint=SOT323 New Footprint=SOD523_
+Change Component Footprint: Designator=D11 Old Footprint=SOT323 New Footprint=SOD523_
+Change Component Footprint: Designator=D12 Old Footprint=SOT323 New Footprint=SOD523_
+Change Component Footprint: Designator=D13 Old Footprint=SOT323 New Footprint=SOD523_
+Change Component Comment : Designator=R42 Old Comment=10r New Comment=22R
+Change Component Comment : Designator=R56 Old Comment=10r New Comment=22R
+Change Component Comment : Designator=D1 Old Comment=BAT54S New Comment=BAT54
+Change Component Comment : Designator=D5 Old Comment=BAT54S New Comment=BAT54
+Change Component Comment : Designator=D11 Old Comment=BAT54S New Comment=BAT54
+Change Component Comment : Designator=D12 Old Comment=BAT54S New Comment=BAT54
+Change Component Comment : Designator=D13 Old Comment=BAT54S New Comment=BAT54
+Added Component: Designator=D14(SOD523_)
+Added Component: Designator=D15(SOD523_)
+Added Component: Designator=D33(SOD523_)
+Added Component: Designator=D34(SOD523_)
+Added Component: Designator=D35(SOD523_)
+Added Pin To Net: NetName=VCC Pin=D1-K
+Added Pin To Net: NetName=GND Pin=D5-A
+Added Pin To Net: NetName=VCC Pin=D11-K
+Added Pin To Net: NetName=GND Pin=D12-A
+Added Pin To Net: NetName=VCC Pin=D13-K
+Added Pin To Net: NetName=GND Pin=D14-A
+Added Pin To Net: NetName=THERM0 Pin=R6-2
+Added Pin To Net: NetName=NetR31_1 Pin=R32-1
+Added Pin To Net: NetName=THERM1 Pin=R37-2
+Added Pin To Net: NetName=NetR36_1 Pin=R38-1
+Added Pin To Net: NetName=THERM2 Pin=R39-2
+Added Pin To Net: NetName=+12V2 Pin=R40-1
+Added Pin To Net: NetName=NetLED2_A Pin=R40-2
+Added Pin To Net: NetName=NetR5_1 Pin=R41-1
+Added Pin To Net: NetName=NetQ1_4 Pin=R43-1
+Added Pin To Net: NetName=FAN-0 Pin=R49-1
+Added Pin To Net: NetName=FAN-1 Pin=R50-1
+Added Pin To Net: NetName=NetQ5_4 Pin=R57-1
+Added Pin To Net: NetName=+12V3 Pin=R58-1
+Added Pin To Net: NetName=NetLED6_A Pin=R58-2
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=D5-K
+Added Pin To Net: NetName=NetD1_A Pin=R6-1
+Added Pin To Net: NetName=NetD1_A Pin=R32-2
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD11_A Pin=D11-A
+Added Pin To Net: NetName=NetD11_A Pin=D12-K
+Added Pin To Net: NetName=NetD11_A Pin=R37-1
+Added Pin To Net: NetName=NetD11_A Pin=R38-2
+Added Net: Name=NetD11_A
+Added Pin To Net: NetName=NetD13_A Pin=D13-A
+Added Pin To Net: NetName=NetD13_A Pin=D14-K
+Added Pin To Net: NetName=NetD13_A Pin=R39-1
+Added Pin To Net: NetName=NetD13_A Pin=R41-2
+Added Net: Name=NetD13_A

@@ -1,0 +1,30 @@
+Added Component: Designator=D33(SOD523)
+Added Component: Designator=D34(SOD523)
+Added Component: Designator=D35(SOD523)
+Added Component: Designator=D36(SOD523)
+Added Component: Designator=R28(R0603)
+Added Component: Designator=R29(R0603)
+Added Component: Designator=R30(R0603)
+Added Component: Designator=R33(R0603)
+Added Pin To Net: NetName=VCC Pin=D33-C
+Added Pin To Net: NetName=VCC Pin=D34-C
+Added Pin To Net: NetName=GND Pin=D35-A
+Added Pin To Net: NetName=GND Pin=D36-A
+Added Pin To Net: NetName=VCC Pin=R28-2
+Added Pin To Net: NetName=VCC Pin=R29-2
+Added Pin To Net: NetName=NetD33_A Pin=D33-A
+Added Pin To Net: NetName=NetD33_A Pin=D35-C
+Added Pin To Net: NetName=NetD33_A Pin=R30-1
+Added Net: Name=NetD33_A
+Added Pin To Net: NetName=NetD34_A Pin=D34-A
+Added Pin To Net: NetName=NetD34_A Pin=D36-C
+Added Pin To Net: NetName=NetD34_A Pin=R33-1
+Added Net: Name=NetD34_A
+Added Pin To Net: NetName=NetR28_1 Pin=R28-1
+Added Pin To Net: NetName=NetR28_1 Pin=R30-2
+Added Pin To Net: NetName=NetR28_1 Pin=X6-3
+Added Net: Name=NetR28_1
+Added Pin To Net: NetName=NetR29_1 Pin=R29-1
+Added Pin To Net: NetName=NetR29_1 Pin=R33-2
+Added Pin To Net: NetName=NetR29_1 Pin=X14-3
+Added Net: Name=NetR29_1

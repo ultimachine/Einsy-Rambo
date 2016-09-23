@@ -1,0 +1,9 @@
+Added Component: Designator=Q2(SOIC8)
+Added Pin To Net: NetName=+12V2 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=+12V2 Pin=Q2-3
+Added Pin To Net: NetName=NetQ2_4 Pin=Q2-4
+Added Pin To Net: NetName=NetQ2_5 Pin=Q2-5
+Added Pin To Net: NetName=NetQ2_5 Pin=Q2-6
+Added Pin To Net: NetName=NetQ2_7 Pin=Q2-7
+Added Pin To Net: NetName=NetQ2_7 Pin=Q2-8
