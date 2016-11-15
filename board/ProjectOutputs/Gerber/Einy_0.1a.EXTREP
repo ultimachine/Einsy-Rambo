@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Einy_0.1a.GBR   7/7/2016  2:01:27 PM
+Gerber File Extension Report For: Einy_0.1a.GBR   10/3/2016  11:21:09 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -16,10 +16,8 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
-.GM1                Dimension                               
 .GM2                PCB Document                            
-.GM8                Top Document                            
-.GM15               Top Courtyard                           
+.GM88               Outline                                 
 .GD1                Drill Drawing                           
 .GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------

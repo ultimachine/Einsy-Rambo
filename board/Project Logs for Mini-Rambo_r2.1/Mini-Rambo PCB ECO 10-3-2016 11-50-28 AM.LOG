@@ -1,0 +1,6 @@
+Added Component: Designator=TP22(TP1-27)
+Added Component: Designator=TP23(TP1-27)
+Added Component: Designator=TP33(TP1-27)
+Added Pin To Net: NetName=NetLED3_C Pin=TP22-TP
+Added Pin To Net: NetName=NetLED5_C Pin=TP23-TP
+Added Pin To Net: NetName=+12V2 Pin=TP33-TP

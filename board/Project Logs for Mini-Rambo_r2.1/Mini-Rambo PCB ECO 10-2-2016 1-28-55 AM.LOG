@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VCC Pin=R35-1
+Removed Pin From Net: NetName=NetLED7_A Pin=R35-2
+Change Component Footprint: Designator=R34 Old Footprint=R0603 New Footprint=R0402
+Change Component Footprint: Designator=R35 Old Footprint=R0603 New Footprint=R0402
+Added Pin To Net: NetName=NetLED7_A Pin=R35-1
+Added Pin To Net: NetName=VCC Pin=R35-2

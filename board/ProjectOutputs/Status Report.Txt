@@ -1,10 +1,11 @@
-Output: FeederBOM
-Type  : BOM
-From  : Project [Mini-Rambo.PrjPcb]
+Output: Generates pick and place files
+Type  : Pick Place
+From  : PCB Document [Mini-Rambo.PcbDoc]
+   Generated File[Einy_0.1a.txt]
    Generated File[Einy_0.1a.csv]
 
 
-Files Generated   : 1
+Files Generated   : 2
 Documents Printed : 0
 
-Finished Output Generation At 2:02:09 PM On 7/7/2016
+Finished Output Generation At 11:21:23 PM On 10/3/2016
