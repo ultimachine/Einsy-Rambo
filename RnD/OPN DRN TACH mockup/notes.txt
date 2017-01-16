@@ -1,1 +1,0 @@
-2k pullup, 10k series, 100nF to GND

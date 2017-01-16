@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-git push --set-upstream origin `git branch | grep \* | sed 's/\* //g'`
