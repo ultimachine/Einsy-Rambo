@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=C61-2
-Removed Pin From Net: NetName=GND Pin=C65-2
-Added Pin To Net: NetName=NetC92_2 Pin=C94-2
-Added Pin To Net: NetName=NetC92_2 Pin=C95-2
-Added Pin To Net: NetName=NetC92_2 Pin=U4-8
-Added Pin To Net: NetName=NetC92_2 Pin=U4-26
-Change Net Name : Old Net Name=X-DIR New Net Name=NetU2_36
-Change Net Name : Old Net Name=X-EN New Net Name=NetU2_71
-Change Net Name : Old Net Name=X-STEP New Net Name=NetU2_53

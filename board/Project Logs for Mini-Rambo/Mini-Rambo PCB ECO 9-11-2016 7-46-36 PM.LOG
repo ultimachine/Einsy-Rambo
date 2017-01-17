@@ -1,8 +1,0 @@
-Added Component: Designator=C42(C0402)
-Added Component: Designator=C43(C0402)
-Added Pin To Net: NetName=NetD33_A Pin=C42-1
-Added Pin To Net: NetName=GND Pin=C42-2
-Added Pin To Net: NetName=NetD34_A Pin=C43-1
-Added Pin To Net: NetName=GND Pin=C43-2
-Change Net Name : Old Net Name=NetD33_A New Net Name=NetC42_1
-Change Net Name : Old Net Name=NetD34_A New Net Name=NetC43_1

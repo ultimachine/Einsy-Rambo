@@ -1,3 +1,0 @@
-Added Component: Designator=TP33(TP1-27)
-Added Pin To Net: NetName=PJ7 Pin=TP33-TP
-Added Member To Class: ClassName=Power-ATX Member=Component TP33 TestPoint

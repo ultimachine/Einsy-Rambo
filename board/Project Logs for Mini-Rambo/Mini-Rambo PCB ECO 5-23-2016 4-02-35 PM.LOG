@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=NetC66_1 Pin=C65-1
-Removed Pin From Net: NetName=NetC106_1 Pin=D24-C
-Removed Pin From Net: NetName=NetC114_1 Pin=D28-C
-Added Pin To Net: NetName=NetC65_1 Pin=C65-1
-Added Pin To Net: NetName=NetC107_1 Pin=D24-C
-Added Pin To Net: NetName=NetC115_1 Pin=D28-C

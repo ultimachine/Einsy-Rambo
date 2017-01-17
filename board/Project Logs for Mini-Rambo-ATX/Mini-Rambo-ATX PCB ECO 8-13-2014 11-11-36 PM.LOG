@@ -1,4 +1,0 @@
-Added Component: Designator=Net Tie(Net Tie)
-Added Pin To Net: NetName=FGND Pin=Net Tie-1
-Added Pin To Net: NetName=GND Pin=Net Tie-2
-Added Member To Class: ClassName=Power-ATX Member=Component Net Tie NetTie
