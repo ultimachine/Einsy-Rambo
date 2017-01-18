@@ -55,6 +55,40 @@ GenerateClassCluster=0
 DocumentUniqueId=TFCEEUOH
 
 [Document2]
+DocumentPath=Connectors.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NJAGOFPX
+
+[Document3]
+DocumentPath=Endstops.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QXCQGDFO
+
+[Document4]
 DocumentPath=USB-Serial.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -71,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YIUFRWTQ
 
-[Document3]
+[Document5]
 DocumentPath=Heaters.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UTAIBHKV
 
-[Document4]
+[Document6]
 DocumentPath=Power-SMPS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SNSLUTXB
 
-[Document5]
+[Document7]
 DocumentPath=Mini-Rambo.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document6]
+[Document8]
 DocumentPath=Mini-Rambo_r2.1.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document9]
 DocumentPath=Mini-Rambo 0.2a.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document10]
 DocumentPath=libraries\3Delight.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OHCJRVIH
 
-[Document9]
+[Document11]
 DocumentPath=libraries\3Delight.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LAPVBBXY
 
-[Document10]
+[Document12]
 DocumentPath=libraries\murata-filter.PCBLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AMCJPDHB
 
-[Document11]
+[Document13]
 DocumentPath=libraries\murata-filter.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document14]
 DocumentPath=Motor-X.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GHGTCUOF
 
-[Document13]
+[Document15]
 DocumentPath=Motor-Y.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -258,7 +292,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UCAMFKMA
 
-[Document14]
+[Document16]
 DocumentPath=Motor-Z.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,7 +309,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GQKGVBYN
 
-[Document15]
+[Document17]
 DocumentPath=Motor-E.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +326,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QMWAJQTW
 
-[Document16]
+[Document18]
 DocumentPath=Mini-Rambo.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -308,23 +342,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VFWRVFAW
-
-[Document17]
-DocumentPath=Connectors.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NJAGOFPX
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Test Points\Assembly Testpoint Report for Mini-Rambo.csv
@@ -619,16 +636,16 @@ Path=*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=projectVersion
-Value=0.2a
+Name=ProjectDesigner
+Value=UltiMachine
 
 [Parameter2]
 Name=ProjectTitle
 Value=Einy
 
 [Parameter3]
-Name=ProjectDesigner
-Value=UltiMachine
+Name=projectVersion
+Value=0.2a
 
 [Configuration1]
 Name=Default Configuration
