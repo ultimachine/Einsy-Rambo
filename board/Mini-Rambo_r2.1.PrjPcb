@@ -174,7 +174,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document9]
-DocumentPath=Mini-Rambo 0.2a.OutJob
+DocumentPath=Mini-Rambo 2.2.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -343,6 +343,40 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VFWRVFAW
 
+[Document19]
+DocumentPath=Mini-Rambo_r2.2.Cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document20]
+DocumentPath=Mini-Rambo.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LCYYBJSK
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Test Points\Assembly Testpoint Report for Mini-Rambo.csv
 DItemRevisionGUID=
@@ -452,182 +486,266 @@ DocumentPath=./ProjectOutputs\Pick Place\Einy_0.1a.txt
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=./ProjectOutputs\NC Drill\Einy_projectVersion.DRR
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.csv
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.EXTREP
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBL
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBO
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.G1
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBP
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBS
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GD1
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GG1
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument36]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM1
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument37]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM2
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM8
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM15
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GM88
 DItemRevisionGUID=
 
 [GeneratedDocument40]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GP1
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument41]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTL
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTO
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument43]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTP
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument44]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTS
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument45]
-DocumentPath=./ProjectOutputs\NC Drill\Einy_projectVersion.LDP
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument46]
-DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.REP
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.REP
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=./ProjectOutputs\NC Drill\Einy_projectVersion.TXT
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument48]
-DocumentPath=./ProjectOutputs\Pick Place\Einy_projectVersion.txt
+DocumentPath=Project Outputs for Mini-Rambo_r2.2\Einy_2.2a.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument49]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\IDFReport_Mini-Rambo.html
+DocumentPath=./ProjectOutputs\NC Drill\Einy_projectVersion.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument50]
-DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\Mini-Rambo.brd
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument51]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.DRR
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument52]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.EXTREP
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument53]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.G1
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument54]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBL
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument55]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBO
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument56]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBP
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument57]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBS
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument58]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GD1
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument59]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GG1
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument60]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM1
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument61]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM8
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument62]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM15
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument63]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GP1
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument64]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTL
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument65]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTO
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument66]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTP
+DocumentPath=./ProjectOutputs\NC Drill\Einy_projectVersion.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument67]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTS
+DocumentPath=./ProjectOutputs\Gerber\Einy_projectVersion.REP
 DItemRevisionGUID=
 
 [GeneratedDocument68]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.LDP
+DocumentPath=./ProjectOutputs\NC Drill\Einy_projectVersion.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument69]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.REP
+DocumentPath=./ProjectOutputs\Pick Place\Einy_projectVersion.txt
 DItemRevisionGUID=
 
 [GeneratedDocument70]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.RUL
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\IDFReport_Mini-Rambo.html
 DItemRevisionGUID=
 
 [GeneratedDocument71]
-DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.TXT
+DocumentPath=Project Outputs for Mini-Rambo\Generate Files\ExportIDF\Mini-Rambo.brd
 DItemRevisionGUID=
 
 [GeneratedDocument72]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument73]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument74]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.G1
+DItemRevisionGUID=
+
+[GeneratedDocument75]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument76]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument77]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument78]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument79]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GD1
+DItemRevisionGUID=
+
+[GeneratedDocument80]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GG1
+DItemRevisionGUID=
+
+[GeneratedDocument81]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument82]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM8
+DItemRevisionGUID=
+
+[GeneratedDocument83]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument84]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument85]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument86]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument87]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument88]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument89]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument90]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.REP
+DItemRevisionGUID=
+
+[GeneratedDocument91]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument92]
+DocumentPath=Project Outputs for Mini-Rambo\Mini-Rambo.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument93]
 DocumentPath=Project Outputs for Mini-Rambo\Generate Files\Pick Place\Pick Place for Mini-Rambo.txt
 DItemRevisionGUID=
 
@@ -636,16 +754,16 @@ Path=*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=ProjectDesigner
-Value=UltiMachine
+Name=projectVersion
+Value=2.2a
 
 [Parameter2]
 Name=ProjectTitle
 Value=Einy
 
 [Parameter3]
-Name=projectVersion
-Value=0.2a
+Name=ProjectDesigner
+Value=UltiMachine
 
 [Configuration1]
 Name=Default Configuration
@@ -655,6 +773,7 @@ ReleaseItemId=
 Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=
+ConfigurationType=
 
 [Generic_SmartPDF]
 AutoOpenFile=-1

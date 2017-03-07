@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Mini-Rambo.PcbDoc   3/6/2017  2:33:11 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top to Bottom
+ASCII RoundHoles File : Einy_2.2a.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.254mm (10mil)                                           Round             394       PTH        1169.53mm (46.04inch)
+T2      0.381mm (15mil)                                           Round             388       PTH        1345.18mm (52.96inch)
+T3      0.9mm (35mil)                                             Round             30        PTH        95.22mm (3.75inch)
+T4      0.965mm (38mil)                                           Round             16        PTH        66.86mm (2.63inch)
+T5      1.016mm (40mil)                                           Round             55        PTH        418.04mm (16.46inch)
+T6      1.397mm (55mil)                                           Round             2         PTH        5.08mm (0.20inch)
+T7      1.499mm (59mil)                                           Round             2         PTH        7.01mm (0.28inch)
+T8      1.6mm (63mil)                                             Round             12        PTH        69.64mm (2.74inch)
+T9      1.778mm (70mil)                                           Round             6         PTH        41.28mm (1.63inch)
+T10     2.21mm (87mil)                                            Round             2         PTH        12.02mm (0.47inch)
+T11     3mm (118mil)                                              Round             4         NPTH       302.90mm (11.93inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              911
+
+Total Processing Time (hh:mm:ss) : 00:00:01

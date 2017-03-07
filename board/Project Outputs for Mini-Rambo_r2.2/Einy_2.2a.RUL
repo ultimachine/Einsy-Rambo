@@ -1,0 +1,15 @@
+DRC Rules Export File for PCB: C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Mini-Rambo.PcbDoc
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=7.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=7.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=3.00
+RuleKind=Clearance|RuleName=mdWireWire|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=mdWirePad|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=mdWireVia|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=mdPadPad|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=mdPadVia|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=mdViaVia|Scope=Board|Minimum=7.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_Via|Scope=Board|Minimum=-16.00
+RuleKind=SolderMaskExpansion|RuleName=ViaTent|Scope=Board|Minimum=-50.00
+RuleKind=Clearance|RuleName=Stitching GND|Scope=Board|Minimum=10.00
