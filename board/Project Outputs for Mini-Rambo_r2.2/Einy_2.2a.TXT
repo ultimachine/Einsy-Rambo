@@ -4,13 +4,20 @@ C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Mini-Ra
 ========================================================================================================================
 File Design Information:
 
-Date:       06/03/17
-Time:       14:33
+Date:       08/03/17
+Time:       12:20
 Revision:   Not in VersionControl
 Variant:    No variations
 Units used: mm
 
 Designator Comment                          Layer    Footprint                   Center-X(mm) Center-Y(mm) Rotation Description                                                              
+J1         2-1437667-9                      TopLayer CON-Barrier-6-8.26mm        92.786       35.509       90                                                                                
+U1         Atmega32u2                       TopLayer QFN32_050050                20.212       43.847       90       Atmega32u2                                                               
+U3         LM25011MY/NOPB                   TopLayer VSSOP10                     81.551       60.771       180      REG BUCK                                                                 
+U7         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 53.975       15.749       0                                                                                 
+U6         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 29.489       15.749       0                                                                                 
+U5         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 18.059       15.749       0                                                                                 
+U4         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 6.696        16.664       0                                                                                 
 FB5        120R                             TopLayer FB0603                      15.824       38.989       360      FERRITE BEAD 120 OHM 0603 1LN                                            
 C74        100nF                            TopLayer C0402                       16.024       40.157       180      CAP CER 0402 100nF 16V 10% X7R                                           
 R76        100R                             TopLayer R0402                       24.154       55.296       180      RES SMD 100 OHM 1% 1/16W 0402                                            
@@ -74,7 +81,6 @@ C105       100nF                            TopLayer C0603                      
 R12        10R                              TopLayer R0402                       12.573       15.572       90       RES SMD 10 OHM 1% 1/16W 0402                                             
 R17        0.1r                             TopLayer R1206                       5.359        24.130       90       RES 1206 0.1r 0.5w 1%                                                    
 R18        0.1r                             TopLayer R1206                       5.232        10.846       180      RES 1206 0.1r 0.5w 1%                                                    
-U4         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 6.696        16.664       360                                                                               
 R13        0.6r                             TopLayer 2512R-0.55                  79.273       65.557       180      RES 0.06 OHM 1W 1% 2512 SMD                                              
 D16        RSB39VTE-17                      TopLayer SOD323-R                    10.101       47.835       270      DIODE TVS                                                                
 S1         1571610-2                        TopLayer B3F-31XX                    4.006        56.006       270      SWTCH Momentary Washable                                                 
@@ -94,7 +100,6 @@ C15        100nF                            TopLayer C0402                      
 LED1       5988140107F                      TopLayer LED2012120                  3.065        50.317       180      LED 0805 Yellow                                                          
 C10        100nF                            TopLayer C0402                       31.521       36.351       90       CAP CER 0402 100nF 16V 10% X7R                                           
 C16        1uF                              TopLayer C0402                       16.024       44.933       180      CAP CER 0402 1uF 6.3V 10% X5R                                            
-U1         Atmega32u2                       TopLayer QFN32_050050                20.212       43.847       90       Atmega32u2                                                               
 X17        PINHD-2X3                        TopLayer 2X03                        17.412       51.652       0        PIN HEADER                                                               
 RV1        CG0603MLC-05E                    TopLayer R0603                       14.249       41.935       90       VAR 0603 5V                                                              
 RV2        CG0603MLC-05E                    TopLayer R0603                       14.249       44.602       270      VAR 0603 5V                                                              
@@ -137,7 +142,7 @@ FID1       FIDUCIAL                         TopLayer FIDUCIAL-1X2               
 FID3       FIDUCIAL                         TopLayer FIDUCIAL-1X2                103.306      1.631        0        Fiducial                                                                 
 D6         SK310A-TP                        TopLayer SMA-SM                      73.403       29.947       180      DIODE Schottky 3A SMA                                                    
 D10        SK310A-TP                        TopLayer SMA-SM                      88.570       49.483       90       DIODE Schottky 3A SMA                                                    
-U10        ADUM7441                         TopLayer QSOP16                      25.614       33.675       270      4ch iCoupler                                                             
+U10        ADUM7441                         TopLayer QSOP16                      25.614       34.024       270      4ch iCoupler                                                             
 R72        1M                               TopLayer R0402                       12.967       46.887       270      RES 0402 1M 100mW 5%                                                     
 C67        100nF                            TopLayer C0402                       21.581       31.435       90       CAP CER 0402 100nF 16V 10% X7R                                           
 C68        100nF                            TopLayer C0402                       29.656       31.509       90       CAP CER 0402 100nF 16V 10% X7R                                           
@@ -182,12 +187,11 @@ C40        100nF                            TopLayer C0603                      
 C45        10uF                             TopLayer C0805                       77.325       57.810       360      CAP CER 0805 10uF 10V 10% X5R                                            
 C49        4.7nF                            TopLayer C0402                       83.918       63.297       180      CAP CER 0402 4.7nF 25V 10% X7R                                           
 D9         SK310A-TP                        TopLayer SMA-SM                      72.292       65.557       360      DIODE Schottky 3A SMA                                                    
-L1         15uH 3.9A                        TopLayer XAL50XX-153                 72.288       60.223       270      IND 15uH 3.9A 20%                                                        
+L1         15uH                             TopLayer XAL50xx_VLS6045             71.577       60.223       270      FIXED IND 15UH 2.5A 98 MOHM SMD                                          
 R3         200K                             TopLayer R0402                       85.853       60.630       360      RES 0402 200K                                                            
 R11        10K                              TopLayer R0402                       85.471       62.181       90       RES SMD 10K OHM 1% 1/16W 0402                                            
 R23        10K                              TopLayer R0402                       83.490       64.847       90       RES SMD 10K OHM 1% 1/16W 0402                                            
 R24        10K                              TopLayer R0402                       84.506       64.845       270      RES SMD 10K OHM 1% 1/16W 0402                                            
-U3         LM25011MY/NOPB                   TopLayer VSSOP10                     81.551       60.771       180      REG BUCK                                                                 
 P3         5x2 IDCw                         TopLayer 2X5_IDCW                    63.644       64.051       270                                                                               
 C84        NP                               TopLayer C0603                       94.259       8.331        270      CAP CER 0603 100nF 50V 10% X7R                                           
 C85        NP                               TopLayer C0603                       94.259       5.334        90       CAP CER 0603 100nF 50V 10% X7R                                           
@@ -195,7 +199,6 @@ C86        NP                               TopLayer C0603                      
 C87        NP                               TopLayer C0603                       84.836       23.673       360      CAP CER 0603 100nF 50V 10% X7R                                           
 C88        NP                               TopLayer C0603                       87.554       25.095       360      CAP CER 0603 100nF 50V 10% X7R                                           
 C89        NP                               TopLayer C0603                       77.292       29.972       270      CAP CER 0603 100nF 50V 10% X7R                                           
-J1         2-1437667-9                      TopLayer CON-BARRIER-6-8.26MM        92.786       35.509       90                                                                                
 X13        0395311002                       TopLayer MSTBV2                      69.266       24.359       180      Conn - 5.08mm Pitch Fixed                                                
 C27        UWT1V101MCL1GS                   TopLayer CAP-ELEC-063063077          79.019       25.451       90       CAP ALUM 100UF 35V 20% SMD                                               
 C103       UWT1V101MCL1GS                   TopLayer CAP-ELEC-063063077          64.008       15.545       90       CAP ALUM 100UF 35V 20% SMD                                               
@@ -217,7 +220,6 @@ C111       100nF                            TopLayer C0603                      
 R4         10R                              TopLayer R0402                       23.901       15.089       90       RES SMD 10 OHM 1% 1/16W 0402                                             
 R7         0.1r                             TopLayer R1206                       17.043       23.063       90       RES 1206 0.1r 0.5w 1%                                                    
 R22        0.1r                             TopLayer R1206                       16.256       9.931        180      RES 1206 0.1r 0.5w 1%                                                    
-U5         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 18.059       15.749       0                                                                                 
 D17        PMEG3010AESB                     TopLayer SOD993-DFN3127P600-8N       5.436        21.184       360      30 V, 1 A low VF MEGA Schottky barrier rectifier                         
 D18        PMEG3010AESB                     TopLayer SOD993-DFN3127P600-8N       6.985        21.184       180      30 V, 1 A low VF MEGA Schottky barrier rectifier                         
 D19        PMEG3010AESB                     TopLayer SOD993-DFN3127P600-8N       7.239        12.395       180      30 V, 1 A low VF MEGA Schottky barrier rectifier                         
@@ -248,7 +250,6 @@ D28        PMEG3010AESB                     TopLayer SOD993-DFN3127P600-8N      
 R8         10R                              TopLayer R0402                       35.077       17.121       90       RES SMD 10 OHM 1% 1/16W 0402                                             
 R10        0.1r                             TopLayer R1206                       29.490       23.317       360      RES 1206 0.1r 0.5w 1%                                                    
 R25        0.1r                             TopLayer R1206                       26.924       9.830        180      RES 1206 0.1r 0.5w 1%                                                    
-U6         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 29.489       15.749       0                                                                                 
 C18        UWT1V101MCL1GS                   TopLayer CAP-ELEC-063063077          65.507       6.096        90       CAP ALUM 100UF 35V 20% SMD                                               
 C31        100nF                            TopLayer C0603                       58.395       11.201       180      CAP CER 0603 100nF 50V 10% X7R                                           
 C36        100nF                            TopLayer C0603                       56.261       21.412       180      CAP CER 0603 100nF 50V 10% X7R                                           
@@ -271,7 +272,6 @@ D32        PMEG3010AESB                     TopLayer SOD993-DFN3127P600-8N      
 R14        10R                              TopLayer R0402                       59.588       17.121       90       RES SMD 10 OHM 1% 1/16W 0402                                             
 R15        0.1r                             TopLayer R1206                       53.035       23.063       90       RES 1206 0.1r 0.5w 1%                                                    
 R26        0.1r                             TopLayer R1206                       51.435       9.855        180      RES 1206 0.1r 0.5w 1%                                                    
-U7         TMC2130-LA                       TopLayer QFN36-50P500X600X900_HS-37N 53.975       15.749       0                                                                                 
 P1         Header 5X2 IDC                   TopLayer HDR2X5_IDC                  50.546       66.294       360      Header, 5-Pin, Dual row                                                  
 P2         Header 5X2 IDC                   TopLayer HDR2X5_IDC                  50.546       56.769       360      Header, 5-Pin, Dual row                                                  
 RV3        VRS0402SR55R101N                 TopLayer C0402                       16.234       55.931       360      Multi-Layer Varistor                                                     
@@ -314,5 +314,5 @@ R45        1K                               TopLayer R0402                      
 D12        BAT54                            TopLayer SOD523_IPC                  55.042       39.141       360      Diode Schottky 30V 100mA Surface Mount SOD-523                           
 FB3        120R                             TopLayer FB0603                      52.146       46.279       180      FERRITE BEAD 120 OHM 0603 1LN                                            
 FB4        120R                             TopLayer FB0603                      51.689       30.658       270      FERRITE BEAD 120 OHM 0603 1LN                                            
-R51        10K                              TopLayer R0402                       68.478       61.010       270      RES SMD 10K OHM 1% 1/16W 0402                                            
-R61        10K                              TopLayer R0402                       68.504       64.517       90       RES SMD 10K OHM 1% 1/16W 0402                                            
+R51        10K                              TopLayer R0402                       68.555       55.526       90       RES SMD 10K OHM 1% 1/16W 0402                                            
+R61        10K                              TopLayer R0402                       68.504       65.025       90       RES SMD 10K OHM 1% 1/16W 0402                                            

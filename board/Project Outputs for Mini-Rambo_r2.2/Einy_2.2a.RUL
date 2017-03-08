@@ -10,6 +10,5 @@ RuleKind=Clearance|RuleName=mdWireVia|Scope=Board|Minimum=7.00
 RuleKind=Clearance|RuleName=mdPadPad|Scope=Board|Minimum=7.00
 RuleKind=Clearance|RuleName=mdPadVia|Scope=Board|Minimum=7.00
 RuleKind=Clearance|RuleName=mdViaVia|Scope=Board|Minimum=7.00
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_Via|Scope=Board|Minimum=-16.00
-RuleKind=SolderMaskExpansion|RuleName=ViaTent|Scope=Board|Minimum=-50.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_Via|Scope=Board|Minimum=-15.00
 RuleKind=Clearance|RuleName=Stitching GND|Scope=Board|Minimum=10.00
