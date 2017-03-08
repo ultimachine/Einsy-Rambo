@@ -1,0 +1,26 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Mini-Rambo-ATX-Panel.PcbDoc   8/21/2014  11:56:02 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top to Bottom
+ASCII RoundHoles File : Mini-Rambo-ATX-Panel.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        15mil (0.381mm)          Round          3336             360.40 Inch (9154.17 mm)
+T2        22mil (0.5588mm)         Round          240              38.20 Inch (970.29 mm)
+T3        28mil (0.7112mm)         Round          18               38.72 Inch (983.50 mm)
+T4        35.4mil (0.89916mm)      Round          60               29.55 Inch (750.47 mm)
+T5        38mil (0.9652mm)         Round          96               35.20 Inch (893.96 mm)
+T6        40mil (1.016mm)          Round          348              98.18 Inch (2493.75 mm)
+T7        55mil (1.397mm)          Round          24               29.69 Inch (754.06 mm)
+T8        59mil (1.4986mm)         Round          12               23.25 Inch (590.64 mm)
+T9        70.9mil (1.80086mm)      Round          144              53.08 Inch (1348.30 mm)
+T10       87mil (2.2098mm)         Round          12               25.24 Inch (641.20 mm)
+T11       100mil (2.54mm)          Round          72               43.76 Inch (1111.46 mm)
+T12       118.1mil (2.99974mm)     Round          24               59.65 Inch (1515.10 mm)
+T13       118.1mil (2.99974mm)     Round          16        NPTH   51.96 Inch (1319.72 mm)
+---------------------------------------------------------------------------
+Totals                                            4402             886.88 Inch (22526.63 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:04
