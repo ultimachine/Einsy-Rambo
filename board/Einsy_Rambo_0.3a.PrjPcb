@@ -44,7 +44,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=11
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -343,25 +343,33 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LCYYBJSK
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Einsy_Rambo_0.3a\Board Information - Mini-Rambo.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Einsy_Rambo_0.3a\Design Rule Check - Mini-Rambo.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=ProjectTitle
-Value=Einsy Rambo
+Name=projectBoardRevision
+Value=a
 
 [Parameter2]
-Name=ProjectDesigner
-Value=AWS
-
-[Parameter3]
 Name=projectBoardVersion
 Value=0.3
 
+[Parameter3]
+Name=ProjectDesigner
+Value=AWS
+
 [Parameter4]
-Name=projectBoardRevision
-Value=a
+Name=ProjectTitle
+Value=Einsy Rambo
 
 [Configuration1]
 Name=Default Configuration
