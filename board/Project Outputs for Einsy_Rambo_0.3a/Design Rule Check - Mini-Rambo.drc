@@ -1,19 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Mini-Rambo.PcbDoc
-Date     : 3/10/2017
-Time     : 2:57:43 PM
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=10mil) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)
-Rule Violations :0
+Date     : 3/13/2017
+Time     : 2:39:03 PM
 
 Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
 Rule Violations :0
@@ -21,10 +9,22 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)

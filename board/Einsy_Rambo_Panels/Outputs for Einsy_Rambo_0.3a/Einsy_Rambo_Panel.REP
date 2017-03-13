@@ -159,10 +159,10 @@ Generating : Supply
 Used DCodes :
     D12
     D15
-    D65
-    D68
+    D66
+    D67
     D70
-    D75
+    D72
     D76
     D77
     D84
@@ -197,14 +197,14 @@ Used DCodes :
     D13
     D14
     D15
-    D29
+    D31
     D65
     D66
+    D67
     D68
-    D69
     D70
-    D74
-    D75
+    D71
+    D72
     D76
     D77
     D84
@@ -341,7 +341,7 @@ Generating : Top Solder
 
 Used DCodes :
     D12
-    D21
+    D23
     D112
     D200
     D201
@@ -423,10 +423,10 @@ Generating : Bottom Solder
 
 Used DCodes :
     D12
-    D21
+    D23
     D112
     D202
-    D215
+    D217
     D251
     D252
     D253
@@ -484,7 +484,7 @@ Generating : PCB Document
 Used DCodes :
     D12
     D14
-    D73
+    D75
     D136
     D138
     D271
@@ -643,7 +643,7 @@ Generating : Drill Drawing
 
 Used DCodes :
     D12
-    D73
+    D75
     D78
     D138
     D141

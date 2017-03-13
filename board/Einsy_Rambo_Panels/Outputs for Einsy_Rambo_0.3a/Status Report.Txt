@@ -1,3 +1,7 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 2:47:35 PM On 3/13/2017
+
 Output: Generates pick and place files
 Type  : Pick Place
 From  : PCB Document [Einsy_Rambo_Panel.PcbDoc]
@@ -8,4 +12,4 @@ From  : PCB Document [Einsy_Rambo_Panel.PcbDoc]
 Files Generated   : 2
 Documents Printed : 0
 
-Finished Output Generation At 2:46:25 PM On 3/10/2017
+Finished Output Generation At 2:47:45 PM On 3/13/2017

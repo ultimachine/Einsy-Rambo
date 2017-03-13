@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: Einsy_Rambo_Panel.PcbDoc   3/10/2017  2:46:18 PM
+NCDrill File Report For: Einsy_Rambo_Panel.PcbDoc   3/13/2017  2:35:15 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top to Bottom
@@ -7,7 +7,7 @@ ASCII RoundHoles File : Einsy_Rambo_Panel.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      10mil (0.254mm)                                           Round             1341      PTH        141.56inch (3595.67mm)
+T1      10mil (0.254mm)                                           Round             1341      PTH        140.89inch (3578.55mm)
 T2      15mil (0.381mm)                                           Round             1008      PTH        148.85inch (3780.81mm)
 T3      35mil (0.899mm)                                           Round             90        PTH        15.64inch (397.35mm)
 T4      38mil (0.965mm)                                           Round             48        PTH        12.07inch (306.48mm)

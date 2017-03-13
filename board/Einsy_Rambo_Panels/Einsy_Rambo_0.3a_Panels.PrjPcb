@@ -72,7 +72,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HSKGHGQI
 
 [Document3]
-DocumentPath=Einsy_Rambo_0.3a_Panel.Cam
+DocumentPath=Einsy_Rambo_0.3a_panel.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
