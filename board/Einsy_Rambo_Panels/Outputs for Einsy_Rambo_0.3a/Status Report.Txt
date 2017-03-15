@@ -1,16 +1,11 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 3:11:07 PM On 3/13/2017
-
-Output: NC Drill Files
-Type  : NC Drill
+Output: Generates pick and place files
+Type  : Pick Place
 From  : PCB Document [Einsy_Rambo_Panel.PcbDoc]
-   Generated File[Einsy_Rambo_Panel.TXT]
-   Generated File[Einsy_Rambo_Panel.LDP]
-   Generated File[Einsy_Rambo_Panel.DRR]
+   Generated File[Pick Place for Einsy_Rambo_Panel.txt]
+   Generated File[Pick Place for Einsy_Rambo_Panel.csv]
 
 
-Files Generated   : 3
+Files Generated   : 2
 Documents Printed : 0
 
-Finished Output Generation At 3:11:09 PM On 3/13/2017
+Finished Output Generation At 3:28:38 PM On 3/15/2017

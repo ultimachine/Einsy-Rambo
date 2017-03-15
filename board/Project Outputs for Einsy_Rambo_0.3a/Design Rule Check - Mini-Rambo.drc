@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Mini-Rambo.PcbDoc
-Date     : 3/13/2017
-Time     : 3:08:12 PM
+Date     : 3/15/2017
+Time     : 3:24:15 PM
 
 Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
 Rule Violations :0
