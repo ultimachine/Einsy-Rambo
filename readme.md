@@ -29,3 +29,5 @@ v0.3a:
 - Adjustments to fuse holder footprint
 - Decreased t-hole size of main power connector
 - Fan connectors now have a third pin for reading fan tach pulses.
+- Adjusted stackup to be more "standard"
+- Added 100R to the gate of each FET
