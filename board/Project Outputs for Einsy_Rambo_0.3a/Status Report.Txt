@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 2:49:44 PM On 3/16/2017
+
+Output: BOM-Single
+Type  : BOM
+From  : Project [Einsy_Rambo_0.3a.PrjPcb]
+   Generated File[Einsy Rambo_projectVersion.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 2:49:44 PM On 3/16/2017

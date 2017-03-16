@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=Mini-Rambo 2.2.OutJob
+Name=Einsy_Rambo.OutJob
 Description=
 TargetOutputMedium=BoardFab
 VariantName=[No Variations]
@@ -136,10 +136,10 @@ OutputName4=Gerber Files
 OutputCategory4=Fabrication
 OutputDocumentPath4=
 OutputVariantName4=
-OutputEnabled4=1
+OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
-OutputEnabled4_OutputMedium3=1
+OutputEnabled4_OutputMedium3=0
 OutputEnabled4_OutputMedium4=0
 OutputEnabled4_OutputMedium5=0
 OutputDefault4=0
@@ -150,10 +150,10 @@ OutputName5=NC Drill Files
 OutputCategory5=Fabrication
 OutputDocumentPath5=
 OutputVariantName5=
-OutputEnabled5=1
+OutputEnabled5=0
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=0
-OutputEnabled5_OutputMedium3=2
+OutputEnabled5_OutputMedium3=0
 OutputEnabled5_OutputMedium4=0
 OutputEnabled5_OutputMedium5=0
 OutputDefault5=0
@@ -179,10 +179,10 @@ OutputName7=Generates pick and place files
 OutputCategory7=Assembly
 OutputDocumentPath7=
 OutputVariantName7=
-OutputEnabled7=1
+OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=0
-OutputEnabled7_OutputMedium3=3
+OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=0
 OutputEnabled7_OutputMedium5=0
 OutputDefault7=0
@@ -267,6 +267,56 @@ Configuration10_Name6=SortOrder
 Configuration10_Item6=Comment=Up
 Configuration10_Name7=VisibleOrder
 Configuration10_Item7=LibRef=85|Comment=108|Description=108|Designator=160|Footprint=147|Quantity=58
+OutputType11=BOM_PartType
+OutputName11=BOM-Single
+OutputCategory11=Report
+OutputDocumentPath11=
+OutputVariantName11=
+OutputEnabled11=1
+OutputEnabled11_OutputMedium1=0
+OutputEnabled11_OutputMedium2=0
+OutputEnabled11_OutputMedium3=1
+OutputEnabled11_OutputMedium4=0
+OutputEnabled11_OutputMedium5=0
+OutputDefault11=0
+PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration11_Name1=ColumnNameFormat
+Configuration11_Item1=CaptionAsName
+Configuration11_Name2=Filter
+Configuration11_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration11_Name3=General
+Configuration11_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=1588|FormHeight=842|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration11_Name4=GroupOrder
+Configuration11_Item4=
+Configuration11_Name5=SortOrder
+Configuration11_Item5=Designator=Up|Comment=Up|Footprint=Up
+Configuration11_Name6=VisibleOrder
+Configuration11_Item6=Designator=94|DISTRIBUTOR=94|DISTRIBUTOR #=94|Manufacturer=94|MANUFACTURER #=94|PART=94|Quantity=53|DNI=33|Comment=112|Footprint=119|Description=112|Part Description=178|VALUE=95|Tolerance=202|EE_SPEC=202
+OutputType12=BOM_PartType
+OutputName12=BOM-Grouped
+OutputCategory12=Report
+OutputDocumentPath12=
+OutputVariantName12=
+OutputEnabled12=0
+OutputEnabled12_OutputMedium1=0
+OutputEnabled12_OutputMedium2=0
+OutputEnabled12_OutputMedium3=0
+OutputEnabled12_OutputMedium4=0
+OutputEnabled12_OutputMedium5=0
+OutputDefault12=0
+PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration12_Name1=ColumnNameFormat
+Configuration12_Item1=CaptionAsName
+Configuration12_Name2=Filter
+Configuration12_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration12_Name3=General
+Configuration12_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=1952|FormHeight=880|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration12_Name4=GroupOrder
+Configuration12_Item4=DNI=True|MANUFACTURER #=True
+Configuration12_Name5=SortOrder
+Configuration12_Item5=Designator=Up|Comment=Up|Footprint=Up
+Configuration12_Name6=VisibleOrder
+Configuration12_Item6=Designator=94|DISTRIBUTOR=94|DISTRIBUTOR #=94|Manufacturer=94|MANUFACTURER #=94|PART=94|Quantity=53|DNI=33|Comment=112|Footprint=119|Description=112|Part Description=178|VALUE=95|Tolerance=202|EE_SPEC=202
 
 [PublishSettings]
 OutputFilePath2=C:\Users\domotechinc\Desktop\SYNC\UltiMachine\mini_rambo\Mini-Rambo\board\Project Outputs for mini-Rambo_0.2a\Einy_0.1a_VariantName_VarRevNo.PDF
@@ -296,9 +346,9 @@ ShowComponentParameters2=1
 GlobalBookmarks2=1
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Mini-Rambo_r2.2\
+OutputFilePath3=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.3a\
 ReleaseManaged3=0
-OutputBasePath3=Project Outputs for Mini-Rambo_r2.2\
+OutputBasePath3=Project Outputs for Einsy_Rambo_0.3a\
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=
@@ -311,7 +361,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for Mini-Rambo_0.3a
+OutputBasePath4=Project Outputs for Einsy_Rambo_0.3a
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -363,7 +413,7 @@ OpenOutput5=1
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\Users\domotechinc\Desktop\SYNC\UltiMachine\mini_rambo\Mini-Rambo\board\Project Outputs for mini-Rambo_0.2a\Einy_0.1a_VariantName_VarRevNo.PDF
 OpenOutputs2=0
-RelativeOutputPath3=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Mini-Rambo_r2.2\
+RelativeOutputPath3=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.3a\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
