@@ -1,14 +1,15 @@
 Project Outputs Generation Report
 ---------------------------------
-Start Output Generation At 2:49:44 PM On 3/16/2017
+Start Output Generation At 1:45:38 PM On 4/21/2017
 
-Output: BOM-Single
-Type  : BOM
-From  : Project [Einsy_Rambo_0.3a.PrjPcb]
-   Generated File[Einsy Rambo_projectVersion.xls]
+Output: Generates pick and place files
+Type  : Pick Place
+From  : PCB Document [Mini-Rambo.PcbDoc]
+   Generated File[Einsy Rambo_projectVersion.txt]
+   Generated File[Einsy Rambo_projectVersion.csv]
 
 
-Files Generated   : 1
+Files Generated   : 2
 Documents Printed : 0
 
-Finished Output Generation At 2:49:44 PM On 3/16/2017
+Finished Output Generation At 1:45:47 PM On 4/21/2017
