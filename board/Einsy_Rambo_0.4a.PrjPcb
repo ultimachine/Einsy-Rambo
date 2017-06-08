@@ -640,25 +640,29 @@ DItemRevisionGUID=
 DocumentPath=Project Outputs for Einsy_Rambo_0.3a\Design Rule Check - Mini-Rambo.html
 DItemRevisionGUID=
 
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Einsy_Rambo_0.4a\Design Rule Check - Mini-Rambo.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=ProjectTitle
-Value=Einsy Rambo
+Name=projectBoardRevision
+Value=a
 
 [Parameter2]
-Name=ProjectDesigner
-Value=AWS
-
-[Parameter3]
 Name=projectBoardVersion
 Value=0.4
 
+[Parameter3]
+Name=ProjectDesigner
+Value=AWS
+
 [Parameter4]
-Name=projectBoardRevision
-Value=a
+Name=ProjectTitle
+Value=Einsy Rambo
 
 [Configuration1]
 Name=Default Configuration
