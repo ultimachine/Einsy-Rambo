@@ -22,7 +22,7 @@ VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
 TargetPrinter=Virtual Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
 OutputMedium1_Printer=
@@ -117,7 +117,7 @@ Configuration2_Name26=OutputConfigurationParameter26
 Configuration2_Item26=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=DrillDrawing|Polygon=Full|PrintOutIndex=6|Record=PcbPrintLayer
 PcbPrintPreferences2=
 OutputType3=PCB 3D Print
-OutputName3=PCB 3D Print
+OutputName3=PCB 3D Print (top)
 OutputCategory3=Documentation
 OutputDocumentPath3=
 OutputVariantName3=
@@ -130,7 +130,7 @@ OutputEnabled3_OutputMedium5=0
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig=
+Configuration3_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig= 
 OutputType4=Gerber
 OutputName4=Gerber Files
 OutputCategory4=Fabrication
@@ -317,11 +317,41 @@ Configuration12_Name5=SortOrder
 Configuration12_Item5=Designator=Up|Comment=Up|Footprint=Up
 Configuration12_Name6=VisibleOrder
 Configuration12_Item6=Designator=94|DISTRIBUTOR=94|DISTRIBUTOR #=94|Manufacturer=94|MANUFACTURER #=94|PART=94|Quantity=53|DNI=33|Comment=112|Footprint=119|Description=112|Part Description=178|VALUE=95|Tolerance=202|EE_SPEC=202
+OutputType13=PCB 3D Print
+OutputName13=PCB 3D Print (bottom)
+OutputCategory13=Documentation
+OutputDocumentPath13=
+OutputVariantName13=
+OutputEnabled13=0
+OutputEnabled13_OutputMedium1=0
+OutputEnabled13_OutputMedium2=0
+OutputEnabled13_OutputMedium3=0
+OutputEnabled13_OutputMedium4=0
+OutputEnabled13_OutputMedium5=0
+OutputDefault13=0
+PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
+Configuration13_Name1=OutputConfigurationParameter1
+Configuration13_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ViewConfig= 
+OutputType14=PCB 3D Print
+OutputName14=PCB 3D Print (orthogonal)
+OutputCategory14=Documentation
+OutputDocumentPath14=
+OutputVariantName14=
+OutputEnabled14=0
+OutputEnabled14_OutputMedium1=0
+OutputEnabled14_OutputMedium2=0
+OutputEnabled14_OutputMedium3=0
+OutputEnabled14_OutputMedium4=0
+OutputEnabled14_OutputMedium5=0
+OutputDefault14=0
+PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
+Configuration14_Name1=OutputConfigurationParameter1
+Configuration14_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=56525887|ViewY=37318652|LookAtX=29211768|LookAtY=22399208|LookAtZ=0.109222650527954|QuatX=-0.375068038702011|QuatY=0.375068038702011|QuatZ=-0.375068038702011|QuatW=0.760244607925415|Zoom=3.28522046684651E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=True|ViewFromTop=False|ViewConfig= 
 
 [PublishSettings]
-OutputFilePath2=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.3a\Einsy Rambo_projectVersion_VariantName_VarRevNo.PDF
+OutputFilePath2=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.4a\
 ReleaseManaged2=0
-OutputBasePath2=Project Outputs for Einsy_Rambo_0.3a\
+OutputBasePath2=Project Outputs for Einsy_Rambo_0.4a\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=
@@ -411,7 +441,7 @@ OutputFileNameSpecial5=
 OpenOutput5=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.3a\Einsy Rambo_projectVersion_VariantName_VarRevNo.PDF
+RelativeOutputPath2=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.4a\
 OpenOutputs2=0
 RelativeOutputPath3=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.3a\
 OpenOutputs3=1
