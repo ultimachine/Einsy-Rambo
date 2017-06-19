@@ -1,15 +1,14 @@
 Project Outputs Generation Report
 ---------------------------------
-Start Output Generation At 1:45:38 PM On 4/21/2017
+Start Output Generation At 1:16:00 PM On 6/15/2017
 
-Output: Generates pick and place files
-Type  : Pick Place
+Output: Export STEP
+Type  : ExportSTEP
 From  : PCB Document [Mini-Rambo.PcbDoc]
-   Generated File[Einsy Rambo_projectVersion.txt]
-   Generated File[Einsy Rambo_projectVersion.csv]
+   Generated File[Einsy Rambo_projectVersion.step]
 
 
-Files Generated   : 2
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 1:45:47 PM On 4/21/2017
+Finished Output Generation At 1:16:07 PM On 6/15/2017

@@ -40,9 +40,9 @@ OutputName1=Schematic Prints
 OutputCategory1=Documentation
 OutputDocumentPath1=
 OutputVariantName1=
-OutputEnabled1=1
+OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
-OutputEnabled1_OutputMedium2=1
+OutputEnabled1_OutputMedium2=0
 OutputEnabled1_OutputMedium3=0
 OutputEnabled1_OutputMedium4=0
 OutputEnabled1_OutputMedium5=0
@@ -130,7 +130,7 @@ OutputEnabled3_OutputMedium5=0
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig= 
+Configuration3_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig=
 OutputType4=Gerber
 OutputName4=Gerber Files
 OutputCategory4=Fabrication
@@ -182,7 +182,7 @@ OutputVariantName7=
 OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=0
-OutputEnabled7_OutputMedium3=1
+OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=0
 OutputEnabled7_OutputMedium5=0
 OutputDefault7=0
@@ -331,7 +331,7 @@ OutputEnabled13_OutputMedium5=0
 OutputDefault13=0
 PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
 Configuration13_Name1=OutputConfigurationParameter1
-Configuration13_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ViewConfig= 
+Configuration13_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=41400000|ViewY=40900000|LookAtX=34400000|LookAtY=25250000|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.743961352657E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ViewConfig=
 OutputType14=PCB 3D Print
 OutputName14=PCB 3D Print (orthogonal)
 OutputCategory14=Documentation
@@ -346,7 +346,53 @@ OutputEnabled14_OutputMedium5=0
 OutputDefault14=0
 PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
 Configuration14_Name1=OutputConfigurationParameter1
-Configuration14_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=56525887|ViewY=37318652|LookAtX=29211768|LookAtY=22399208|LookAtZ=0.109222650527954|QuatX=-0.375068038702011|QuatY=0.375068038702011|QuatZ=-0.375068038702011|QuatW=0.760244607925415|Zoom=3.28522046684651E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=True|ViewFromTop=False|ViewConfig= 
+Configuration14_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=56525887|ViewY=37318652|LookAtX=29211768|LookAtY=22399208|LookAtZ=0.109222650527954|QuatX=-0.375068038702011|QuatY=0.375068038702011|QuatZ=-0.375068038702011|QuatW=0.760244607925415|Zoom=3.28522046684651E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=True|ViewFromTop=False|ViewConfig=
+OutputType15=ExportSTEP
+OutputName15=Export STEP
+OutputCategory15=Export
+OutputDocumentPath15=Mini-Rambo.PcbDoc
+OutputVariantName15=
+OutputEnabled15=0
+OutputEnabled15_OutputMedium1=0
+OutputEnabled15_OutputMedium2=0
+OutputEnabled15_OutputMedium3=1
+OutputEnabled15_OutputMedium4=0
+OutputEnabled15_OutputMedium5=0
+OutputDefault15=0
+Configuration15_Name1=OutputConfigurationParameter1
+Configuration15_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=True|IncludeElectricalPadHoles=True|IncludeFreePadHoles=True|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=True|IncludeCoverLayer=True
+OutputType16=PCB Print
+OutputName16=Designators
+OutputCategory16=Documentation
+OutputDocumentPath16=Mini-Rambo.PcbDoc
+OutputVariantName16=
+OutputEnabled16=1
+OutputEnabled16_OutputMedium1=0
+OutputEnabled16_OutputMedium2=1
+OutputEnabled16_OutputMedium3=0
+OutputEnabled16_OutputMedium4=0
+OutputEnabled16_OutputMedium5=0
+OutputDefault16=0
+PageOptions16=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration16_Name1=OutputConfigurationParameter1
+Configuration16_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView
+Configuration16_Name2=OutputConfigurationParameter2
+Configuration16_Item2=IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Top Designators|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False
+Configuration16_Name3=OutputConfigurationParameter3
+Configuration16_Item3=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical88|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer
+Configuration16_Name4=OutputConfigurationParameter4
+Configuration16_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical34|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer
+Configuration16_Name5=OutputConfigurationParameter5
+Configuration16_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer
+Configuration16_Name6=OutputConfigurationParameter6
+Configuration16_Item6=IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=1|Mirror=True|Name=Bottom Designators|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False
+Configuration16_Name7=OutputConfigurationParameter7
+Configuration16_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical88|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer
+Configuration16_Name8=OutputConfigurationParameter8
+Configuration16_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer
+Configuration16_Name9=OutputConfigurationParameter9
+Configuration16_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Hidden|CVia=Hidden|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Hidden|FVia=Hidden|Layer=BottomLayer|Polygon=Hidden|PrintOutIndex=1|Record=PcbPrintLayer
+PcbPrintPreferences16=
 
 [PublishSettings]
 OutputFilePath2=C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Project Outputs for Einsy_Rambo_0.4a\

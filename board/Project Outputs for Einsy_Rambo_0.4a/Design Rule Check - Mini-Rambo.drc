@@ -1,36 +1,39 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Mini-Rambo.PcbDoc
-Date     : 6/14/2017
-Time     : 2:12:38 PM
+Date     : 6/19/2017
+Time     : 5:50:47 PM
 
 Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsVia)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Processing Rule : Clearance Constraint (Gap=7mil) (IsVia),(IsVia)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=10mil) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)
 Rule Violations :0
 
-Processing Rule : Short-Circuit Constraint (Allowed=Yes) (InPadClass('NPTH_bot')),(InPadClass('top_smt_bot'))
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InLayerClass('Signal Layers') AND IsTrack)),((InLayerClass('Signal Layers') AND IsTrack))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (InPolygon),(All)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (InPadClass('NPTH_bot')),(InPadClass('top_smt_bot'))
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
@@ -39,13 +42,13 @@ Rule Violations :0
 Processing Rule : Width Constraint (Min=7mil) (Max=250mil) (Preferred=24mil) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=20mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=20mil) (Air Gap=10mil) (Entries=4) (All)
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
@@ -65,4 +68,5 @@ Rule Violations :0
 
 
 Violations Detected : 0
+Waived Violations : 0
 Time Elapsed        : 00:00:07
