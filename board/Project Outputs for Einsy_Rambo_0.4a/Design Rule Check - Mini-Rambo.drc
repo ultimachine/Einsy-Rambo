@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Aaron\Documents\mini_Rambo\Mini-Rambo\board\Mini-Rambo.PcbDoc
-Date     : 6/19/2017
-Time     : 5:50:47 PM
+PCB File : C:\Users\Johnny-x-9c\Documents\Projects\Einsy-Rambo\board\Mini-Rambo.PcbDoc
+Date     : 6/20/2017
+Time     : 2:45:22 PM
 
 Processing Rule : Clearance Constraint (Gap=7mil) (IsPad),(IsPad)
 Rule Violations :0
@@ -68,5 +68,4 @@ Rule Violations :0
 
 
 Violations Detected : 0
-Waived Violations : 0
-Time Elapsed        : 00:00:07
+Time Elapsed        : 00:00:34
