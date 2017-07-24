@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=PWR-IN Pin=C84-1
+Removed Pin From Net: NetName=GND Pin=C84-2
+Removed Pin From Net: NetName=GND Pin=C85-2
+Removed Pin From Net: NetName=GND Pin=D2-A
+Removed Pin From Net: NetName=PWR-IN Pin=FB1-1
+Removed Member From Class: ClassName=Power-SMPS Member=C3
+Removed Member From Class: ClassName=Power-SMPS Member=C84
+Removed Member From Class: ClassName=Power-SMPS Member=C85
+Removed Member From Class: ClassName=Power-SMPS Member=D2
+Removed Member From Class: ClassName=Power-SMPS Member=F1
+Removed Member From Class: ClassName=Power-SMPS Member=FB1

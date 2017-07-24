@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=VMOT Pin=C3-1
+Removed Pin From Net: NetName=VMOT Pin=D2-C
+Removed Pin From Net: NetName=VMOT Pin=F1-2
+Removed Pin From Net: NetName=VMOT Pin=F1-2
+Added Pin To Net: NetName=VMOT Pin=C30-1
+Added Pin To Net: NetName=VMOT Pin=C35-1
+Added Pin To Net: NetName=VMOT Pin=C60-1
+Added Pin To Net: NetName=VMOT Pin=C103-1
+Added Pin To Net: NetName=VMOT Pin=D6-C
+Added Pin To Net: NetName=VMOT Pin=D8-C
+Added Pin To Net: NetName=VMOT Pin=F2-2
+Added Pin To Net: NetName=VMOT Pin=F2-2
+Added Pin To Net: NetName=VMOT Pin=J4-2
+Added Pin To Net: NetName=VMOT Pin=J5-2
+Added Pin To Net: NetName=VMOT Pin=J19-7
+Added Pin To Net: NetName=VMOT Pin=J19-8
+Added Pin To Net: NetName=VMOT Pin=R3-2
+Added Pin To Net: NetName=VMOT Pin=R9-1
+Added Pin To Net: NetName=VMOT Pin=R16-1
+Added Pin To Net: NetName=VMOT Pin=R40-1
+Added Pin To Net: NetName=VMOT Pin=R66-2
+Added Pin To Net: NetName=VMOT Pin=TP3-TP
+Added Pin To Net: NetName=VMOT Pin=TP33-TP
+Added Pin To Net: NetName=VMOT Pin=U3-1
+Added Pin To Net: NetName=VMOT Pin=X13-1
+Change Net Name : Old Net Name=VMOT New Net Name=+12V2
+Added Pin To Net: NetName=VMOT Pin=C3-1
+Added Pin To Net: NetName=VMOT Pin=D2-C
+Added Pin To Net: NetName=VMOT Pin=F1-2
+Added Pin To Net: NetName=VMOT Pin=F1-2
+Added Net: Name=VMOT

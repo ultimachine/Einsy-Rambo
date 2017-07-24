@@ -1,0 +1,98 @@
+Removed Pin From Net: NetName=NetC97_1 Pin=J8-1
+Removed Pin From Net: NetName=NetC98_1 Pin=J8-2
+Removed Pin From Net: NetName=NetC100_1 Pin=J8-3
+Removed Pin From Net: NetName=NetC101_1 Pin=J8-4
+Change Component Comment : Designator=R17 Old Comment=0.1r New Comment=0.22R
+Change Component Comment : Designator=R18 Old Comment=0.1r New Comment=0.22R
+Change component parameters: Designator = "R17"; Footprint = "R1206"; UniqueID = "\JJGJGPIQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "DISTRIBUTOR"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DISTRIBUTOR #"; Value = "P17624TR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DNI"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "EE_SPEC"; Value = "0.22R 1% 1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANUFACTURER #"; Value = "ERJ-8BQFR22V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ManufacturerPartNumber2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PART"; Value = "0.22R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Description"; Value = "0.22 Ohm ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "0.22R"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R18"; Footprint = "R1206"; UniqueID = "\SNOQLDIX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "DISTRIBUTOR"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DISTRIBUTOR #"; Value = "P17624TR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DNI"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "EE_SPEC"; Value = "0.22R 1% 1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANUFACTURER #"; Value = "ERJ-8BQFR22V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ManufacturerPartNumber2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PART"; Value = "0.22R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Description"; Value = "0.22 Ohm ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense Thick Film"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "+/- 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "0.22R"; VariantName = "[No Variations]"
+Added Component: Designator=FB1(FB0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DISTRIBUTOR"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DISTRIBUTOR #"; Value = "1276-6351-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DNI"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EE_SPEC"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER #"; Value = "CIS10P121AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART"; Value = "FERRITE 120R 3A 0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART DESCRIPTION"; Value = "FERRITE BEAD 120 OHM 0603 1LN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TOLERANCE"; Value = "-NA-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "120Rfb"; VariantName = "[No Variations]"
+Added Component: Designator=FB6(FB0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DISTRIBUTOR"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DISTRIBUTOR #"; Value = "1276-6351-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DNI"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EE_SPEC"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER #"; Value = "CIS10P121AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART"; Value = "FERRITE 120R 3A 0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART DESCRIPTION"; Value = "FERRITE BEAD 120 OHM 0603 1LN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TOLERANCE"; Value = "-NA-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "120Rfb"; VariantName = "[No Variations]"
+Added Component: Designator=FB7(FB0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DISTRIBUTOR"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DISTRIBUTOR #"; Value = "1276-6351-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DNI"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EE_SPEC"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER #"; Value = "CIS10P121AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART"; Value = "FERRITE 120R 3A 0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART DESCRIPTION"; Value = "FERRITE BEAD 120 OHM 0603 1LN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TOLERANCE"; Value = "-NA-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "120Rfb"; VariantName = "[No Variations]"
+Added Component: Designator=FB8(FB0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DISTRIBUTOR"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DISTRIBUTOR #"; Value = "1276-6351-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DNI"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EE_SPEC"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "Samsung"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER #"; Value = "CIS10P121AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART"; Value = "FERRITE 120R 3A 0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART DESCRIPTION"; Value = "FERRITE BEAD 120 OHM 0603 1LN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TOLERANCE"; Value = "-NA-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "120Rfb"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC97_1 Pin=FB1-1
+Added Pin To Net: NetName=NetC98_1 Pin=FB6-1
+Added Pin To Net: NetName=NetC100_1 Pin=FB7-1
+Added Pin To Net: NetName=NetC101_1 Pin=FB8-1
+Added Pin To Net: NetName=NetFB1_2 Pin=FB1-2
+Added Pin To Net: NetName=NetFB1_2 Pin=J8-1
+Added Net: Name=NetFB1_2
+Added Pin To Net: NetName=NetFB6_2 Pin=FB6-2
+Added Pin To Net: NetName=NetFB6_2 Pin=J8-2
+Added Net: Name=NetFB6_2
+Added Pin To Net: NetName=NetFB7_2 Pin=FB7-2
+Added Pin To Net: NetName=NetFB7_2 Pin=J8-3
+Added Net: Name=NetFB7_2
+Added Pin To Net: NetName=NetFB8_2 Pin=FB8-2
+Added Pin To Net: NetName=NetFB8_2 Pin=J8-4
+Added Net: Name=NetFB8_2
