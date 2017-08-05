@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\Johnny-x-9c\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo_Panels\Einsy_Rambo_Panel.PcbDoc
+DRC Rules Export File for PCB: C:\Users\domotechinc\Documents\Einsy\Einsy-Rambo\board\Einsy_Rambo_Panels\Einsy_Rambo_Panel.PcbDoc
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
 RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00

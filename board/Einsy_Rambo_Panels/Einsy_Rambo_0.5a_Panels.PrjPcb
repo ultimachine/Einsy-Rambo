@@ -73,7 +73,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HSKGHGQI
 
 [Document3]
-DocumentPath=Einsy_0.5a_panel.Cam
+DocumentPath=Einsy_Rambo_0.5a_panel.cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -138,46 +138,62 @@ DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GP1
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GM30
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTL
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GM31
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTO
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GM32
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTP
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTS
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.LDP
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.REP
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.RUL
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.TXT
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Outputs for Einsy_Rambo_0.5a\Pick Place for Einsy_Rambo_Panel.csv
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.REP
 DItemRevisionGUID=
 
 [GeneratedDocument23]
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Einsy_Rambo_Panel.xls
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Outputs for Einsy_Rambo_0.5a\Pick Place for Einsy_Rambo_Panel.csv
+DItemRevisionGUID=
+
+[GeneratedDocument27]
 DocumentPath=Outputs for Einsy_Rambo_0.5a\Pick Place for Einsy_Rambo_Panel.txt
 DItemRevisionGUID=
 
@@ -206,7 +222,7 @@ ConfigurationType=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=PCADNetlist
 OutputName1=PCAD Netlist
@@ -327,7 +343,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -464,7 +480,7 @@ PageOptions20=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -486,7 +502,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=NC Drill
 OutputName1=NC Drill Files
@@ -614,7 +630,7 @@ Configuration12_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLaye
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -651,7 +667,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -831,7 +847,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Configuration compliance
 OutputName1=Environment configuration compliance check
@@ -870,7 +886,7 @@ OutputDefault6=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Brother DCP-7065DN Printer
+TargetPrinter=PDF-XChange 4.0
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB

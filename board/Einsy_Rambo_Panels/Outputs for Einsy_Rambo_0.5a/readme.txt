@@ -14,8 +14,8 @@ Mask type              See special requirement below
 Mask color             Orange -See special requirement below
 Silk screen color      Black -See special requirement below
 Silk screen Sides      BOTH 
-Min trace width        0.007"
-Min clearance          0.007"
+Min trace width        0.006"
+Min clearance          0.008"
 Min Hole Diameter >=   10mil
 Gold Edge Connectors   No
 Internal slots/routes  0
@@ -57,8 +57,10 @@ Bottom Silk Screen            Einsy_Rambo_Panel.GBO
 NC Drill File                 Einsy_Rambo_Panel.TXT
 Board Dimensions              Einsy_Rambo_Panel.GM8
 Panel Dimensions              Einsy_Rambo_Panel.GM30
-Board Outline	     		  Einsy_Rambo_Panel.GM1
+Panel                         Einsy_Rambo_Panel.GM1
 Fabrication Notes             Einsy_Rambo_Panel.GM2
+UL Logo Placement             Einsy_Rambo_Panel.GM29
+Panel Dimension               Einsy_Rambo_Panel.GM30
 V-Score                       Einsy_Rambo_Panel.GM31
 Panel Outline                 Einsy_Rambo_Panel.GM32
 IPC-D-356 Netlist             Einsy_Rambo_Panel IPC-D-356.net

@@ -1,11 +1,10 @@
-Output: Generates pick and place files
-Type  : Pick Place
+Output: Report Board Stack
+Type  : Report Board Stack
 From  : PCB Document [Einsy_Rambo_Panel.PcbDoc]
-   Generated File[Pick Place for Einsy_Rambo_Panel.txt]
-   Generated File[Pick Place for Einsy_Rambo_Panel.csv]
+   Generated File[Einsy_Rambo_Panel.xls]
 
 
-Files Generated   : 2
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 12:16:19 PM On 7/28/2017
+Finished Output Generation At 11:16:23 PM On 8/4/2017
