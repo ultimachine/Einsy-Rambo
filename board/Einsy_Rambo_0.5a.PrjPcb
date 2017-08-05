@@ -325,7 +325,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=VCXGCORV
+DocumentUniqueId=
 
 [Document18]
 DocumentPath=..\..\..\Libs\Einsy_Rambo_0.4a.SCHLIB
@@ -376,7 +376,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XDYXITFL
 
 [Document21]
 DocumentPath=..\..\..\Libs\ICs-Analog.SchLib
@@ -495,7 +495,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DJAQHSFP
 
 [Document28]
 DocumentPath=..\..\..\Libs\Inductors.SchLib
@@ -512,7 +512,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=GNJXXAII
+DocumentUniqueId=
 
 [Document29]
 DocumentPath=..\..\..\Libs\LEDs.SchLib
@@ -580,7 +580,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=GBJQHBEA
+DocumentUniqueId=
 
 [Document33]
 DocumentPath=..\..\..\Libs\Switches.PcbLib
@@ -649,6 +649,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Einsy_Rambo_0.5a\Design Rule Check - Einsy_Rambo.html
+DItemRevisionGUID=
 
 [SearchPath1]
 Path=*.*
