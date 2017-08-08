@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Einsy_Rambo_Panel.PcbDoc   8/8/2017  1:22:02 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top to Bottom
+ASCII RoundHoles File : Einsy_Rambo_Panel.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.254mm)                                           Round             1929      PTH        224.79inch (5709.66mm)
+T2      15mil (0.381mm)                                           Round             942       PTH        145.26inch (3689.51mm)
+T3      35mil (0.899mm)                                           Round             90        PTH        16.12inch (409.46mm)
+T4      38mil (0.965mm)                                           Round             30        PTH        7.96inch (202.09mm)
+T5      40mil (1.016mm)                                           Round             141       PTH        44.03inch (1118.24mm)
+T6      55mil (1.397mm)                                           Round             6         PTH        6.20inch (157.44mm)
+T7      59mil (1.499mm)                                           Round             6         PTH        5.87inch (149.21mm)
+T8      60mil (1.524mm)                                           Round             18        PTH        7.22inch (183.48mm)
+T9      63mil (1.6mm)                                             Round             36        PTH        10.71inch (271.94mm)
+T10     87mil (2.21mm)                                            Round             6         PTH        6.07inch (154.22mm)
+T11     50mil (1.28mm)                                            Round             42        NPTH       9.30inch (236.18mm)
+T12     118mil (3mm)                                              Round             16        NPTH       32.91inch (835.98mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              3262
+
+Total Processing Time (hh:mm:ss) : 00:00:03
