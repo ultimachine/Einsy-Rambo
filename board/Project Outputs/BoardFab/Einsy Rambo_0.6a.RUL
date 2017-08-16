@@ -1,0 +1,11 @@
+DRC Rules Export File for PCB: C:\Users\Johnny-x-9c\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc
+RuleKind=Clearance|RuleName=fiducial|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=Clearance_1|Scope=Board|Minimum=8.00
+RuleKind=ShortCircuit|RuleName=bot_entry_header|Scope=Board|Allowed=1
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Polygon Clearance|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_Via|Scope=Board|Minimum=-15.00
+RuleKind=Clearance|RuleName=Internal Layer Polygon|Scope=Board|Minimum=12.00

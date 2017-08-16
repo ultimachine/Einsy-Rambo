@@ -1,0 +1,10 @@
+Output: BOM-Grouped
+Type  : BOM
+From  : Project [Einsy_Rambo_0.5a.PrjPcb]
+   Generated File[BOM-Grouped_Einsy Rambo_0.6a.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:49:32 AM On 8/16/2017

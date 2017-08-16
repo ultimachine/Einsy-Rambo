@@ -1,0 +1,10 @@
+Output: Report Board Stack
+Type  : Report Board Stack
+From  : PCB Document [Einsy_Rambo.PcbDoc]
+   Generated File[Einsy Rambo_0.6a.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:48:34 AM On 8/16/2017
