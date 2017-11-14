@@ -260,19 +260,15 @@ GenerateClassCluster=0
 DocumentUniqueId=VFWRVFAW
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_0.6a.xlsx
+DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_1.1a.xls
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Einsy_Rambo_0.5a\Design Rule Check - Einsy_Rambo.html
+DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_0.6a.csv
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_0.6a.txt
+DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.1a.txt
 DItemRevisionGUID=
 
 [SearchPath1]
@@ -285,7 +281,7 @@ Value=a
 
 [Parameter2]
 Name=projectBoardVersion
-Value=1.0
+Value=1.1
 
 [Parameter3]
 Name=ProjectDesigner
@@ -1753,46 +1749,6 @@ OutputName9=Specctra Design PCB
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=Ansoft Neutral
-OutputName10=Ansoft Neutral (AutoPCB)
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=HyperLynx
-OutputName11=HyperLynx (AutoPCB)
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=Orcad SDT Schematic
-OutputName12=Orcad SDT Schematic (AutoSCH)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=Orcad v7 Capture Design
-OutputName13=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=P-CAD ASCII
-OutputName14=P-CAD ASCII (AutoPCB)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD V16 Schematic Design
-OutputName15=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=Protel PCB 2.8 ASCII
-OutputName16=Protel PCB 2.8 ASCII (AutoPCB)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
