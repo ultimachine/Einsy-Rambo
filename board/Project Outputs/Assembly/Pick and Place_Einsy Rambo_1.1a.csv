@@ -1,16 +1,17 @@
 Altium Designer Pick and Place Locations
-C:\Users\Aaron\Documents\Einsy-Rambo\Einsy-Rambo\board\Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
+C:\Users\Johnny-x-9c\Documents\Projects\Einsy-Rambo - 1.1a\board\Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
 
 ========================================================================================================================
 File Design Information:
 
-Date:       14/11/17
-Time:       15:18
+Date:       15/11/17
+Time:       02:36
 Revision:   Not in VersionControl
 Variant:    No variations
 Units used: mm
 
 "Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description","Ref-X(mm)","Ref-Y(mm)"
+"P4","RJ45 SMT","BottomLayer","RJ45_SMT","12.3850","-10.8750","90","RJCSE538001","17.3750","-10.8750"
 "R84","10K","TopLayer","R0402","27.9534","-27.0774","360","RES SMD 10K OHM 1% 1/16W 0402","27.9521","-27.0774"
 "D2","SMAJ28A","TopLayer","SMA-SM","49.5155","-53.4524","180","TVS DIODE 28VWM 45.4VC SMA","49.5188","-53.4524"
 "C85","100nF","TopLayer","C0603","70.9104","-51.7716","90","CAP CER 0603 100nF 50V 10% X7R","70.9104","-51.7716"
@@ -72,7 +73,7 @@ Units used: mm
 "FB33","120R","TopLayer","R0402","25.6222","-7.2187","90","FERRITE BEAD 120 OHM 0402 1LN","25.6222","-7.2200"
 "FB24","120R","TopLayer","R0402","34.7421","-5.4928","360","FERRITE BEAD 120 OHM 0402 1LN","34.7408","-5.4928"
 "FB32","120R","TopLayer","R0402","6.0973","-3.9370","360","FERRITE BEAD 120 OHM 0402 1LN","6.0960","-3.9370"
-"FB31","120R","TopLayer","R0402","8.9513","-4.5000","360","FERRITE BEAD 120 OHM 0402 1LN","8.9500","-4.5000"
+"FB31","120R","TopLayer","R0402","9.3513","-4.7750","360","FERRITE BEAD 120 OHM 0402 1LN","9.3500","-4.7750"
 "FB30","120R","TopLayer","R0402","8.1965","-6.0008","180","FERRITE BEAD 120 OHM 0402 1LN","8.1978","-6.0008"
 "FB29","120R","TopLayer","R0402","10.1803","-6.0262","360","FERRITE BEAD 120 OHM 0402 1LN","10.1790","-6.0262"
 "FB27","120R","TopLayer","R0402","16.9741","-5.6759","225","FERRITE BEAD 120 OHM 0402 1LN","16.9750","-5.6750"
@@ -288,7 +289,7 @@ Units used: mm
 "J13","CONN 2PIN VERT 0.1" SHRD LOCKING","TopLayer","70543-02","-8.6868","8.8900","180","Connector 2pos","-8.6868","8.8900"
 "J14","CONN 2PIN VERT 0.1" SHRD LOCKING","TopLayer","70543-02","-0.5334","8.8900","180","Connector 2pos","-0.5334","8.8900"
 "J15","Molex 0705430003","TopLayer","4POL254","10.0826","8.9008","180","Molex 4 Pin Clip Connector","10.0826","8.9008"
-"R67","100R","TopLayer","R0402","32.2529","-5.5436","360","RES SMD 100 OHM 1% 1/16W 0402","32.2516","-5.5436"
+"R67","100R","TopLayer","R0402","18.9750","-8.4987","90","RES SMD 100 OHM 1% 1/16W 0402","18.9750","-8.5000"
 "R74","100R","TopLayer","R0402","-0.7620","-4.8501","90","RES SMD 100 OHM 1% 1/16W 0402","-0.7620","-4.8514"
 "R75","100R","TopLayer","R0402","2.6670","-4.9771","90","RES SMD 100 OHM 1% 1/16W 0402","2.6670","-4.9784"
 "R76","100R","TopLayer","R0402","4.1415","-4.9276","360","RES SMD 100 OHM 1% 1/16W 0402","4.1402","-4.9276"

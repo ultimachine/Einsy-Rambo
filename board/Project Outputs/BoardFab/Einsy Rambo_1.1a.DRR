@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: Einsy_Rambo.PcbDoc   11/14/2017  3:24:23 PM
+NCDrill File Report For: Einsy_Rambo.PcbDoc   11/15/2017  2:35:59 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top to Bottom
@@ -7,7 +7,7 @@ ASCII RoundHoles File : Einsy Rambo_1.1a.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.254mm (10mil)                                           Round             641       PTH        1928.34mm (75.92inch)
+T1      0.254mm (10mil)                                           Round             644       PTH        1927.55mm (75.89inch)
 T2      0.381mm (15mil)                                           Round             314       PTH        1207.35mm (47.53inch)
 T3      0.9mm (35mil)                                             Round             30        PTH        91.26mm (3.59inch)
 T4      0.965mm (38mil)                                           Round             10        PTH        34.55mm (1.36inch)
@@ -20,6 +20,6 @@ T10     2.21mm (87mil)                                            Round         
 T11     1.28mm (50mil)                                            Round             14        NPTH       33.02mm (1.30inch)
 T12     3mm (118mil)                                              Round             4         NPTH       302.90mm (11.93inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              1084
+Totals                                                                              1087
 
 Total Processing Time (hh:mm:ss) : 00:00:01
