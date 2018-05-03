@@ -17,7 +17,7 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=Einsy_Rambo_panel.OutJob
 Description=
-TargetOutputMedium=BoardFab
+TargetOutputMedium=Paste Stencils
 VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
@@ -37,6 +37,8 @@ OutputMedium5=PCB print components
 OutputMedium5_Type=Publish
 OutputMedium6=BOM
 OutputMedium6_Type=GeneratedFiles
+OutputMedium7=Paste Stencils
+OutputMedium7_Type=GeneratedFiles
 OutputType1=PCB Print
 OutputName1=PCB Prints
 OutputCategory1=Documentation
@@ -49,6 +51,7 @@ OutputEnabled1_OutputMedium3=0
 OutputEnabled1_OutputMedium4=0
 OutputEnabled1_OutputMedium5=0
 OutputEnabled1_OutputMedium6=0
+OutputEnabled1_OutputMedium7=0
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.85|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration1_Name1=OutputConfigurationParameter1
@@ -94,6 +97,7 @@ OutputEnabled2_OutputMedium3=0
 OutputEnabled2_OutputMedium4=0
 OutputEnabled2_OutputMedium5=1
 OutputEnabled2_OutputMedium6=0
+OutputEnabled2_OutputMedium7=0
 OutputDefault2=0
 PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
 Configuration2_Name1=OutputConfigurationParameter1
@@ -103,13 +107,14 @@ OutputName3=Gerber Files
 OutputCategory3=Fabrication
 OutputDocumentPath3=
 OutputVariantName3=
-OutputEnabled3=1
+OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
 OutputEnabled3_OutputMedium2=0
 OutputEnabled3_OutputMedium3=2
 OutputEnabled3_OutputMedium4=0
 OutputEnabled3_OutputMedium5=0
 OutputEnabled3_OutputMedium6=0
+OutputEnabled3_OutputMedium7=0
 OutputDefault3=0
 Configuration3_Name1=OutputConfigurationParameter1
 Configuration3_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=True|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842753~1,16777219~1,16777218~1,16777220~1,16842751~1,16973835~1,16973831~1,16908289~1,16908317~1,16908318~1,16908319~1,16908320~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False
@@ -118,13 +123,14 @@ OutputName4=NC Drill Files
 OutputCategory4=Fabrication
 OutputDocumentPath4=
 OutputVariantName4=
-OutputEnabled4=1
+OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
 OutputEnabled4_OutputMedium3=1
 OutputEnabled4_OutputMedium4=0
 OutputEnabled4_OutputMedium5=0
 OutputEnabled4_OutputMedium6=0
+OutputEnabled4_OutputMedium7=0
 OutputDefault4=0
 Configuration4_Name1=OutputConfigurationParameter1
 Configuration4_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=4|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressLeadingZeroes
@@ -140,6 +146,7 @@ OutputEnabled5_OutputMedium3=0
 OutputEnabled5_OutputMedium4=0
 OutputEnabled5_OutputMedium5=0
 OutputEnabled5_OutputMedium6=0
+OutputEnabled5_OutputMedium7=0
 OutputDefault5=0
 PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration5_Name1=OutputConfigurationParameter1
@@ -149,16 +156,33 @@ OutputName6=Generates pick and place files
 OutputCategory6=Assembly
 OutputDocumentPath6=
 OutputVariantName6=
-OutputEnabled6=1
+OutputEnabled6=0
 OutputEnabled6_OutputMedium1=0
 OutputEnabled6_OutputMedium2=0
 OutputEnabled6_OutputMedium3=3
 OutputEnabled6_OutputMedium4=0
 OutputEnabled6_OutputMedium5=0
 OutputEnabled6_OutputMedium6=0
+OutputEnabled6_OutputMedium7=0
 OutputDefault6=0
 Configuration6_Name1=OutputConfigurationParameter1
 Configuration6_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=True|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|Filter= |FilterActive=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15
+OutputType7=Gerber
+OutputName7=Paste gerbers
+OutputCategory7=Fabrication
+OutputDocumentPath7=
+OutputVariantName7=
+OutputEnabled7=1
+OutputEnabled7_OutputMedium1=0
+OutputEnabled7_OutputMedium2=0
+OutputEnabled7_OutputMedium3=4
+OutputEnabled7_OutputMedium4=0
+OutputEnabled7_OutputMedium5=0
+OutputEnabled7_OutputMedium6=0
+OutputEnabled7_OutputMedium7=1
+OutputDefault7=0
+Configuration7_Name1=OutputConfigurationParameter1
+Configuration7_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=True|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973832~1,16973833~1|PlotDrillDrawingLayerPair0_BackDrill=False|PlotDrillDrawingLayerPair0_HighLayer=Top Layer|PlotDrillDrawingLayerPair0_LowLayer=Bottom Layer|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False
 
 [PublishSettings]
 OutputFilePath2=C:\Users\johnny\Documents\GitHub\ambit\New folder\PCB-Rev2\ProjectOutputsForAMBIT\ProjectTitle_projectVersion_VariantName_VarRevNo.PDF
@@ -278,6 +302,19 @@ OutputFileNameMulti6==ProjectTitle+_+projectVersion
 UseOutputNameForMulti6=0
 OutputFileNameSpecial6=
 OpenOutput6=1
+OutputFilePath7=C:\Users\Aaron\Documents\Einsy-Rambo\Einsy-Rambo\board\Einsy_Rambo_Panels\Outputs for Einsy_Rambo_Panel\PIN-IN-PASTE\
+ReleaseManaged7=0
+OutputBasePath7=Outputs for Einsy_Rambo_Panel\PIN-IN-PASTE\
+OutputPathMedia7=
+OutputPathMediaValue7=
+OutputPathOutputer7=
+OutputPathOutputerPrefix7=
+OutputPathOutputerValue7=
+OutputFileName7=
+OutputFileNameMulti7=
+UseOutputNameForMulti7=1
+OutputFileNameSpecial7=
+OpenOutput7=1
 
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\Users\johnny\Documents\GitHub\ambit\New folder\PCB-Rev2\ProjectOutputsForAMBIT\ProjectTitle_projectVersion_VariantName_VarRevNo.PDF
@@ -306,4 +343,14 @@ OpenGerberOutput6=0
 OpenNCDrillOutput6=0
 OpenIPCOutput6=0
 EnableReload6=0
+RelativeOutputPath7=C:\Users\Aaron\Documents\Einsy-Rambo\Einsy-Rambo\board\Einsy_Rambo_Panels\Outputs for Einsy_Rambo_Panel\PIN-IN-PASTE\
+OpenOutputs7=1
+AddToProject7=1
+TimestampFolder7=0
+UseOutputName7=0
+OpenODBOutput7=0
+OpenGerberOutput7=0
+OpenNCDrillOutput7=0
+OpenIPCOutput7=0
+EnableReload7=0
 
