@@ -1,0 +1,19 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 10:38:44 PM On 5/6/2018
+
+Output: Paste gerbers
+Type  : Gerber
+From  : PCB Document [Einsy_Rambo_Panel.PcbDoc]
+   Generated File[Einsy_Rambo_Panel.GTP]
+   Generated File[Einsy_Rambo_Panel.GBP]
+   Generated File[Einsy_Rambo_Panel.GD1]
+   Generated File[Einsy_Rambo_Panel.RUL]
+   Generated File[Einsy_Rambo_Panel.EXTREP]
+   Generated File[Einsy_Rambo_Panel.REP]
+
+
+Files Generated   : 6
+Documents Printed : 0
+
+Finished Output Generation At 10:39:02 PM On 5/6/2018

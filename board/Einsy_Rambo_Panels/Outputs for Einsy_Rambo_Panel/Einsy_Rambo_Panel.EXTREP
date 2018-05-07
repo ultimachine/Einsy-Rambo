@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Einsy_Rambo_Panel.GBR   11/15/2017  2:38:20 AM
+Gerber File Extension Report For: Einsy_Rambo_Panel.GBR   5/6/2018  10:41:04 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -16,6 +16,7 @@ Layer Extension     Layer Description
 .GTP                Top Paste                               
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
 .GM1                Dimension                               
 .GM29               UL                                      
