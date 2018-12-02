@@ -71,7 +71,6 @@ IPC-D-356 Netlist             Einsy_Rambo_Panel IPC-D-356.net
 Stackup                       Stack up.jpg
 
 Contact Information
-Address
 Company        UltiMachine
 Address        200 12th St. N.
 City           South Pittsburg
@@ -80,18 +79,3 @@ PostCode       37380
 Country        USA
 Email          info@ultimachine.com
 Phone          423-228-0005
-
-Purchasing contact:
-Lee Turner - lee@ultimachine.com
-
-Technical contacts:
-Aaron Shepard - aaron@ultimachine.com 
-Johnny Russell - johnny@ultimachine.com
-
-
-Please quote quantities / lead time:
-48 pieces = 16 panels - Rush
-1002 pcs = 334 panels - 3 weeks
-1002 pcs = 334 panels - 4 weeks
-2004 pcs = 668 panels
-4008 pcs = 1336 panels
