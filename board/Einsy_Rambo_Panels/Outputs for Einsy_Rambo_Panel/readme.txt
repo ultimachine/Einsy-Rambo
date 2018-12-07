@@ -1,8 +1,8 @@
-Readme File for Printed Circuit Board 'Einsy_Rambo_1.1a'
+Readme File for Printed Circuit Board 'Einsy_Rambo_1.2a'
 
 Board Specification
 Part Number            Einsy_Rambo
-Revision               1.1a
+Revision               1.2a
 Board size             105 x 71mm
 Board Thickness        1.524mm (0.06")
 Board type             Rigid

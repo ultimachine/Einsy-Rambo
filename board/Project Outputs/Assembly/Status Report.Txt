@@ -1,10 +1,10 @@
-Output: BOM-Grouped
-Type  : BOM
-From  : Project [Einsy_Rambo.PrjPcb]
-   Generated File[BOM-Grouped_Einsy Rambo_1.2a.xls]
+Output: Export STEP
+Type  : ExportSTEP
+From  : PCB Document [Einsy_Rambo.PcbDoc]
+   Generated File[Export STEP_Einsy Rambo_1.2a.step]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 9:15:51 AM On 12/6/2018
+Finished Output Generation At 9:12:25 PM On 12/6/2018
