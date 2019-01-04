@@ -167,14 +167,6 @@ DItemRevisionGUID=
 DocumentPath=Outputs for Einsy_Rambo_Panel\Einsy_Rambo_Panel.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument25]
-DocumentPath=Outputs for Einsy_Rambo_Panel\Pick Place for Einsy_Rambo_Panel.csv
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Outputs for Einsy_Rambo_Panel\Pick Place for Einsy_Rambo_Panel.txt
-DItemRevisionGUID=
-
 [Parameter1]
 Name=ProjectDesigner
 Value=UltiMachine
@@ -841,36 +833,6 @@ OutputName9=Specctra Design PCB
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=Ansoft Neutral
-OutputName10=Ansoft Neutral (AutoPCB)
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=HyperLynx
-OutputName11=HyperLynx (AutoPCB)
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=Orcad v7 Capture Design
-OutputName12=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=P-CAD ASCII
-OutputName13=P-CAD ASCII (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=P-CAD V16 Schematic Design
-OutputName14=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=SiSoft
-OutputName15=SiSoft (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
