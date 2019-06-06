@@ -414,6 +414,30 @@ Configuration17_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Ful
 Configuration17_Name7=OutputConfigurationParameter7
 Configuration17_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer
 PcbPrintPreferences17=
+OutputType18=BOM_PartType
+OutputName18=BOMwCentroid
+OutputCategory18=Report
+OutputDocumentPath18=
+OutputVariantName18=
+OutputEnabled18=0
+OutputEnabled18_OutputMedium1=0
+OutputEnabled18_OutputMedium2=0
+OutputEnabled18_OutputMedium3=0
+OutputEnabled18_OutputMedium4=0
+OutputDefault18=0
+PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration18_Name1=ColumnNameFormat
+Configuration18_Item1=CaptionAsName
+Configuration18_Name2=General
+Configuration18_Item2=OpenExported=True|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=True|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=0|FormWidth=1541|FormHeight=660|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=1|UseDirectApi=False|BomSetName=
+Configuration18_Name3=GroupOrder
+Configuration18_Item3=LibRef=True|Comment=True|Footprint=True
+Configuration18_Name4=SortOrder
+Configuration18_Item4=Designator=Up|Comment=Up|Footprint=Up
+Configuration18_Name5=VisibleOrder
+Configuration18_Item5=Quantity=79|Designator=134|Center-X(Mil)=100|Center-Y(Mil)=100|Rotation=100|Description=134|Comment=134|Footprint=134|MANUFACTURER #=100|LibRef=135
+Configuration18_Name6=VisibleOrder_Flat
+Configuration18_Item6=Quantity=79|Designator=134|Center-X(Mil)=100|Center-Y(Mil)=100|Rotation=100|Description=134|Comment=134|Footprint=134|MANUFACTURER #=100|LibRef=135
 
 [PublishSettings]
 OutputFilePath2=C:\Users\Johnny\Documents\Projects\Einsy-Rambo\board\Project Outputs\
