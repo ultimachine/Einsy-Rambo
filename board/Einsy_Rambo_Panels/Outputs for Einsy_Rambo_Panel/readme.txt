@@ -1,8 +1,8 @@
-Readme File for Printed Circuit Board 'Einsy_Rambo_1.2b'
+Readme File for Printed Circuit Board 'Einsy_Rambo_1.2c'
 
 Board Specification
 Part Number            Einsy_Rambo
-Revision               1.2b
+Revision               1.2c
 Board size             105 x 71mm
 Board Thickness        1.524mm (0.06")
 Board type             Rigid
@@ -32,7 +32,10 @@ Special Requirements
 2. The PCB must be lead free assembly process compatible.
   Must handle minimum 6 cycles - 260C for 10 seconds.
 3. Please ship panels including rails with tooling holes and fiducials in gerber files.
-4.UL LOGO + ID and ROHS logo to be placed on solder side (bottom silk screen) by board fab in regions .
+4.UL LOGO + ID and ROHS logo to be placed on solder side (bottom silk screen) by board fab in 
+    regions in Einsy_Rambo_Panel.GM29.
+  Do not add any marking to bottom areas marked in GM9. We require this area blank for production 
+    laser marking.
 5. We wish to have an orange soldermask with a black soldermask on top. Print soldermask Orange as 
   provided. Print silk screen layer Einsy_Rambo_Panel.GTO INVERTED (negative) in black.
   The end result should be a black surface with orange silkscreen legend showing from beneath. 
