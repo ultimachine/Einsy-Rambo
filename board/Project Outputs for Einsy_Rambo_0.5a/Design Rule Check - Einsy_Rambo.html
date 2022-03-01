@@ -1,0 +1,444 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2/28/2022</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7:58:52 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc" class="file"><acronym title="D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc">D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">14</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">6</td></tr>
+</table>
+</td>
+</table><a name="IDEUBRJEDM5NWBCPBXLDUYXBBRWOU0HEFQRG2SHVGYCMDK4EQK5C2K"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID052XVB2X1H1TPU0VHA4S5ISERESOTKWGSAUGCDL2LBOUVIYYDYB">Unplated multi-layer pad(s) detected</a></td>
+<td class="column2">14</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">14</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRAOEXUI5CMXYK0KJCVSPFPIIDDI4DYHGZCI0YVOYX342BVO3NRIC">Clearance Constraint (Gap=7mil) (InComponentClass('Fiducials')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNMS0RZJBMG0XIXR0IQDQDO3HOPOWYMNMMZIK44FULFEZ05ELJMZL">Clearance Constraint (Gap=7mil) (InComponent('U3')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2N53JOZT0Y5PHOZJXL4PDZDBUC10EX0TFQPREAPIJOQM1CPKQY4E">Clearance Constraint (Gap=10mil) ((OnLayer('Signal Layer 1') OR OnLayer('Supply') OR OnLayer('Signal Layer 2'))),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRRVKHOHLDVJ4GZRVMJC1DTHYIPYMUHDB1G4ZR4LTKYF4K155IUBE">Clearance Constraint (Gap=8mil) (InPolygon),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQZAHANQVELXGKSWJIX1YJ4F4YC1XQPSDQU03XHN25M2ZBEUZNVFJ">Clearance Constraint (Gap=8mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYJFKD3RKBMB3EWIXRXLRIS3L5NDQX3KJP5RDVHEUU5FCLUYLGQG">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCXCRY54FCSO4LPMKFRLZFYWHBMDWVKGUUGXCRREVRQKLYUQ5PPFM">Short-Circuit Constraint (Allowed=Yes) (InPadClass('NPTH_bot')),(InPadClass('top_smt_bot'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID510MFYIJSA1TJSKO2ALD1JHVSMRJJXGKZXZSW3NZNPBWRGXZNDXI">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1L5FMK02XL4K3LYDADB3YFMRIXW3EYCIC1VIXGRJXGSFG5F5TPI">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWVKI2BYHL2B1PIOLLTAJQLPBU51DDFQOI1HUEIGP0NA2EUAQISI">Width Constraint (Min=6mil) (Max=1000mil) (Preferred=24mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEAR1OODAXKDVHM0LMXHMBP4ORGCYCTRFPWNKUIE0OXAEGHHVKX4K">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDI4TFGWHQDWE5GSWJLMNVAAJB3JKL45NEPLMBLQHWAV2GPT4FMEDG">Routing Via (MinHoleWidth=10mil) (MaxHoleWidth=15mil) (PreferredHoleWidth=10mil) (MinWidth=22mil) (MaxWidth=32mil) (PreferedWidth=22mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0GNLYXNBDNONBCNVZVOGGZCXEDE052MV0S13VZO1WKVD0P4MIG4I">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJPGHHA3DJEKJDTIIWXAGCAIADHMAUGE0ZFS1CPDOAX4CXHRFUFKE">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB0QYGZOVCGB1JPWI4AVKR24XQBJCHFR41EKYWQJLNNQUB0WFUYBG">Power Plane Connect Rule(Relief Connect )(Expansion=12mil) (Conductor Width=8mil) (Air Gap=12mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ0DKG0HRRBNJHSPFJAA335ECRHVAURLR0ID4KPIKUHJA0WJFDGOF">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=20mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID21UGJ0VYKEU2HVIEWI4HYVLF2OMWVJLDZZHMUKKXPZEYPPYUT43P">Power Plane Connect Rule(NoConnect Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) ((InComponent('J19')  and HasRoundHole))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIQ5BXVJJDOWSFOWDXUDIVO1TKDB2LFCKQHDEQIHBYR5IEKMESRYC">Minimum Annular Ring (Minimum=6mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2ARWXO1UNVVELVZOGAZEQXPDACPQM2VCWDDLT0KNTTV2EAFH13EP">Hole Size Constraint (Min=7.874mil) (Max=100000mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGERCXJGBO2AIHWLK4NYSQJOZXJJIZ54CBBPQUXNCWXUBIMQJHCFB">Hole To Hole Clearance (Gap=8mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIUIWYANAMIZTEIH0XD1BADHEZMZY2Y33QYEWLXEBKZHDUXLKRQPH">Minimum Solder Mask Sliver (Gap=4mil) (All),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDY5JDFPESIX2FOJY23HNYTKOJXP4V4TERJOLUX1BVJC3EY240UBQC">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJM20IXYVWXJXGUYPRG5K30ITOEJKH1FCJZJZDHN4QG2CWCAA2NHB">Component Clearance Constraint ( Horizontal Gap = 1mil, Vertical Gap = 10mil ) (Disabled)(InComponentClass('Connectors')),(All) </a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDW33NGIU4UC2YIYQ0OZKPL0K5HJX22RFEF11APGOMPU2P4ACZQBWN">Component Clearance Constraint ( Horizontal Gap = 10mil, Vertical Gap = 10mil ) (Disabled)(All),(All) </a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRDOZ0GYQ3X2IJQIK451SWF2QPH4VMXJBK43M5OFVS0FM42PWPYWM">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">6</td>
+</tr>
+</table><br><a name="IDNSIOA0LQ15THCR0UXCGU45I0IFJRRTCTHM5GUANBCUASAXAQ0GAF"><h2>Warnings</h2></a><a name="ID052XVB2X1H1TPU0VHA4S5ISERESOTKWGSAUGCDL2LBOUVIYYDYB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Unplated multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2434.055mil|Location2.X=2504.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2434.055mil|Location2.X=2504.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-14(1485.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2434.055mil|Location2.X=2504.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2434.055mil|Location2.X=2504.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-13(1485.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net NetJ19_13</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2334.055mil|Location2.X=2404.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2334.055mil|Location2.X=2404.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-12(1385.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net MOSI</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2334.055mil|Location2.X=2404.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2334.055mil|Location2.X=2404.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-11(1385.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net SCK</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2234.055mil|Location2.X=2304.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2234.055mil|Location2.X=2304.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-10(1285.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net VCC</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2234.055mil|Location2.X=2304.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2234.055mil|Location2.X=2304.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-9(1285.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net MISO</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2134.055mil|Location2.X=2204.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2134.055mil|Location2.X=2204.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-8(1185.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net NetJ19_8</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2134.055mil|Location2.X=2204.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2134.055mil|Location2.X=2204.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-7(1185.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net PJ3</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2034.055mil|Location2.X=2104.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2034.055mil|Location2.X=2104.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-6(1085.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net RX1</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2034.055mil|Location2.X=2104.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2034.055mil|Location2.X=2104.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-5(1085.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net PROC_nCS</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1934.055mil|Location2.X=2004.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1934.055mil|Location2.X=2004.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-4(985.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1934.055mil|Location2.X=2004.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1934.055mil|Location2.X=2004.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-3(985.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net nAC_FAULT</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1834.055mil|Location2.X=1904.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1834.055mil|Location2.X=1904.449mil|Location1.Y=3297.055mil|Location2.Y=3367.449mil|Absolute=True">Pad J19-2(885.827mil,2348.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net VCC</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1834.055mil|Location2.X=1904.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1834.055mil|Location2.X=1904.449mil|Location1.Y=3197.055mil|Location2.Y=3267.449mil|Absolute=True">Pad J19-1(885.827mil,2248.032mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net +12V2</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDIUIWYANAMIZTEIH0XD1BADHEZMZY2Y33QYEWLXEBKZHDUXLKRQPH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=4mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4297.63mil|Location2.X=4302.88mil|Location1.Y=3413.343mil|Location2.Y=3418.593mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4297.63mil|Location2.X=4302.88mil|Location1.Y=3413.343mil|Location2.Y=3418.593mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.15mil &lt; 4mil) Between Pad U3-1(3299.113mil,2399.268mil) on Top And Pad U3-2(3303.05mil,2440.606mil) on Top [Top Solder] Mask Sliver [3.15mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4270.07mil|Location2.X=4275.32mil|Location1.Y=3431.06mil|Location2.Y=3436.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4270.07mil|Location2.X=4275.32mil|Location1.Y=3431.06mil|Location2.Y=3436.31mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.15mil &lt; 4mil) Between Pad U3-2(3303.05mil,2440.606mil) on Top And Pad U3-3(3303.05mil,2458.323mil) on Top [Top Solder] Mask Sliver [3.15mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4270.07mil|Location2.X=4275.32mil|Location1.Y=3448.777mil|Location2.Y=3454.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4270.07mil|Location2.X=4275.32mil|Location1.Y=3448.777mil|Location2.Y=3454.027mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.15mil &lt; 4mil) Between Pad U3-3(3303.05mil,2458.323mil) on Top And Pad U3-4(3303.05mil,2476.039mil) on Top [Top Solder] Mask Sliver [3.15mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4222.826mil|Location2.X=4228.076mil|Location1.Y=3448.777mil|Location2.Y=3454.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4222.826mil|Location2.X=4228.076mil|Location1.Y=3448.777mil|Location2.Y=3454.027mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.15mil &lt; 4mil) Between Pad U3-5(3228.247mil,2476.039mil) on Top And Pad U3-6(3228.247mil,2458.323mil) on Top [Top Solder] Mask Sliver [3.15mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4222.826mil|Location2.X=4228.076mil|Location1.Y=3431.06mil|Location2.Y=3436.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4222.826mil|Location2.X=4228.076mil|Location1.Y=3431.06mil|Location2.Y=3436.31mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.15mil &lt; 4mil) Between Pad U3-6(3228.247mil,2458.323mil) on Top And Pad U3-7(3228.247mil,2440.606mil) on Top [Top Solder] Mask Sliver [3.15mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4195.267mil|Location2.X=4200.517mil|Location1.Y=3413.343mil|Location2.Y=3418.593mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4195.267mil|Location2.X=4200.517mil|Location1.Y=3413.343mil|Location2.Y=3418.593mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.15mil &lt; 4mil) Between Pad U3-7(3228.247mil,2440.606mil) on Top And Pad U3-8(3232.184mil,2399.268mil) on Top [Top Solder] Mask Sliver [3.15mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -265,19 +265,31 @@ DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_1.1a.xls
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Einsy_Rambo_0.5a\Design Rule Check - Einsy_Rambo.html
+DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_1.2d.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
+DocumentPath=Project Outputs\Assembly\Export STEP_Einsy Rambo_1.2d.step
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.1a.txt
+DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
 DItemRevisionGUID=
 
 [GeneratedDocument5]
+DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.2d.csv
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.1a.txt
+DItemRevisionGUID=
+
+[GeneratedDocument7]
 DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.2a.txt
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.2d.txt
 DItemRevisionGUID=
 
 [SearchPath1]
@@ -289,20 +301,20 @@ Path=..\..\altium_libs\*.*
 IncludeSubFolders=0
 
 [Parameter1]
-Name=ProjectTitle
-Value=Einsy Rambo
+Name=projectBoardRevision
+Value=e
 
 [Parameter2]
-Name=ProjectDesigner
-Value=UltiMachine
-
-[Parameter3]
 Name=projectBoardVersion
 Value=1.2
 
+[Parameter3]
+Name=ProjectDesigner
+Value=UltiMachine
+
 [Parameter4]
-Name=projectBoardRevision
-Value=c
+Name=ProjectTitle
+Value=Einsy Rambo
 
 [Configuration1]
 Name=Default Configuration
@@ -461,7 +473,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Adobe PDF
+TargetPrinter=KONICA MINOLTA C360SeriesPS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]

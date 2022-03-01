@@ -17,11 +17,11 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=Einsy_Rambo.OutJob
 Description=
-TargetOutputMedium=Assembly
+TargetOutputMedium=BoardFab
 VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
-TargetPrinter=Brother HL-3140CW series Printer
+TargetPrinter=KONICA MINOLTA C360SeriesPS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -143,20 +143,20 @@ OutputName4=Gerber Files
 OutputCategory4=Fabrication
 OutputDocumentPath4=
 OutputVariantName4=
-OutputEnabled4=0
+OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
 OutputEnabled4_OutputMedium3=1
 OutputEnabled4_OutputMedium4=0
 OutputDefault4=0
 Configuration4_Name1=OutputConfigurationParameter1
-Configuration4_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=True|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842753~1,16777218~1,16842751~1,16973835~1,16973833~1,16973831~1,16908290~1,16908376~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False
+Configuration4_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=True|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16842753~1,16777219~1,16777218~1,16777220~1,16842751~1,16973835~1,16973833~1,16973831~1,16908290~1,16908376~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False|DocumentPath=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc
 OutputType5=NC Drill
 OutputName5=NC Drill Files
 OutputCategory5=Fabrication
 OutputDocumentPath5=
 OutputVariantName5=
-OutputEnabled5=0
+OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=0
 OutputEnabled5_OutputMedium3=2
@@ -183,14 +183,14 @@ OutputName7=Pick and Place
 OutputCategory7=Assembly
 OutputDocumentPath7=
 OutputVariantName7=
-OutputEnabled7=1
+OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=0
 OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=1
 OutputDefault7=0
 Configuration7_Name1=OutputConfigurationParameter1
-Configuration7_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|GenerateTextFormat=False|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|Filter= |FilterActive=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:PART,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#18=Name:PART DESCRIPTION,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#19=Name:DISTRIBUTOR #,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#20=Name:TOLERANCE,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#21=Name:DNI,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#22=Name:VALUE,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#23=Name:Manufacturer2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#24=Name:MANUFACTURER,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#25=Name:DISTRIBUTOR,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#26=Name:EE_SPEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#27=Name:MANUFACTURER #,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#28=Name:ManufacturerPartNumber2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#29=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29|Column#30=Name:ManufacturerPartNumber,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33|Column#31=Name:LastRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30|Column#32=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35|Column#33=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28|Column#34=Name:MANUFACTURER2#,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32|Column#35=Name:LastRevisionNote,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31|Column#36=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34
+Configuration7_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|GenerateTextFormat=False|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|Filter= |FilterActive=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:PART,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#18=Name:PART DESCRIPTION,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#19=Name:DISTRIBUTOR #,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#20=Name:TOLERANCE,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#21=Name:DNI,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#22=Name:VALUE,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#23=Name:Manufacturer2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#24=Name:MANUFACTURER,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#25=Name:DISTRIBUTOR,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#26=Name:EE_SPEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#27=Name:MANUFACTURER #,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#28=Name:ManufacturerPartNumber2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#29=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29|Column#30=Name:ManufacturerPartNumber,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33|Column#31=Name:LastRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30|Column#32=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35|Column#33=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28|Column#34=Name:MANUFACTURER2#,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32|Column#35=Name:LastRevisionNote,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31|Column#36=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34|DocumentPath=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc
 OutputType8=BOM_PartType
 OutputName8=Bill of Materials
 OutputCategory8=Report
@@ -220,7 +220,7 @@ OutputName9=tab_bom
 OutputCategory9=Report
 OutputDocumentPath9=
 OutputVariantName9=
-OutputEnabled9=1
+OutputEnabled9=0
 OutputEnabled9_OutputMedium1=0
 OutputEnabled9_OutputMedium2=0
 OutputEnabled9_OutputMedium3=0
@@ -296,7 +296,7 @@ OutputName12=BOM-Grouped
 OutputCategory12=Report
 OutputDocumentPath12=
 OutputVariantName12=
-OutputEnabled12=1
+OutputEnabled12=0
 OutputEnabled12_OutputMedium1=0
 OutputEnabled12_OutputMedium2=0
 OutputEnabled12_OutputMedium3=0
@@ -305,16 +305,16 @@ OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration12_Name1=ColumnNameFormat
 Configuration12_Item1=CaptionAsName
-Configuration12_Name2=Filter
-Configuration12_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
-Configuration12_Name3=General
-Configuration12_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=942|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
-Configuration12_Name4=GroupOrder
-Configuration12_Item4=DNI=True|MANUFACTURER #=True
-Configuration12_Name5=SortOrder
-Configuration12_Item5=Designator=Up|Comment=Up|Footprint=Up
-Configuration12_Name6=VisibleOrder
-Configuration12_Item6=Designator=94|DISTRIBUTOR=94|DISTRIBUTOR #=94|Manufacturer=94|MANUFACTURER #=94|PART=94|Quantity=53|DNI=33|Comment=112|Footprint=119|Description=112|Part Description=178|VALUE=95|Tolerance=202|EE_SPEC=202
+Configuration12_Name2=General
+Configuration12_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=942|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration12_Name3=GroupOrder
+Configuration12_Item3=DNI=True|MANUFACTURER #=True
+Configuration12_Name4=SortOrder
+Configuration12_Item4=Designator=Up|Comment=Up|Footprint=Up
+Configuration12_Name5=VisibleOrder
+Configuration12_Item5=Designator=94|DISTRIBUTOR=94|DISTRIBUTOR #=94|Manufacturer=94|MANUFACTURER #=94|PART=94|Quantity=53|DNI=33|Comment=112|Footprint=119|Description=112|Part Description=178|VALUE=95|Tolerance=202|EE_SPEC=202|DesignItemId=100
+Configuration12_Name6=VisibleOrder_Flat
+Configuration12_Item6=Designator=94|DISTRIBUTOR=94|DISTRIBUTOR #=94|Manufacturer=94|MANUFACTURER #=94|PART=94|Quantity=53|DNI=33|Comment=112|Footprint=119|Description=112|Part Description=178|VALUE=95|Tolerance=202|EE_SPEC=202|DesignItemId=100
 OutputType13=PCB 3D Print
 OutputName13=PCB 3D Print (bottom)
 OutputCategory13=Documentation
@@ -348,14 +348,14 @@ OutputName15=Export STEP
 OutputCategory15=Export
 OutputDocumentPath15=
 OutputVariantName15=
-OutputEnabled15=1
+OutputEnabled15=0
 OutputEnabled15_OutputMedium1=0
 OutputEnabled15_OutputMedium2=0
 OutputEnabled15_OutputMedium3=0
 OutputEnabled15_OutputMedium4=4
 OutputDefault15=0
 Configuration15_Name1=OutputConfigurationParameter1
-Configuration15_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=True|IncludeElectricalPadHoles=True|IncludeFreePadHoles=True|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=True|IncludeCoverLayer=True
+Configuration15_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=True|IncludeElectricalPadHoles=True|IncludeFreePadHoles=True|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=True|IncludeCoverLayer=True|DocumentPath=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc
 OutputType16=PCB Print
 OutputName16=Designators
 OutputCategory16=Documentation
@@ -480,7 +480,7 @@ OutputFileNameMulti3==ProjectTitle+_+projectBoardVersion+projectBoardRevision
 UseOutputNameForMulti3=0
 OutputFileNameSpecial3=
 OpenOutput3=1
-OutputFilePath4=C:\Users\Johnny\Documents\Projects\Einsy-Rambo\board\Project Outputs\Assembly\
+OutputFilePath4=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Project Outputs\Assembly\
 ReleaseManaged4=0
 OutputBasePath4=Project Outputs\
 OutputPathMedia4=[Media Name]
@@ -507,7 +507,7 @@ OpenGerberOutput3=0
 OpenNCDrillOutput3=0
 OpenIPCOutput3=0
 EnableReload3=0
-RelativeOutputPath4=C:\Users\Johnny\Documents\Projects\Einsy-Rambo\board\Project Outputs\Assembly\
+RelativeOutputPath4=D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Project Outputs\Assembly\
 OpenOutputs4=1
 AddToProject4=1
 TimestampFolder4=0

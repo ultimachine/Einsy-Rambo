@@ -1,0 +1,106 @@
+Protel Design System Design Rule Check
+PCB File : D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc
+Date     : 2/28/2022
+Time     : 7:58:52 PM
+
+WARNING: Unplated multi-layer pad(s) detected
+   Pad J19-14(1485.827mil,2348.032mil) on Multi-Layer on Net GND
+   Pad J19-13(1485.827mil,2248.032mil) on Multi-Layer on Net NetJ19_13
+   Pad J19-12(1385.827mil,2348.032mil) on Multi-Layer on Net MOSI
+   Pad J19-11(1385.827mil,2248.032mil) on Multi-Layer on Net SCK
+   Pad J19-10(1285.827mil,2348.032mil) on Multi-Layer on Net VCC
+   Pad J19-9(1285.827mil,2248.032mil) on Multi-Layer on Net MISO
+   Pad J19-8(1185.827mil,2348.032mil) on Multi-Layer on Net NetJ19_8
+   Pad J19-7(1185.827mil,2248.032mil) on Multi-Layer on Net PJ3
+   Pad J19-6(1085.827mil,2348.032mil) on Multi-Layer on Net RX1
+   Pad J19-5(1085.827mil,2248.032mil) on Multi-Layer on Net PROC_nCS
+   Pad J19-4(985.827mil,2348.032mil) on Multi-Layer on Net GND
+   Pad J19-3(985.827mil,2248.032mil) on Multi-Layer on Net nAC_FAULT
+   Pad J19-2(885.827mil,2348.032mil) on Multi-Layer on Net VCC
+   Pad J19-1(885.827mil,2248.032mil) on Multi-Layer on Net +12V2
+
+Processing Rule : Clearance Constraint (Gap=7mil) (InComponentClass('Fiducials')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (InComponent('U3')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) ((OnLayer('Signal Layer 1') OR OnLayer('Supply') OR OnLayer('Signal Layer 2'))),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (InPadClass('NPTH_bot')),(InPadClass('top_smt_bot'))
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=1000mil) (Preferred=24mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=10mil) (MaxHoleWidth=15mil) (PreferredHoleWidth=10mil) (MinWidth=22mil) (MaxWidth=32mil) (PreferedWidth=22mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=24mil) (Air Gap=10mil) (Entries=4) (InNet('+12V'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=12mil) (Conductor Width=8mil) (Air Gap=12mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=20mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(NoConnect Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) ((InComponent('J19')  and HasRoundHole))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=7.874mil) (Max=100000mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (3.15mil < 4mil) Between Pad U3-1(3299.113mil,2399.268mil) on Top And Pad U3-2(3303.05mil,2440.606mil) on Top [Top Solder] Mask Sliver [3.15mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.15mil < 4mil) Between Pad U3-2(3303.05mil,2440.606mil) on Top And Pad U3-3(3303.05mil,2458.323mil) on Top [Top Solder] Mask Sliver [3.15mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.15mil < 4mil) Between Pad U3-3(3303.05mil,2458.323mil) on Top And Pad U3-4(3303.05mil,2476.039mil) on Top [Top Solder] Mask Sliver [3.15mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.15mil < 4mil) Between Pad U3-5(3228.247mil,2476.039mil) on Top And Pad U3-6(3228.247mil,2458.323mil) on Top [Top Solder] Mask Sliver [3.15mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.15mil < 4mil) Between Pad U3-6(3228.247mil,2458.323mil) on Top And Pad U3-7(3228.247mil,2440.606mil) on Top [Top Solder] Mask Sliver [3.15mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.15mil < 4mil) Between Pad U3-7(3228.247mil,2440.606mil) on Top And Pad U3-8(3232.184mil,2399.268mil) on Top [Top Solder] Mask Sliver [3.15mil]
+Rule Violations :6
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 1mil, Vertical Gap = 10mil ) (Disabled)(InComponentClass('Connectors')),(All) 
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 10mil, Vertical Gap = 10mil ) (Disabled)(All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 6
+Waived Violations : 0
+Time Elapsed        : 00:00:02

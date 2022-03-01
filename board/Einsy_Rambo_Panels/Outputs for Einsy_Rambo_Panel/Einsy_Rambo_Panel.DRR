@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: Einsy_Rambo_Panel.PcbDoc   7/18/2021  4:40:36 PM
+NCDrill File Report For: Einsy_Rambo_Panel.PcbDoc   2/15/2022  6:24:52 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top to Bottom
@@ -7,8 +7,8 @@ ASCII RoundHoles File : Einsy_Rambo_Panel.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      10mil (0.254mm)                                           Round             2079      PTH        0.00inch (0.00mm)
-T2      15mil (0.381mm)                                           Round             930       PTH        0.00inch (0.00mm)
+T1      10mil (0.254mm)                                           Round             2217      PTH        0.00inch (0.00mm)
+T2      15mil (0.381mm)                                           Round             885       PTH        0.00inch (0.00mm)
 T3      35mil (0.899mm)                                           Round             90        PTH        0.00inch (0.00mm)
 T4      38mil (0.965mm)                                           Round             30        PTH        0.00inch (0.00mm)
 T5      40mil (1.016mm)                                           Round             141       PTH        0.00inch (0.00mm)
@@ -20,6 +20,6 @@ T10     87mil (2.21mm)                                            Round         
 T11     50mil (1.28mm)                                            Round             42        NPTH       0.00inch (0.00mm)
 T12     118mil (3mm)                                              Round             16        NPTH       0.00inch (0.00mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              3400
+Totals                                                                              3493
 
 Total Processing Time (hh:mm:ss) : 00:00:02
