@@ -1,0 +1,16 @@
+Source PCB Design Einsy_Rambo_Panel.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Einsy_Rambo_Panels.PrjPcb]
+   Generated File[Einsy_Rambo_Panel.GM9]
+   Generated File[Einsy_Rambo_Panel.GD1]
+   Generated File[Einsy_Rambo_Panel.RUL]
+   Generated File[Einsy_Rambo_Panel.EXTREP]
+   Generated File[Einsy_Rambo_Panel.REP]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 10:37:09 AM On 11/22/2019

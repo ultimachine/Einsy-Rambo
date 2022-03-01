@@ -1,10 +1,10 @@
 Output: Export STEP
 Type  : ExportSTEP
 From  : PCB Document [Einsy_Rambo.PcbDoc]
-   Generated File[Export STEP_Einsy Rambo_1.2b.step]
+   Generated File[Export STEP_Einsy Rambo_1.2d.step]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 9:28:58 AM On 7/23/2019
+Finished Output Generation At 8:01:10 AM On 12/14/2021

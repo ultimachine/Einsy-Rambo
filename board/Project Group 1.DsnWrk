@@ -1,0 +1,16 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=..\..\VHMI\VHMI\VHMI\VHMI.PrjPcb
+[Project2]
+ProjectPath=..\..\VHMI\VHMI\Proximity Sensor Castle\Proximity Sensor Castle.PrjPcb
+[Project3]
+ProjectPath=..\..\altium_libs\Libs.PrjPcb
+[Project4]
+ProjectPath=..\..\VHMI\VHMI\VHMI\Panels\VHMI_Panels.PrjPcb
+[Project5]
+ProjectPath=..\..\VHMI\VHMI\Proximity Sensor Castle\Panels\Proximity_Castle_panel.PrjPcb
+[Project6]
+ProjectPath=..\..\Archimajor\Archimajor.PrjPcb
+[Project7]
+ProjectPath=Einsy_Rambo.PrjPcb

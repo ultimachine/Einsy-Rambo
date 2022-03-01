@@ -1,0 +1,15 @@
+Output: Paste gerbers
+Type  : Gerber
+From  : PCB Document [Einsy_Rambo_Panel.PcbDoc]
+   Generated File[Einsy_Rambo_Panel.GTP]
+   Generated File[Einsy_Rambo_Panel.GBP]
+   Generated File[Einsy_Rambo_Panel.GD1]
+   Generated File[Einsy_Rambo_Panel.RUL]
+   Generated File[Einsy_Rambo_Panel.EXTREP]
+   Generated File[Einsy_Rambo_Panel.REP]
+
+
+Files Generated   : 6
+Documents Printed : 0
+
+Finished Output Generation At 7:48:05 AM On 12/14/2021

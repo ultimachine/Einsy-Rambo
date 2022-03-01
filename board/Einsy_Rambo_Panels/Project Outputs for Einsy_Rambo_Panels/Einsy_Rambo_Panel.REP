@@ -1,0 +1,39 @@
+*************************************************************
+FileName = Einsy_Rambo_Panel.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bot Document
+      File : Einsy_Rambo_Panel.GM9
+
+    Adding Layer      : Bot Document
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Einsy_Rambo_Panel.GD1
+
+    Adding Drill Pair : Top-Bottom
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D15
+    D18
+    D19
+    D20
+    D21
+    D22
+*************************************************************
+

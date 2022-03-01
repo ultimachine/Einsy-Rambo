@@ -261,23 +261,43 @@ GenerateClassCluster=0
 DocumentUniqueId=BUDQKMWO
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_1.1a.xls
+DocumentPath=C:\Users\Johnny\AppData\Local\Temp\Revisions\[Revision ebe8841ea017fe68291dcd481a57ecbc86a8289a] Einsy_Rambo.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Einsy_Rambo_0.5a\Design Rule Check - Einsy_Rambo.html
+DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_1.1a.xls
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
+DocumentPath=Project Outputs\Assembly\BOM-Grouped_Einsy Rambo_1.2d.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.1a.txt
+DocumentPath=Project Outputs for Einsy_Rambo_0.5a\Design Rule Check - Einsy_Rambo.html
 DItemRevisionGUID=
 
 [GeneratedDocument5]
+DocumentPath=Project Outputs\Assembly\Export STEP_Einsy Rambo_1.2d.step
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.1a.csv
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs\Assembly\Pick and Place_Einsy Rambo_1.2d.csv
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.1a.txt
+DItemRevisionGUID=
+
+[GeneratedDocument9]
 DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.2a.txt
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs\Assembly\tab_bom_Einsy Rambo_1.2d.txt
 DItemRevisionGUID=
 
 [SearchPath1]
@@ -302,7 +322,7 @@ Value=1.2
 
 [Parameter4]
 Name=projectBoardRevision
-Value=c
+Value=d
 
 [Configuration1]
 Name=Default Configuration

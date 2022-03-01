@@ -1,8 +1,8 @@
-Readme File for Printed Circuit Board 'Einsy_Rambo_1.2c'
+Readme File for Printed Circuit Board 'Einsy_Rambo_1.2d'
 
 Board Specification
 Part Number            Einsy_Rambo
-Revision               1.2c
+Revision               1.2d
 Board size             105 x 71mm
 Board Thickness        1.524mm (0.06")
 Board type             Rigid
@@ -22,7 +22,7 @@ Internal slots/routes  0
 Blind Vias             No
 Buried Vias            No
 No of Boards/Panel     3
-Routing                V-Score
+Routing                V-Score and Routing
 Panel Size     116.8 X 226.1mm
 
 Drill format           Leading zero suppression 2.4

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [Einsy_Rambo.PcbDoc]
+   Generated File[Einsy Rambo_1.2d.TXT]
+   Generated File[Einsy Rambo_1.2d.LDP]
+   Generated File[Einsy Rambo_1.2d.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 8:01:50 AM On 12/14/2021

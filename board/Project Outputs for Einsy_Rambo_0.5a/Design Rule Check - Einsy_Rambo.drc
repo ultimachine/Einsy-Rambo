@@ -1,0 +1,97 @@
+Protel Design System Design Rule Check
+PCB File : D:\Users\Secondary\Documents\Projects\Einsy-Rambo\board\Einsy_Rambo.PcbDoc
+Date     : 12/13/2021
+Time     : 11:32:42 PM
+
+WARNING: Unplated multi-layer pad(s) detected
+   Pad J19-14(37.74mm,59.64mm) on Multi-Layer on Net GND
+   Pad J19-13(37.74mm,57.1mm) on Multi-Layer on Net NetJ19_13
+   Pad J19-12(35.2mm,59.64mm) on Multi-Layer on Net MOSI
+   Pad J19-11(35.2mm,57.1mm) on Multi-Layer on Net SCK
+   Pad J19-10(32.66mm,59.64mm) on Multi-Layer on Net VCC
+   Pad J19-9(32.66mm,57.1mm) on Multi-Layer on Net MISO
+   Pad J19-8(30.12mm,59.64mm) on Multi-Layer on Net NetJ19_8
+   Pad J19-7(30.12mm,57.1mm) on Multi-Layer on Net PJ3
+   Pad J19-6(27.58mm,59.64mm) on Multi-Layer on Net RX1
+   Pad J19-5(27.58mm,57.1mm) on Multi-Layer on Net PROC_nCS
+   Pad J19-4(25.04mm,59.64mm) on Multi-Layer on Net GND
+   Pad J19-3(25.04mm,57.1mm) on Multi-Layer on Net nAC_FAULT
+   Pad J19-2(22.5mm,59.64mm) on Multi-Layer on Net VCC
+   Pad J19-1(22.5mm,57.1mm) on Multi-Layer on Net +12V2
+
+Processing Rule : Clearance Constraint (Gap=0.178mm) (InComponentClass('Fiducials')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.203mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) ((OnLayer('Signal Layer 1') OR OnLayer('Supply') OR OnLayer('Signal Layer 2'))),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.203mm) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (InPadClass('NPTH_bot')),(InPadClass('top_smt_bot'))
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=25.4mm) (Preferred=0.61mm) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=0.254mm) (MaxHoleWidth=0.381mm) (PreferredHoleWidth=0.254mm) (MinWidth=0.559mm) (MaxWidth=0.813mm) (PreferedWidth=0.559mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (IsVia)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.61mm) (Air Gap=0.254mm) (Entries=4) (InNet('+12V'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.305mm) (Conductor Width=0.203mm) (Air Gap=0.305mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.508mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(NoConnect Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) ((InComponent('J19')  and HasRoundHole))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.152mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=2540mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.203mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.025mm, Vertical Gap = 0.254mm ) (Disabled)(InComponentClass('Connectors')),(All) 
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (Disabled)(All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:02
